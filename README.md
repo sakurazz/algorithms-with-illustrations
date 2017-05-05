@@ -1,3 +1,3 @@
 # Algorithms
 
-Here are all about alogrithms I wrote. 
+Here are some alogrithms I wrote. 
