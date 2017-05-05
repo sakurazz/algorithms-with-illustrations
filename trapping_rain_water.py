@@ -1,9 +1,9 @@
 # Time: O(n)
 # Space: O(1)
+#
 # Given n non-negative integers 
 # representing an elevation map where the width of each bar is 1, 
 # compute how much water it is able to trap after raining.
-
 # For example, 
 # Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 
@@ -15,10 +15,12 @@ Greedy, two pointers
  II
 III
 2. trap water until we find a bigger integer 
-        I  
-  I     I   
- IIII  II  
-IIIIIIIII
+                  I  
+                  I  
+        I         I         
+  I     I         I         I
+ IIII  II         I         I    I
+IIIIIIIII.........I.........IIIIIII
 '''
 
 class Solution(object):
