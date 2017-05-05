@@ -13,7 +13,7 @@
 """
 Notes: 
 Greedy, Always choose the bigger area 
-between the new one and the old among n rectangle  
+between the new one and the old among n rectangles
 """
 
 
