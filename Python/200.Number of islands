@@ -1,0 +1,3 @@
+queue = []
+if queue:
+    print "Yes!"
