@@ -1,4 +1,4 @@
-# [LeetCode][1] Training Guide  
+# Aogrithms' Delight 
 
 > Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  —— 《Master Sun: The Art of War》
 
