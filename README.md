@@ -8,6 +8,7 @@
 <br>
 > Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  —— *Master Sun: The Art of War*
 
+<br>
 
 ## 常见问题❓
 
@@ -82,4 +83,6 @@
 
 ## Reference 
 
-[1]:	https://leetcode.com/problemset/algorithms/
+- [题目训练](https://leetcode.com/problemset/algorithms/)
+- [模拟面试](https://www.pramp.com/dashboard#/)
+- [Github使用指南:把Github当作博客用](https://github.com/mqyqingfeng/Blog/issues/2)
