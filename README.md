@@ -6,12 +6,20 @@
 | 问题类型<br>[❓](#常见问题) | 数据结构<br>[⛓](#数据结构)|核心思想<br>[🤖](#核心思想) | 实现技巧<br>[✍️](#实现技巧) | Reference<br>[📝](#reference) |
 
 <br>
-> Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  —— *Master Sun: The Art of War*
+> Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  
+> <br>
+> —— *Master Sun: The Art of War*
 
 <br>
 
+
 ## 常见问题❓
 
+### 基础问题
+
+- Big O notation
+
+### 问题分类
 - 遍历问题
 	- 树的遍历：增删查改，前，中，后序
 	- 图的遍历：最小生成树？
