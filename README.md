@@ -13,6 +13,14 @@
 <br>
 
 
+## 清单
+
+| 关键词 🔑 | 典型题 👻 | 讲解 🎦 | 笔记 📒 | 备注  |
+| :--------: | :---------: | :---------: | :---------: | :---------: | 
+| Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/LKYGzjXKLFA) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
+
+
+
 ## 常见问题❓
 
 ### 基础问题
