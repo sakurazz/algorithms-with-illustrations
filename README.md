@@ -17,7 +17,9 @@
 
 | 关键词 🔑 | 典型题 👻 | 讲解 🎦 | 笔记 📒 | 备注  |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
-| Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/LKYGzjXKLFA) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
+| Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/7niUr7LlviY) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
+| Binary Search | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [33](https://youtu.be/Rmny73Wx3D0) | [?] | 减治系列 |
+
 
 
 
