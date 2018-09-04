@@ -13,13 +13,43 @@
 <br>
 
 
-## 清单
+## 清单 Lists/CheatSheet
 
 | 关键词 🔑 | 典型题 👻 | 讲解 🎦 | 笔记 📒 | 备注  |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
-| Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/7niUr7LlviY) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
+| Array Queue|  |  | |
+| Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/) |  | |
+| Linked List| 141, 206 |  | |
+| Tree Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/7niUr7LlviY) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
+| Tree Trie| [208] |  | |
+| Segement Tree| [218] |  | |
+| Binary Indexed Tree|  |  | |
+| Tree Traversal |  |  | |
+| Undirected Graph|  |  | |
+| Directed Graph|  |  | |
+| MST |  |  | |
+| Shortest Path| [787] ,[505] |  | |
+| String|  |  | |
+| Two Pointer|  |  | |
+| Sliding Window| 76 |  | |
+| Matrix|  |  | |
+| Hash| 146 |  | |
+| Two Sum系列|  |  | |
+| Sorting|  |  | |
+| DFS|  |  | |
+| BFS|  |  | |
 | Binary Search | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [33](https://youtu.be/Rmny73Wx3D0) | [?] | 减治系列 |
-
+| DP |  |  | |
+| 股票系列 |  |  | |
+| Greedy |  |  | |
+| Recursion |  |  | |
+| Backtracking |  |  | |
+| 思维方式 | ---| --- | --- | --- | 
+| Reverse	thinking | 88， 795 |  | |
+| Definition| 261 |  | |
+| Object| 418 |  | |
+| 双标准| 678 |  | |
+| 满足/不满足| 836 |  | |
 
 
 
