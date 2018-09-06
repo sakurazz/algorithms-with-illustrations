@@ -13,13 +13,14 @@
 <br>
 
 
-## 清单 Lists/CheatSheet
+## 清单 Lists
 
 | 关键词 🔑 | 典型题 👻 | 讲解 🎦 | 笔记 📒 | 备注  |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
+| Data Strcture| ---- | ---- | ---- | ---- |
 | Array Queue|  |  | |
 | Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/) |  | |
-| Linked List| 141, 206 |  | |
+| Linked List| 25,141, 206, | [25](https://youtu.be/W0QkqzwB9qY) | | 增删查改转; Dummy node, reverse, |
 | Tree Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/7niUr7LlviY) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
 | Tree Trie| [208] |  | |
 | Segement Tree| [218] |  | |
@@ -35,6 +36,7 @@
 | Matrix|  |  | |
 | Hash| 146 |  | |
 | Two Sum系列|  |  | |
+| 算法思想| ❤️ | ❤️ | ❤️ | ❤️|
 | Sorting|  |  | |
 | DFS|  |  | |
 | BFS|  |  | |
@@ -51,6 +53,36 @@
 | 双标准| 678 |  | |
 | 满足/不满足| 836 |  | |
 
+
+## CheatSheet 
+
+### Linked List 
+
+List problems often have a simple brute-force solution that uses 0(n) space, but a subtler solution that uses **the existing list nodes** to reduce space complexity to 0(1). 
+
+Very often, a problem on lists is conceptually simple, and is more about **cleanly coding what's specified**, rather than designing an algorithm.
+
+Consider using **a dummy head** (sometimes referred to as a sentinel) to avoid having to check for empty lists. This simplifies code, and makes bugs less likely. 
+
+It's easy to forget **to update next** (and previous for double linked list) for the head and tail.
+
+Algorithms operating on singly linked lists often benefit from using **two iterators**, one ahead of the other, or **one advancing quicker than the other**. 
+ 
+#### Key words 
+- deletion O(1): moditfy the value or pointer 
+- dummy node: 
+- reverse: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
+- partition: merge two lists
+- linked list ~= array 
+- two pointer (fast/slow pointers)
+	- get the kth from last node 
+	- detect cycle 
+	- getting the middle node 
+
+#### Corner cases
+- Single node 
+- Two nodes
+- Linked list has cycle. Clarify with the interviewer whether there can be a cycle in the list. Usually the answer is no.
 
 
 ## 常见问题❓
@@ -134,3 +166,4 @@
 - [题目训练](https://leetcode.com/problemset/algorithms/)
 - [模拟面试](https://www.pramp.com/dashboard#/)
 - [Github使用指南:把Github当作博客用](https://github.com/mqyqingfeng/Blog/issues/2)
+- *Elements of Programming interviews*
