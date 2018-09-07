@@ -56,7 +56,7 @@
 
 ## CheatSheet 
 
-### Linked List 
+## Linked List 
 
 List problems often have a simple brute-force solution that uses 0(n) space, but a subtler solution that uses **the existing list nodes** to reduce space complexity to 0(1). 
 
@@ -68,9 +68,9 @@ It's easy to forget **to update next** (and previous for double linked list) for
 
 Algorithms operating on singly linked lists often benefit from using **two iterators**, one ahead of the other, or **one advancing quicker than the other**. 
  
-#### Key words 
+### Key words 
 - deletion O(1): moditfy the value or pointer 
-- dummy node: 
+- dummy node: [2](https://leetcode.com/problems/add-two-numbers/description/)
 - reverse: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
 - partition: merge two lists
 - linked list ~= array 
@@ -79,10 +79,120 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 	- detect cycle 
 	- getting the middle node 
 
-#### Corner cases
+### Corner cases
 - Single node 
 - Two nodes
 - Linked list has cycle. Clarify with the interviewer whether there can be a cycle in the list. Usually the answer is no.
+
+## Heap 
+
+### Study Links
+Learning to Love Heaps
+
+### Notes
+Use a heap when all you care about is the **largest** or **smallest** elements, and you do not need to support fast lookup, delete, or search operations for arbitrary elements. [Problem 11.1]
+
+A heap is a good choice when you need to compute the k **largest** or k **smallest** elements in a collection. For the former, use a min-heap, for the latter, use a max-heap. [Problem 11.4]
+
+### Key words 
+- top / lowest k: [347](https://leetcode.com/problems/top-k-frequent-elements/description/)
+
+#### Corner cases
+
+## BST 
+
+### Study notes
+
+### Notes
+ With a BST you can **iterate** through elements in sorted order in time 0(n) (regard- less of whether it is balanced). 
+ 
+Some problems need **a combination of a BST and a hashtable**. For example, if you insert student objects into a BST and entries are ordered by GPA, and then a student's GPA needs to be updated and all we have is the student's name and new GPA, we cannot find the student by name without a full traversal. However, with an additional hash table, we can directly go to the corresponding entry in the tree. 
+
+Sometimes, it's necessary to **augment** a BST, e.g., the number of nodes at a subtree in addition to its key, or the range of values sorted in the subtree. 
+
+The BST property is **a global property**—a binary tree may have the property that each node's key is greater than the key at its left child and smaller than the key at its right child, but it may not be a BST. 
+
+### key words
+- inorder [285](https://leetcode.com/problems/inorder-successor-in-bst/description/), [230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)
+- BST & Hashtable
+- subtree
+
+
+## Trie 
+
+### Study notes
+
+### Notes
+Tries are special trees (prefix trees) that make searching and storing strings more efficient. Tries have many practical applications, such as conducting **searches** and providing **autocomplete**. It is helpful to know these common applications so that you can easily identify when a problem can be efficiently solved using a trie.
+
+Sometimes preprocessing a dictionary of **words** (given in a list) into a trie, will improve the efficiency of searching for a word of length k, among n words. Searching becomes O(k) instead of O(n).
+
+Be familiar with implementing, from scratch, a Trie class and its `add`, `remove` and `search` methods.
+
+### key words
+- implement trie [208](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
+
+
+### Corner cases
+
+
+## Segment Tree 
+
+### Study notes
+
+### Notes
+In computer science, a segment tree also known as a statistic tree is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it's a structure that cannot be modified once it's built. A similar data structure is the interval tree.  - from wiki 
+
+### key words
+- [218](https://leetcode.com/problems/the-skyline-problem/description/) [308]() [315]()
+
+### Corner cases
+
+
+## Binary Indexed Tree 
+
+### Study notes
+
+### Notes
+
+### key words
+
+### Corner cases
+
+## Graph 
+
+### Study notes
+
+### Notes
+ It's natural to use a graph when the problem involves **spatially connected** objects, e.g., road segments between cities. 
+  
+More generally, consider using a graph when you need to analyze **any binary relationship**, between objects, such as interlinked webpages, followers in a social graph, etc. 
+
+Some graph problems entail **analyzing structure**, e.g., looking for cycles or connected components. DFS works particularly well for these applications. 
+
+Some graph problems are related to **optimization**, e.g., find the shortest path from one vertex to another. **BFS, Dijkstra's shortest path algorithm, and minimum spanning tree** are examples of graph algorithms appropriate for optimization problems. 
+
+### key words
+- DAG 
+
+### Corner cases
+
+
+
+----
+## Trie 
+
+### Study notes
+
+### Notes
+
+### key words
+
+### Corner cases
+
+
+
+
 
 
 ## 常见问题❓
