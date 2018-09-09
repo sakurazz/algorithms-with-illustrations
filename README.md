@@ -178,6 +178,27 @@ Some graph problems are related to **optimization**, e.g., find the shortest pat
 ### Corner cases
 
 
+## Trie 
+
+### Study notes
+
+Consider using DP whenever you have to **make choices** to arrive at the solution, specifically, when the solution relates to subproblems.
+
+In addition to optimization problems, DP is also **applicable** to **counting and decision problems**—any problem where you can express a solution recursively in terms of the same computation on smaller instances.
+
+Although conceptually DP involves recursion, often for efficiency the cache is **built "bottom-up"**, i.e., iteratively. [Problem 17.3].
+
+To save space, **cache space** may be **recycled** once it is known that a set of entries will not be looked up again. [Problems 17.1 and 17.2]
+
+Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the solution is found early or subproblems can be **pruned** through bounding. [Problem 17.5]
+
+### Notes
+
+### key words
+
+### Corner cases
+
+
 
 ----
 ## Trie 
