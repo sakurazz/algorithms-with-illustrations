@@ -84,6 +84,30 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 - Two nodes
 - Linked list has cycle. Clarify with the interviewer whether there can be a cycle in the list. Usually the answer is no.
 
+## Queue [FIFO]
+
+### Study notes
+
+### Notes
+
+### key words
+
+### Corner cases
+
+## Stack[LIFO]
+
+### Study notes
+
+### Notes
+Learn to recognize when the stack **LIFO** property is applicable. For example, **parsing** typically benefits from a stack. 
+
+Consider augmenting the basic stack or queue data structure to support additional operations, such as **finding the maximum element**. 
+
+### key words
+- LIFO: 901
+
+### Corner cases
+
 ## Heap 
 
 ### Study Links
@@ -98,6 +122,28 @@ A heap is a good choice when you need to compute the k **largest** or k **smalle
 - top / lowest k: [347](https://leetcode.com/problems/top-k-frequent-elements/description/)
 
 #### Corner cases
+
+## Binary Tree
+
+### Study notes
+
+ **Recursive algorithms** are well-suited to problems on trees. Remember to include space implicitly allocated on the **function call stack** when doing space complexity analysis. 
+ 
+Some tree problems have simple brute-force solutions that use 0(n) space solution, but subtler solutions that uses the **existing tree nodes** to reduce space complexity to 0( 1). 
+
+Consider **left- and right-skewed trees** when doing complexity analysis. Note that 0(h) complexity, where h is the tree height, translates into 0(log n) complexity for balanced trees, but 0(n) complexity for skewed trees. [Problem 10.12]
+
+If each node has a **parent field**, use it to make your code simpler, and to reduce time and space complexity. [Problem 10.10]
+
+It's easy to make the **mistake** of treating a node that has a single child as a leaf. 
+
+### Notes
+
+### key words
+
+### Corner cases
+
+
 
 ## BST 
 
@@ -178,7 +224,7 @@ Some graph problems are related to **optimization**, e.g., find the shortest pat
 ### Corner cases
 
 
-## Trie 
+## DP
 
 ### Study notes
 
@@ -195,13 +241,46 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 ### Notes
 
 ### key words
+- choice: 120, 97, 174, [221 Matrix], 903
+- variable: 188, 474,
+- sequence aligment: [300](https://leetcode.com/problems/longest-increasing-subsequence/description/) , 152
+- shortest path: 
+- counting: 96 
+- string: 5 
+- DFS -> DP: 139, 678, 464 
+
+### Corner cases
+
+
+## xxxxx
+
+### Study notes
+
+Recursion is especially suitable when **the input is expressed using recursive rules.** 
+
+Recursion is a good choice for **search, enumeration, and divide-and-conquer.** 
+
+Use recursion as **alternative to deeply nested iteration loops**. For example, recursion is much better when you have an undefined number of levels, such as the IP address problem generalized to k substrings. 
+
+If you are asked to **remove recursion** from a program, consider mimicking call stack with the **stack data structure**.
+
+Recursion can be easily removed from a **tail-recursive** program by using a while- loop—no stack is needed. (Optimizing compilers do this.) 
+
+If a recursive function may end up being called with **the same arguments** more than once, cache the results—this is the idea behind Dynamic Programming.
+
+### Notes
+- tree: [687 Path](https://leetcode.com/problems/longest-univalue-path/description/)
+- enumeration: [78], [248]
+
+### key words
 
 ### Corner cases
 
 
 
+
 ----
-## Trie 
+## xxxxx
 
 ### Study notes
 
