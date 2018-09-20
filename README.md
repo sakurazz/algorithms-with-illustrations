@@ -22,7 +22,7 @@
 | Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/) |  | |
 | Linked List| 25,141, 206, | [25](https://youtu.be/W0QkqzwB9qY) | | 增删查改转; Dummy node, reverse, |
 | Tree Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/7niUr7LlviY) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
-| Tree Trie| [208] |  | |
+| Tree Trie| [208], 421 |  | |
 | Segement Tree| [218] |  | |
 | Binary Indexed Tree|  |  | |
 | Tree Traversal |  |  | |
@@ -38,14 +38,15 @@
 | Two Sum系列|  |  | |
 | 算法思想| ❤️ | ❤️ | ❤️ | ❤️|
 | Sorting|  |  | |
+| Bucket Sort|  |  | |
 | DFS|  |  | |
 | BFS|  |  | |
-| Binary Search | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [33](https://youtu.be/Rmny73Wx3D0) | [?] | 减治系列 |
+| Binary Search | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [33](https://youtu.be/Rmny73Wx3D0) 35 | [?] | 减治系列 |
 | DP |  |  | |
 | 股票系列 |  |  | |
 | Greedy |  |  | |
 | Recursion |  |  | |
-| Backtracking |  |  | |
+| Backtracking | 39. Combination Sum |  | |
 | 思维方式 | ---| --- | --- | --- | 
 | Reverse	thinking | 88， 795 |  | |
 | Definition| 261 |  | |
@@ -177,7 +178,7 @@ Be familiar with implementing, from scratch, a Trie class and its `add`, `remove
 
 ### key words
 - implement trie [208](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
-
+- search: 421 
 
 ### Corner cases
 
@@ -224,6 +225,17 @@ Some graph problems are related to **optimization**, e.g., find the shortest pat
 ### Corner cases
 
 
+## Binary Search 
+
+### Study notes
+
+### Notes
+
+### key words
+- find in sorted xx: 35 
+
+### Corner cases
+
 ## DP
 
 ### Study notes
@@ -241,7 +253,7 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 ### Notes
 
 ### key words
-- choice: 120, 97, 174, [221 Matrix], 903
+- choice: 120, 97, 174, [221 Matrix], 903, **322**
 - variable: 188, 474,
 - sequence aligment: [300](https://leetcode.com/problems/longest-increasing-subsequence/description/) , 152
 - shortest path: 
@@ -252,7 +264,36 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 ### Corner cases
 
 
-## xxxxx
+## Backtracking 
+
+
+[A general approach to backtracking questions in Java (Subsets, Permutations, Combination Sum, Palindrome Partioning)](https://leetcode.com/problems/permutations/discuss/18239/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning)
+
+### Study notes
+
+基本概念：
+backtracking（回溯算法）也叫试探法，它是一种系统地搜索问题的解的方法。回溯算法的基本思想是：从一条路往前走，能进则进，不能进则退回来，换一条路再试。
+
+回溯算法说白了就是穷举法。不过回溯算法使用剪枝函数，剪去一些不可能到达最终状态（即答案状态）的节点，从而减少状态空间树节点的生成。 
+回溯法是一个既带有系统性又带有跳跃性的的搜索算法。它在包含问题的所有解的解空间树中，按照深度优先的策略，从根结点出发搜索解空间树。算法搜索至解空间树的任一结点时，总是先判断该结点是否肯定不包含问题的解。如果肯定不包含，则跳过对以该结点为根的子树的系统搜索，逐层向其祖先结点回溯。否则，进入该子树，继续按深度优先的策略进行搜索。
+
+回溯法在用来求问题的所有解时，要回溯到根，且根结点的所有子树都已被搜索遍才结束。
+而回溯法在用来求问题的任一解时，只要搜索到问题的一个解就可以结束。
+这种以深度优先的方式系统地搜索问题的解的算法称为回溯法，它适用于解一些组合数较大的问题。
+
+
+### Notes
+
+### key words
+- combination: 39 
+- permutation 46 
+
+### Corner cases
+
+
+
+
+## Recursion 
 
 ### Study notes
 
