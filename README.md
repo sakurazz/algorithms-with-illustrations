@@ -1,4 +1,4 @@
-# Aogrithms' Delight 😇 
+# Aogrithms with illustration 
 
 
 | Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ |
@@ -6,16 +6,14 @@
 | 问题类型<br>[❓](#常见问题) | 数据结构<br>[⛓](#数据结构)|核心思想<br>[🤖](#核心思想) | 实现技巧<br>[✍️](#实现技巧) | Reference<br>[📝](#reference) |
 
 <br>
-> Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  
+> Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  —— *The Art of War*
 > <br>
-> —— *Master Sun: The Art of War*
-
 <br>
 
 
 ## 清单 Lists
 
-| 关键词 🔑 | 典型题 👻 | 讲解 🎦 | 笔记 📒 | 备注  |
+| key 🔑 | typical 👻 | video 🎦 | notes 📒 | comments  |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
 | Data Strcture| ---- | ---- | ---- | ---- |
 | Array Queue|  |  | |
@@ -40,6 +38,7 @@
 | Sorting|  |  | |
 | Bucket Sort|  |  | |
 | DFS|  |  | |
+| DFS with memo| [913. Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/description/) | [913](https://youtu.be/WJ7uqznd_4s) | [913](https://leetcode.com/problems/cat-and-mouse/discuss/176268/Clean-Code-explained-in-detail-(Python))| DFS to DP |
 | BFS|  |  | |
 | Binary Search | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [33](https://youtu.be/Rmny73Wx3D0) 35 | [?] | 减治系列 |
 | DP |  |  | |
@@ -238,7 +237,13 @@ Some graph problems are related to **optimization**, e.g., find the shortest pat
 
 ## DP
 
+
+
 ### Study notes
+
+- [Dynamic Programming – 7 Steps to Solve any DP Interview Problem](http://blog.refdash.com/dynamic-programming-tutorial-example/)
+
+### Notes
 
 Consider using DP whenever you have to **make choices** to arrive at the solution, specifically, when the solution relates to subproblems.
 
@@ -250,7 +255,6 @@ To save space, **cache space** may be **recycled** once it is known that a set o
 
 Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the solution is found early or subproblems can be **pruned** through bounding. [Problem 17.5]
 
-### Notes
 
 ### key words
 - choice: 120, 97, 174, [221 Matrix], 903, **322**
