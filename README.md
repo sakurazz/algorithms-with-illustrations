@@ -1,23 +1,21 @@
-# Aogrithms with illustration 
+# Aogrithms with Illustration 
 
 
 | Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
 | 问题类型<br>[❓](#常见问题) | 数据结构<br>[⛓](#数据结构)|核心思想<br>[🤖](#核心思想) | 实现技巧<br>[✍️](#实现技巧) | Reference<br>[📝](#reference) |
 
-<br>
 > Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  —— *The Art of War*
-> <br>
-<br>
 
 
-## 清单 Lists
+
+## Lists
 
 | key 🔑 | typical 👻 | video 🎦 | notes 📒 | comments  |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
 | Data Strcture| ---- | ---- | ---- | ---- |
 | Array Queue|  |  | |
-| Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/) |  | |
+| Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  | |**回眸**一笑，**原来**是你 |
 | Linked List| 25,141, 206, | [25](https://youtu.be/W0QkqzwB9qY) | | 增删查改转; Dummy node, reverse, |
 | Tree Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [407](https://youtu.be/7niUr7LlviY) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) | [] BFS solution |
 | Tree Trie| [208], 421 |  | |
@@ -105,6 +103,7 @@ Consider augmenting the basic stack or queue data structure to support additiona
 
 ### key words
 - LIFO: 901
+- nearest largest: 84, 85, 801, 739, 907, 221 (6 solved in 1 way)
 
 ### Corner cases
 
@@ -238,7 +237,6 @@ Some graph problems are related to **optimization**, e.g., find the shortest pat
 ## DP
 
 
-
 ### Study notes
 
 - [Dynamic Programming – 7 Steps to Solve any DP Interview Problem](http://blog.refdash.com/dynamic-programming-tutorial-example/)
@@ -318,6 +316,7 @@ If a recursive function may end up being called with **the same arguments** more
 - enumeration: [78], [248]
 
 ### key words
+- all A[A[x:i] > A[i]: 
 
 ### Corner cases
 
