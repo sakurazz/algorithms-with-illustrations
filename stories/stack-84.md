@@ -16,7 +16,7 @@ Weekly Contest 做了 907. Sum of Subarray Minimums, 事后发现其核心部分
 	
 ## 2. 本质是什么？
 	
-所以，这些题的本质是什么呢？他们本质都在求 **离我最近比我大或者小数的位置**, 然后都用了stack, 核心是什么让你想到使用Stack呢？ 
+所以，这些题的本质是什么呢？他们本质都在求 **从自己算起，连续比自己小(大)的序列长度**, 换句话说是“**找到最近第一个比自己大(小)的数字的位置**”, 然后都用了stack, 核心是什么让你想到使用Stack呢？ 
 	
 我的解答是：**回眸一笑，原来是你。**
 	
@@ -36,7 +36,7 @@ Weekly Contest 做了 907. Sum of Subarray Minimums, 事后发现其核心部分
 	
 ## 3. 小结
 	
-**离我最近比我大或者小数的位置** 可以总结为“Save for later”问题, 保留有用信息，便于之后读取。类似的问题就是括号系列问题，如 678. Valid Parenthesis String. 其他关于stack使用场景还有
+**找到最近第一个比自己大(小)的数字的位置** 可以总结为“Save for later”问题, 保留有用信息(比自己大的数，以及有几个？)，便于之后读取。类似的问题就是括号系列问题，如 678. Valid Parenthesis String. 其他关于stack使用场景还有
 	
 - 特殊顺序, 如 232. Implement Queue using Stacks
 - 用栈解决自上而下结构的问题: 利用栈数据结构消除递归 如 94. Binary Tree Inorder Traversal (Iterative)
@@ -50,3 +50,8 @@ Weekly Contest 做了 907. Sum of Subarray Minimums, 事后发现其核心部分
 * [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 * [770.Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) (系列)
 	
+	
+----
+## change-log
+
+- 添加：**从自己算起，连续比自己小(大)的序列长度**, 增加思考的中间过程
