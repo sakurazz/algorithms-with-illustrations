@@ -44,9 +44,9 @@ Weekly Contest 做了 907. Sum of Subarray Minimums, 事后发现其核心部分
 
 ## 4. 木桩训练
 
-* 84. Largest Rectangle in Histogram (系列, 907 + 42?)
-* 907. Sum of Subarray Minimums 
-* 94. Binary Tree Inorder Traversal (Iterative, 系列) 
-* 232. Implement Queue using Stacks
-* 770. Basic Calculator IV (系列)
+* [84.Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) (系列, 907 + 42?)
+* [907.Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) 
+* [94.Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) (Iterative, 系列) 
+* [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
+* [770.Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) (系列)
 	
