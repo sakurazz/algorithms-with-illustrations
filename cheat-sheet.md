@@ -1,11 +1,11 @@
 # Cheat sheet for algorithm 
 
+> Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  —— *The Art of War*
+
 
 | Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
 | 问题类型<br>[❓](#常见问题) | 数据结构<br>[⛓](#数据结构)|核心思想<br>[🤖](#核心思想) | 实现技巧<br>[✍️](#实现技巧) | Reference<br>[📝](#reference) |
-
-> Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.  —— *The Art of War*
 
 ## Content 
 
@@ -23,11 +23,10 @@
 - Binary Indexed Tree
 - Graph
 - Hash Map
+- Union-Find 
 - Binary Search 
 - Backtracking 
 - Recursion 
-- 
-
 
 
 ## Linked List 
