@@ -79,7 +79,9 @@ Consider augmenting the basic stack or queue data structure to support additiona
 ### key words
 - LIFO: 901
 - nearest largest: 84, 85, 801, 739, 907, 221 (6 solved in 1 way)
-
+- save for later:
+- top-down: 
+- special order: 
 ### Corner cases
 
 ## Heap 
