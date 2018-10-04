@@ -44,12 +44,9 @@ Weekly Contest 做了 907. Sum of Subarray Minimums, 事后发现其核心部分
 
 ## 4. 木桩训练
 
-* 84. Largest Rectangle in Histogram
-* 85. Maximal Rectangle
+* 84. Largest Rectangle in Histogram (系列, 907 + 42?)
+* 907. Sum of Subarray Minimums 
+* 94. Binary Tree Inorder Traversal (Iterative, 系列) 
 * 232. Implement Queue using Stacks
-* 739. Daily Temperatures
-* 901. Online Stock Span
-* 907. Sum of Subarray Minimums
-* 94. Binary Tree Inorder Traversal (Iterative)
-* 232. Implement Queue using Stacks
+* 770. Basic Calculator IV (系列)
 	
