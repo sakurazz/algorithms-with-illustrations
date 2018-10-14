@@ -2,10 +2,10 @@
 
 **基石：**
 
-* []括号系列题目 
-* [] two sum 的 **N** 种解法
-* [] two sum 的扩展系列
-* [] 如何快速得到component? DFS, BFS, Union Find?
+*  [ ] 括号系列题目 
+*  [ ] two sum 的 **N** 种解法
+*  [ ] two sum 的扩展系列
+*  [ ] 如何快速得到component? DFS, BFS, Union Find?
 
 
 ## 921. Minimum Add to Make Parentheses Valid
