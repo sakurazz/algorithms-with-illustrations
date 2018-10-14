@@ -1,0 +1,255 @@
+# Leetcode Weekly Contest 106
+
+**基石：**
+
+* []括号系列题目 
+* [] two sum 的 **N** 种解法
+* [] two sum 的扩展系列
+* [] 如何快速得到component? DFS, BFS, Union Find?
+
+
+## 921. Minimum Add to Make Parentheses Valid
+
+**启发：**
+
+- 用指针去指向位置，而不用开辟新空间
+- 对于二元问题，只用排好一个位置，那么另一个位置，就自动排好了！
+- 对于二元问题，**何时交换？** 找到两个都不对的位置，交换即可。
+
+``` python 
+class Solution1(object):
+    def sortArrayByParityII(self, A):
+        """
+        :type A: List[int]
+        :rtype: List[int]
+        """
+        ans = [None for _ in range(len(A))]
+        odd = 1
+        even = 0 
+        for num in A:
+            if num % 2 == 0:
+                ans[even] = num
+                even += 2
+            else:
+                ans[odd] = num
+                odd += 2
+        return ans 
+```
+### 交换的时刻？
+
+``` python 
+class Solution2(object):
+    def sortArrayByParityII(self, A):
+        """
+        :type A: List[int]
+        :rtype: List[int]
+        """
+        j = 1
+        for i in range(0, len(A), 2):
+            if A[i] % 2 == 1:
+                while A[j] % 2 == 1:
+                    j += 2
+                A[i], A[j] = A[j], A[i]
+        return A
+```
+
+### Interview moment for 921
+
+**The brute force solution is** just to read all the even integers and put them into places ans[0], ans[2], ans[4], and so on. 
+
+Then, read all the odd integers and put them into places ans[1], ans[3], ans[5], etc.
+ 
+How can we improve our solution? We may want to pursue a solution where we modify the original array A **in place**.
+
+First, it is enough to put all even elements in the correct place, since all odd elements will be in the correct place too. So **let's only focus on** A[0], A[2], A[4], ...
+
+**Ideally**, we would like to have some **partition** where everything to the left is already correct, and everything to the right is undecided.
+
+**Indeed**, **this idea works** if we separate it into two **slices** even = A[0], A[2], A[4], ... and odd = A[1], A[3], A[5], .... Our **invariant** will be that everything less than `i` in the even slice is correct, and everything less than `j` in the odd slice is correct.
+
+
+For each even `i`, let's make `A[i]` even. To do it, we will iterate the even slice until we find an odd element. Then we **pass** `j` through the odd slice until we find an even element, then **swap**. Our **invariant** is maintained, so the algorithm is correct.
+
+
+
+## 922. Sort Array By Parity II 
+
+### 基石
+
+* []括号系列题目 
+
+``` python 
+class Solution(object):
+    def minAddToMakeValid(self, S):
+        """
+        :type S: str
+        :rtype: int
+        """
+        res, count = 0, 0
+        for symbol in S:
+            if symbol == "(":
+                count += 1
+            else:
+                count -= 1
+            if count == -1:
+                res += 1
+                count = 0
+        return res + count
+```
+
+### Interview moment for 922 
+
+The key idea is what is a valid stirng? 
+
+We just keep track of the **balance** of the string: the number of left brackets minus the number of right brakets. A string is valid if its balance is 0, plus **every prefix has non-negative balance.**
+
+For example, 
+
+- `(()))` we need to add `(` 
+- `(((`  we need to add `)))`
+
+Thus, consider the balance of every prefix of S. If it is ever negative (say, -1), we must add a '(' bracket. Also, if the balance of S is positive (say, +B), we must add B ')' brackets at the end.
+
+
+
+## 923. 3Sum With Multiplicity 
+
+### 基石:
+
+* [] two sum 的 **N** 种解法
+* [] two sum 的扩展系列
+
+``` python 
+class Solution(object):
+    def threeSumMulti(self, A, target):
+        """
+        :type A: List[int]
+        :type target: int
+        :rtype: int
+        """
+        mod = 10**9 + 7
+        nums = sorted(A)
+        res = 0
+        for i in range(len(nums)-2):
+            j = i + 1
+            k = len(nums) - 1
+            while j < k:
+                if nums[i] + nums[j] + nums[k] < target:
+                    j += 1
+                elif nums[i] + nums[j] + nums[k] > target:
+                    k -= 1
+                else:
+                    if nums[j] != nums[k]:
+                        left, right = 1, 1
+                        while j + 1 < k and nums[j] == nums[j+1]: 
+                            j += 1
+                            left += 1
+                        while j < k - 1 and nums[k] == nums[k-1]:
+                            k -= 1
+                            right += 1
+                        res += left * right 
+                        j += 1
+                        k -= 1
+                    else: 
+                        n = k - j
+                        res += (n+1) * n / 2
+                        j = k
+        return res % mod  
+```
+
+### Interview moment for 923 
+
+we can adapt the solution from two sum. 
+
+Sort the array. For each i, set T = target - A[i], the remaining target. We can try using a two-pointer technique to find A[j] + A[k] == T. 
+
+Because some elements are duplicated, we have to be careful. Whenever A[j] + A[k] == T, we should count the multiplicity of A[j] and A[k].
+
+For example, (consider different cases) 
+
+* [1,2,2,3,3,3,4,4] target = 7, if A[i] = 2, A[j] = 2, A[k] = 4, thus [1,2,4] occurs 2 * 2 = 4, becuase there are two `2` and two `4`. The total number of pairs is 2 * 2 = 4. We then move to the remaining window A[j+1:k] of [1,2,2,3,3,3,4,4], thus [3,3,3]
+
+**As a special case**, if A[j] == A[k], then our manner of counting would be incorrect. For example, 
+
+* [1,2,2,2,2,2] target = 5, if A[i] = 1, A[j] = 2, A[k] = 2, A[j] == A[k], thus the [1,2,2] occurs (5 * 4) /2, because the combination of getting 2 from 5 is C52. In general,  we have (M 2) = (M) * (M - 1) /2. 
+
+By this way, the time complexity is O(N^2), the space is O(1)
+
+## 924. Minimize Malware Spread   
+
+### 基石：
+
+* [] 如何快速得到component? DFS, BFS, Union Find?
+
+``` python 
+class Solution(object):
+    def minMalwareSpread(self, graph, initial):
+        # 1. Color each component.
+        # colors[node] = the color of this node.
+        # colors = {0:0, 1:0, 2:0, 3:0, 4:1, 5:1, 6:2}
+        
+        N = len(graph)
+        colors = {}
+        c = 0
+
+        def dfs(node, color):
+            colors[node] = color
+            for nei, adj in enumerate(graph[node]):
+                if adj and nei not in colors:
+                    dfs(nei, color)
+
+        for node in xrange(N):
+            if node not in colors:
+                dfs(node, c)
+                c += 1
+
+        # 2. Size of each color.
+        # size[color] = number of occurrences of this color.
+        # size = {0:4, 1:2, 2:1}
+        size = collections.Counter(colors.values())
+
+        # 3. Find unique colors.
+        # color_count = {1:2, 2:2, 4:1}
+        color_count = collections.Counter()
+        for node in initial:
+            color_count[colors[node]] += 1
+
+        # 4. Answer
+        ans = float('inf')
+        for x in initial:
+            color = colors[x]
+            if color_count[color] == 1:
+                if ans == float('inf'):
+                    ans = x
+                elif size[color] > size[colors[ans]]:
+                    ans = x
+                elif size[color] == size[colors[ans]] and x < ans:
+                    ans = x
+
+        return ans if ans < float('inf') else min(initial)    
+```
+
+### Interview moment for 924 
+
+The first idea I come up with is to count how many component there are in the graph? Because if there are two nodes infected in one component, it won't help if we remove just one node. Cause they will be all infected if there exists one node infected.
+
+For example, 
+
+[0,1,2,3] [4, 5] [6]
+
+Our goal is to find the biggest component in which one node are infected and if there are more answers, we return smallest number. 
+
+**To make it more intuitive**, let's color (the nodes of) each component of the graph. We can do this using a dfs or bfs.
+
+Afterwards, notice that if two nodes in initial have the same color (ie., belong to the same component), then removing them from initial won't decrease M(initial).
+
+So, among nodes with a unique color in initial, we will remove the node with the largest component size. (If there's a tie, we return the smallest index. Also, if there aren't any nodes with a unique color, we'll just return the smallest index node.)
+
+
+Thus, this algorithm has a few parts:
+
+* **Color each component**: For each node, if it isn't yet colored, use a depth-first search to traverse its component, coloring that component with a new color.
+* **Get size of each color**: Count the number of occurrences of each color.
+* **Find unique colors**: Look at the colors of nodes in initial to see which nodes have unique colors.
+* **Choose answer**: For each node with a unique color, find the size of that color. The largest size is selected, with ties broken by lowest node number.
+* If there is no node with a unique color, the answer is min(initial).
