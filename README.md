@@ -54,5 +54,5 @@
 | 双标准| 678 |  | |
 | 满足/不满足| 836 |  | |
 | Granularity: zoom out | 918 |  | [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)| |
-| 二元聚焦 | 918 |  | [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)| |
+| 二元聚焦 | 921 |  | [921](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/contests/contest-106.md)| |
 
