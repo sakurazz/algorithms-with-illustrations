@@ -31,7 +31,7 @@
 | Shortest Path| [787] ,[505] |  | |
 | String|  |  | |
 | Two Pointer|  |  | |
-| Sliding Window| [159 Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/), 76, [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)  |  |[159](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/sliding-window-159.md)|
+| Sliding Window| [159 Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/), [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/), [76](https://leetcode.com/problems/minimum-window-substring/)  |  |[159](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/sliding-window-159.md)|
 | Matrix|  |  | |
 | Hash| 146 |  | |
 | Two Sum系列|  |  | |
