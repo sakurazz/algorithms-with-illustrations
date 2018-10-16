@@ -31,7 +31,7 @@
 | Shortest Path| [787] ,[505] |  | |
 | String|  |  | |
 | Two Pointer|  |  | |
-| Sliding Window| 76 |  | |
+| Sliding Window| 76, |  | |
 | Matrix|  |  | |
 | Hash| 146 |  | |
 | Two Sum系列|  |  | |
