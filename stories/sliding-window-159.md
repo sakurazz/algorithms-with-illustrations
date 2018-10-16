@@ -20,7 +20,7 @@ def sliding_window(arr):
 	for i, num in enumerate(arr):
 		# do sth. for num
 	
-		while !condition:
+		while not condition:
 			# do sth. 
 		  
 		longest = max(longest, i - start + 1)
