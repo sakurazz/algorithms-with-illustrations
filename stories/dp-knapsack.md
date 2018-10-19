@@ -20,27 +20,6 @@
 *  情况二: 第i件放进去后，这时所得价值为:  `f[i-1][c-wlist[i]] + vlist[i]`
 
 
-```
-
-
-In the following recursion tree, K() refers to knapSack().  The two 
-parameters indicated in the following recursion tree are n and W.  
-The recursion tree is for following sample inputs.
-wt[] = {1, 1, 1}, W = 2, val[] = {10, 20, 30}
-
-                       K(3, 2)         ---------> K(n, W)
-                   /            \ 
-                 /                \               
-            K(2,2)                  K(2,1)
-          /       \                  /    \ 
-        /           \              /        \
-       K(1,2)      K(1,1)        K(1,1)     K(1,0)
-       /  \         /   \          /   \
-     /      \     /       \      /       \
-K(0,2)  K(0,1)  K(0,1)  K(0,0)  K(0,1)   K(0,0)
-Recursion tree for Knapsack capacity 2 units and 3 items of 1 unit weight.
-```
-
 ``` python 
 
 # https://repl.it/@WillWang42/dp-knapsack
@@ -68,6 +47,83 @@ print(knapsack_01(capacity, wlist, vlist))  # 11
 
 ```
 
+Follow up 1: 如果我们只用一维DP, 如何做呢？
+
+核心问题：我们在不能覆盖之后会使用的新数据。所以，我们倒序更新DP数组，从背包容量`n到1`更新，如果反之，我已经得到对于第i件物品：
+
+> i == 2, K = [0, 0, 0, 4, 5, 5, 5, 9, 9, 9, 9]
+
+当物品 `i = 3` 时，如果我们**正序**更新，那么
+
+> K[5] = max(K[5 - wlist[3]] + vlist[3], K[5])
+
+这时已经改变了K[5]的值，但是如果后面，比如，K[10] 要用到K[5]时，这是K[5]已经是 `i == 3`的值，而不是 `i == 2` 的值了， 但是我们想要是 `i == 2` 时 K[5]的值。
+
+而**倒序**更新则不会影响，因为K[5]永远不会是用到K[10]的值。
+
+``` python 
+def knapsack_01_1d(capacity, wlist, vlist): 
+    n = len(wlist)
+    K = [0] * (capacity+1) 
+
+    for i in range(n): 
+        for c in range(capacity, 0, -1): 
+            if wlist[i] <= c: 
+                # pick it or not 
+                K[c] = max(vlist[i] + K[c-wlist[i]],  K[c]) 
+
+    return K[-1] # 11
+```
+
+Follow up 2: 如果使用recursive的方法做呢？
+
+即自上往下做，如下图所示：
+
+```
+In the following recursion tree, K() refers to knapSack().  The two 
+parameters indicated in the following recursion tree are n and W.  
+The recursion tree is for following sample inputs.
+wt[] = {1, 1, 1}, W = 2, val[] = {10, 20, 30}
+
+                       K(3, 2)         ---------> K(n, W)
+                   /            \ 
+                 /                \               
+            K(2,2)                  K(2,1)
+          /       \                  /    \ 
+        /           \              /        \
+       K(1,2)      K(1,1)        K(1,1)     K(1,0)
+       /  \         /   \          /   \
+     /      \     /       \      /       \
+K(0,2)  K(0,1)  K(0,1)  K(0,0)  K(0,1)   K(0,0)
+Recursion tree for Knapsack capacity 2 units and 3 items of 1 unit weight.
+```
+
+```python
+# Time: O(2^n) where n = len(wlist)
+# Space: O(n)
+
+def helper(n, c, wlist, vlist, selected):
+    if n == 0 or c == 0:
+      return 0
+    for i in range(n-1, -1, -1):
+      if wlist[i] > c:
+        return helper(n-1, c, wlist, vlist, selected)
+      else:
+        p_yeah = vlist[i] + helper(n-1, c-wlist[i], wlist, vlist, selected)
+        p_nope = helper(n-1, c, wlist, vlist, selected)
+        if p_yeah > p_nope:
+          selected[i] = 1
+          return p_yeah
+        else:
+          return p_nope
+
+def knapsack_01_recursive(capacity, wlist, vlist):
+    n = len(wlist)
+    selected = [0] * n
+    return helper(n, capacity, wlist, vlist, selected)
+```
+
+
 ## 2. knapsack with infinite items   
 
 > *完全背包: 有N种物品和一个容量为V的背包，每种物品都有无限件可用。第i种物品的费用是c[i]，价值是w[i]。求解将哪些物品装入背包可使这些物品的费用总和不超过背包容量，且价值总和最大。*
@@ -80,12 +136,12 @@ print(knapsack_01(capacity, wlist, vlist))  # 11
  不同于01背包，在背包容量为c时，所有物品都可以选择, 所以如果知道f[1] ... f[c-1]的值，那么求f[c]，即把所有放入背包试一下，取最大值即可。
 
 ```python
- def knapsack_infinite(capacity, wlist, vlist):
+def knapsack_infinite(capacity, wlist, vlist):
     n = len(wlist)
     K = [0] * (capacity+1)
 
-    for i in range(n): 
-        for c in range(1, capacity+1): 
+    for c in range(1, capacity+1):
+      for i in range(n):
             if wlist[i] <= c: 
                 # pick it or not 
                 K[c] = max(vlist[i] + K[c-wlist[i]],  K[c]) 
@@ -101,14 +157,94 @@ print(knapsack_infinite(capacity2, wlist, vlist))  # 28
 # 4/3 has the best value for its weight, thus (21/3) * 4 = 28 
 ```
 
+类似的题目，有**LC322. Coin Change**, 区别在于求“最少”, 但本质的思路还是一样： 
+
+> pick it or not 
+
+``` python 
+# Time: O( amount * len(coins) ) 
+# Space: O(amount)
+# 322. Coin Change
+
+'''
+coins = [1, 2, 5], amount = 11
+return 3 (11 = 5 + 5 + 1)
+
+Amount:  0 1 2 3 4 5 6 7 8 9 10 11
+         0 x x x x x x x x x x  x
+           1 1 2 2 1 2 2 3 3 2  3        
+
+dp[3] = min(dp[3], dp[3-1] + 1) = 2
+dp[3] = min(dp[3], dp[3-2] + 1) = 2
+   
+Which is better? use it or not.
+'''
+
+def coin_change(coins, amount):
+    """
+    :type coins: List[int]
+    :type amount: int
+    :rtype: int
+    """
+    # if amount == 0: return 0 
+    if not coins:   return -1
+    
+    dp = [0] + [float("inf") for _ in range(amount + 1)]
+    
+    for v in range(1, amount + 1):
+        for c in coins:
+            if c <= v:
+                dp[v] = min(dp[v], dp[v-c]+1) 
+       
+    return dp[amount] if dp[amount] != float("inf") else -1
+
+```
+
+还有 **LC518. coin change 2**, 其思路还是一样：
+
+> 使用新的硬币，能够产生新的combinations的有什么。
+
+```python 
+# Time: O(n * v) where n = len(coins) and v = amount
+# Space: O(amount)
+
+def change2(amount, coins):
+    """
+    :type amount: int
+    :type coins: List[int]
+    :rtype: int
+    """
+    record = [1] + [0]*amount
+    for coin in coins:
+        for v in range(coin, amount+1):
+            record[v] += record[v-coin] # use the coin 
+    return record[amount]
+```
 
 ## 3. knapsack with repetitions 
 > 多重背包: 有N种物品和一个容量为V的背包。第i种物品最多有n[i]件可用，每件费用是c[i]，价值是w[i]。求解将哪些物品装入背包可使这些物品的费用总和不超过背包容量，且价值总和最大。 
 
 简单的做法，是把多重背包变成01背包去做。
 
-```python
+``` python 
+# Time:  O( sum(nlist[i]) * c )
+# space: O(c)
+
+def knapsack_bounded(capacity, wlist, vlist, nlist):
+    n = len(wlist)
+    K = [0] * (capacity+1) 
+
+    for i in range(n): 
+      for _ in range(nlist[i]): # unfold it to 01 knapsack problem 
+        for c in range(capacity, 0, -1): 
+            if wlist[i] <= c: 
+                # pick it or not 
+                K[c] = max(vlist[i] + K[c-wlist[i]],  K[c]) 
+
+    print(K)   
+    return K[-1]   
 ```
+
 
 ## 木桩训练
 
