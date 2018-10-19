@@ -47,7 +47,7 @@ print(knapsack_01(capacity, wlist, vlist))  # 11
 
 ```
 
-Follow up 1: 如果我们只用一维DP, 如何做呢？
+### Follow up 1: 如果我们只用一维DP, 如何做呢？
 
 核心问题：我们在不能覆盖之后会使用的新数据。所以，我们倒序更新DP数组，从背包容量`n到1`更新，如果反之，我已经得到对于第i件物品：
 
@@ -75,7 +75,7 @@ def knapsack_01_1d(capacity, wlist, vlist):
     return K[-1] # 11
 ```
 
-Follow up 2: 如果使用recursive的方法做呢？
+### Follow up 2: 如果使用recursive的方法做呢？
 
 即自上往下做，如下图所示：
 
@@ -123,6 +123,52 @@ def knapsack_01_recursive(capacity, wlist, vlist):
     return helper(n, capacity, wlist, vlist, selected)
 ```
 
+### 实战1.1: LC416. Partition Equal Subset Sum
+
+This problem is essentially let us to find whether there are several numbers in a set which are able to sum to a specific value (in this problem, the value is sum/2).
+
+> For each number, we can **pick it or not.** 
+
+Let us assume dp[i][j] means whether the specific sum `j` can be gotten from the first `i` numbers. 
+
+If we can pick such a series of numbers from 0-i whose sum is `j`, `dp[i][j]` is true, otherwise it is false.
+
+**Base case**: `dp[0][0]` is true; (zero number consists of sum 0 is true)
+
+**Transition function**: For each number, 
+
+- If we pick nums[i]. `dp[i][j] = dp[i-1][j-nums[i]]`, which represents that j is composed of the current value nums[i] and other previous numbers. 
+- if we don't pick it, `dp[i][j] = dp[i-1][j]`, which means if the first i-1 elements has made it to j, dp[i][j] would also make it to j (we can just ignore nums[i]). 
+
+Thus, the transition function is `dp[i][j] =  dp[i-1][j-nums[i]] | dp[i-1][j]`. 
+
+If we use 1-D solution, the transition function would be
+
+`dp[j] = dp[j-nums[i]] | dp[j]` 
+
+``` python 
+# Time: O(n * half) where n = len(nums), half = sum(nums) / 2
+# Space: O(half)
+# 416. Partition Equal Subset Sum
+
+class Solution(object):
+    def canPartition(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        quotient, remainder =  divmod(sum(nums), 2)
+        if remainder == 1: return False 
+        
+        dp = [True] + [False for _ in range(quotient)]
+        
+        for i in range(len(nums)):
+            for j in range(quotient, nums[i]-1, -1):
+                dp[j] = dp[j-nums[i]] | dp[j]
+        return dp[-1]
+```
+
+
 
 ## 2. knapsack with infinite items   
 
@@ -156,6 +202,7 @@ print(knapsack_infinite(capacity2, wlist, vlist))  # 28
 # [0, 0, 0, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22, 24, 25, 26, 28]
 # 4/3 has the best value for its weight, thus (21/3) * 4 = 28 
 ```
+### 实战2.1：LC322
 
 类似的题目，有**LC322. Coin Change**, 区别在于求“最少”, 但本质的思路还是一样： 
 
@@ -199,6 +246,7 @@ def coin_change(coins, amount):
     return dp[amount] if dp[amount] != float("inf") else -1
 
 ```
+### 实战2.2: LC518
 
 还有 **LC518. coin change 2**, 其思路还是一样：
 
