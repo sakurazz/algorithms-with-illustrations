@@ -335,11 +335,11 @@ def knapsack_bounded(capacity, wlist, vlist, nlist):
 
 ## 木桩训练
 
-* [322. Coin Change](https://leetcode.com/problems/coin-change/description/)
 * [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/)
-* [474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/)
-* [494. Target Sum](https://leetcode.com/problems/target-sum/description/)
+* [494. Target Sum](https://leetcode.com/problems/target-sum/description/): 
+* [322. Coin Change](https://leetcode.com/problems/coin-change/description/): [279](https://leetcode.com/problems/perfect-squares/description/) 
 * [518. Coin Change 2](https://leetcode.com/problems/coin-change-2/description/)
+* [474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/)
 
 ## Thanks
 

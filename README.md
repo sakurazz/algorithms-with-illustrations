@@ -71,7 +71,7 @@
 | Greedy |  |  | |
 | Recursion | 78 |  | |
 | Backtracking | 39. Combination Sum |  | |
-| Math |  50 |  | |
+| Math |  50, 279 |  | |
 | 思维方式 | ---| --- | --- | --- | 
 | Reverse	thinking | 88， 795 |  | |
 | Definition| 261 |  | |
