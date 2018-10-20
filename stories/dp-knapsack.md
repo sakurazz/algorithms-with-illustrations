@@ -170,6 +170,8 @@ class Solution(object):
 
 ## 实战1.2 LC494
 
+这道题，首先需要数学转换成类`Partition Equal Subset Sum`, 然后融合`coin change2`思路。
+
 ```python
 # Time:  O(n * half) where n = len(nums), half = sum(nums) + S
 # Space: O(n)
