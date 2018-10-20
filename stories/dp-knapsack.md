@@ -168,6 +168,43 @@ class Solution(object):
         return dp[-1]
 ```
 
+## 实战1.2 LC494
+
+```python
+# Time:  O(n * half) where n = len(nums), half = sum(nums) + S
+# Space: O(n)
+# 494. Target Sum
+
+'''
+nums = {1,2,3,4,5}, target=3, one solution is: +1-2+3-4+5 =3
+
+Thus, (P={1,3,5})，(N={2,4})
+
+Thus, 
+sum(1,3,5) - sum(2,4) = target
+sum(1,3,5) - sum(2,4) + sum(1,3,5) + sum(2,4) = target + sum(1,3,5) + sum(2,4)
+2sum(1,3,5) = target + sum(1,3,5) + sum(2,4)
+2sum(P) = target + sum(nums)
+sum(P) = (target + sum(nums)) / 2
+'''
+class Solution:
+    def findTargetSumWays(self, nums, S):
+        """
+        :type nums: List[int]
+        :type S: int
+        :rtype: int
+        """    
+        quotient, remainder =  divmod(sum(nums)+S, 2)
+        if remainder == 1 or S > sum(nums) or S < -sum(nums): return 0 
+        
+        dp = [1] + [0] * (quotient)
+        
+        for i in range(len(nums)):
+            for j in range(quotient, nums[i]-1,  -1):
+                dp[j] += dp[j-nums[i]]
+        return dp[-1]
+```
+
 
 
 ## 2. knapsack with infinite items   

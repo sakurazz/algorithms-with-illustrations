@@ -1,6 +1,10 @@
 # DP to DFS: 416 
 
+
 This problem is essentially let us to find whether there are several numbers in a set which are able to sum to a specific value (in this problem, the value is sum/2).
+
+
+
 
 ## 1. DP - 0/1 knapsack 
 
@@ -68,7 +72,7 @@ class Solution(object):
 # Space: O(len(cache))
 # 416. Partition Equal Subset Sum
 '''
-Why better than DP? Cause we cache what we need instead of all conditions. 
+Why better than DP? Cause we only cache what we need (valid states) instead of all continuous states . 
 '''
 
 class Solution(object):
@@ -89,3 +93,8 @@ class Solution(object):
         
         return False if sum(nums)%2 else helper(0, sum(nums)/2)
 ```
+
+
+## Thanks
+
+* [494: evolve from brute force to dp](https://leetcode.com/problems/target-sum/discuss/97369/Evolve-from-brute-force-to-dp)
