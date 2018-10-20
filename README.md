@@ -83,4 +83,6 @@
 | Math reduce | 494 |  | |
 
 
+## Tools
 
+- [Create graph from adjacency](https://repl.it/@WillWang42/adjacency-list-2-matrix)
