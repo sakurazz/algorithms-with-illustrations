@@ -61,6 +61,7 @@
 | DP > for/recursive| 139 |  | |
 | DP > counting| 16, 70, 96 |  | |
 | DP > string | 5 |  | |
+| DP to DFS | 416 |  | [dp-2-dfs](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/dp-to-dfs-416.md)|
 | 背包系列 |  | [01](https://www.youtube.com/watch?v=8LusJS5-AGo), [infinite](https://www.youtube.com/watch?v=jaNZ83Q3QGc&t=503s) | [knapsack](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/dp-knapsack.md)|
 | 股票系列 |  |  | |
 | Reduce & conquer | 240  |  | |
