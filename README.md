@@ -61,7 +61,7 @@
 | DP > for/recursive| 139 |  | |
 | DP > counting| 16, 70, 96 |  | |
 | DP > string | 5 |  | |
-| 背包系列 |  |  | [knapsack](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/dp-knapsack.md)|
+| 背包系列 |  | [01](https://www.youtube.com/watch?v=8LusJS5-AGo), [infinite](https://www.youtube.com/watch?v=jaNZ83Q3QGc&t=503s) | [knapsack](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/dp-knapsack.md)|
 | 股票系列 |  |  | |
 | Reduce & conquer | 240  |  | |
 | Divide & conquer |  |  | |
