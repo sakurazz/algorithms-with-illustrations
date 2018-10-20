@@ -3,6 +3,8 @@
 
 This problem is essentially let us to find whether there are several numbers in a set which are able to sum to a specific value (in this problem, the value is sum/2).
 
+- [x] 416
+- [ ] [494. Target Sum](https://leetcode.com/problems/target-sum/discuss/97369/Evolve-from-brute-force-to-dp): evolve from brute force to dp
 
 
 
