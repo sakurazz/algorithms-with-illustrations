@@ -83,7 +83,23 @@ class Solution:
         return res
 ```
 
-解决case过不了的问题：
+上面的解法问题，因为DFS会提前，决定一个`state`的状态，导致平局状态。
+
+> For example, if mouse is one step away from the hole, and dfs picks another root before the hole root, if that root is a loop and return to this node again, dfs would think that's a draw(return to previous state) instead of mouse win.  —— Unicorn
+
+对于Case: 
+
+> [[6],[4],[9],[5],[1,5],[3,4,6],[0,5,10],[8,9,10],[7],[2,7],[6,7]]
+
+![wrong answer](https://i.imgur.com/HLEZs3W.png)
+
+![看log找Bug](https://i.imgur.com/2WfskGM.jpg) 
+ 
+Debug过程：https://repl.it/@WillWang42/cat-and-mouse-debug/
+
+![](https://i.imgur.com/SoaTYNA.png)
+![detail1](https://i.imgur.com/fhJwL66.png)
+![detail2](https://i.imgur.com/H5tN79m.png)
 
 ``` python 
 class Solution:
@@ -129,3 +145,4 @@ class Solution:
         state[m_pos][c_pos] = 2 if all_cat_win else 0
         return state[m_pos][c_pos]
 ```
+
