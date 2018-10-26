@@ -1,4 +1,8 @@
-# Greedy Meeting roooms 
+# Greedy - Meeting roooms 252 
+
+
+
+## 1. 问题是这样子的
 
 Given an array of meeting time intervals consisting of start and end times `[[s1,e1],[s2,e2],...]` (si < ei), find the minimum number of conference rooms required.
 
@@ -13,7 +17,7 @@ Output: 2
 
 
 
-## Interview Moment
+## 2. 一个理想的思路是
 
 Key idea: If a new meeting **starts** while no meeting is **ended**, we need an additional room.
 
@@ -36,34 +40,14 @@ Time Complexity:
 * The total complexity takes O(nlogn).
 
 
-## Show me the code
-
-``` python
-# Time:  O(nlogn)
-# Space: O(n)
-# 253. Meeting Rooms II
-class Solution:
-    # @param {Interval[]} intervals
-    # @return {integer}
-    def minMeetingRooms(self, intervals):
-        starts = sorted(i.start for i in intervals)
-        ends = sorted(i.end for i in intervals)
-        
-        e = 0 
-        numRooms = available = 0
-        for start in starts:
-            if end[e] <= start:
-                available += 1
-                e += 1
-            if availble > 0:
-                available -= 1
-            else: 
-                numRooms += 1
-        
-        return numRooms 
-```
+## 3. Show me the code
 
 ``` python 
+# Time: O(nlogn), where n = len(intervals) 
+# cause sort takes O(nlogn), for loop takes O(n) and each heap operation takes O(nlogn) in the worst case.
+
+# Space: O(n) 
+
 # Definition for an interval.
 # class Interval:
 #     def __init__(self, s=0, e=0):
@@ -84,6 +68,69 @@ class Solution:
                 heapq.heapreplace(heap, i.end)
             else:
                 heapq.heappush(heap, i.end)
-        return len(heap)
-            
+        return len(heap)     
+```
+
+## 4. 拓展
+
+![bike问题](https://i.imgur.com/pRW43Sm.jpg)
+
+上述的问题可以转换成：(抽象到具象，再到抽象的过程)
+
+> 有三件房间，有一堆会议，问最多能安排多少会议？
+> 
+> Given `n` meetings represented by pairs `(start,end)` with `3` rooms, your task is to find the maximal number of meetings that we can have.
+
+
+
+```
+Input:  [1, 10], [1, 6], [2, 8], [3, 5]
+Output: 3
+```
+
+### 思路：
+
+可以利用meeting room II的思路来解决这个问题。
+
+1. 会议表示为`[start ,end]`, 以会议`start time`排序`Input data`。
+2. 像Meeting roomII, 那样解题，多一个限制条件，就是如果len(heap) > 3，然后不再放入heap中，但是如果新的会议[next.start, next.end] 中，next.start < heap[0].end, 也替换掉heap[0]的会议，为后面的会议留出更好的空间。
+
+``` 
+----------
+ --------------
+ 	----------------
+ 		--
+
+``` 
+
+### show me the code:
+
+``` python 
+# https://repl.it/@WillWang42/meeting-rooms
+# need to be proved 
+
+import heapq
+def max_meetings(meetings):
+  meetings.sort()
+  heap = []
+  start, end = 0, 1
+  res = 0 
+  for m in meetings:
+    if heap and m[start] >= heap[0]:
+      heapq.heapreplace(heap, m[end])
+      res += 1
+    else:
+      if len(heap) < 3:
+        heapq.heappush(heap, m[end])
+        res += 1
+      else:
+        if m[end] < heap[0]:
+          heapq.heapreplace(heap, m[end])
+  return res 
+
+
+test1 = [[1, 10], [1, 6], [2, 8], [3, 5]] # 3
+test2 = [[1,10],[2,9],[3,7],[4,6],[6,11]] # 4
+print(max_meetings(test2))
+
 ```
