@@ -131,3 +131,23 @@ test2 = [[1,10],[2,9],[3,7],[4,6],[6,11]] # 4
 print(max_meetings(test2))
 
 ```
+
+``` python 
+# ideas like the greedy example in "algorithm design"
+def max_meetings2(meetings):
+  start, end = 0, 1
+  meetings.sort(key = lambda i: i[end])
+  rooms = []
+  res = 0 
+  for m in meetings:
+    if len(rooms) < 3:
+      rooms.append(m[end])
+      res += 1
+    else:
+      for i in range(len(rooms)):
+        if m[start] >= rooms[i]:
+          rooms[i] = m[end]
+          res += 1
+          break 
+  return res 
+```
