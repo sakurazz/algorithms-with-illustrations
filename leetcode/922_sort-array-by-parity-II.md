@@ -64,7 +64,7 @@ class Solution2(object):
         return A
 ```
 
-### Interview moment for 921
+## Interview moment for 922
 
 **The brute force solution is** just to read all the even integers and put them into places ans[0], ans[2], ans[4], and so on. 
 

@@ -79,7 +79,7 @@
 | 双标准| 678 |  | |
 | 满足/不满足| 836 |  | |
 | Granularity: zoom out | 918 |  | [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)| |
-| 补集思维 | 921, |  | | |
+| 补集思维 | 930.Binary Subarrays With Sum <br> 921 |  |<img src="https://i.imgur.com/0W32d8v.png" alt="decision-tree" width="200"/> <br>[930](https://youtu.be/eRx56MI3Svo)  | |
 | Math reduce | 494 |  | |
 
 
