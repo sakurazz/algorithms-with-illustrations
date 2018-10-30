@@ -71,6 +71,8 @@ Output: 3
 
 ``` python 
 # https://repl.it/@WillWang42/meeting-rooms
+# Time: O(kn), where k = 3, n is the number of meetings 
+# Space: O(k)
 
 def max_meetings(meetings):
   start, end = 0, 1
