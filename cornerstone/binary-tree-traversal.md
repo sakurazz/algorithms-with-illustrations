@@ -1,4 +1,4 @@
-# Tree Traversal 
+# Binary Tree Traversal 
 
 以 Preorder 为例
 
