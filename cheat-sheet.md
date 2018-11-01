@@ -143,17 +143,6 @@ Some graph problems are related to **optimization**, e.g., find the shortest pat
 ### Corner cases
 
 
-## Binary Search 
-
-### Study notes
-
-### Notes
-
-### key words
-- find in sorted xx: 35 
-
-### Corner cases
-
 ## DP
 
 
