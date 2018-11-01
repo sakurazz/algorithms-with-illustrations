@@ -110,23 +110,6 @@ The BST property is **a global property**—a binary tree may have the property 
 - subtree
 
 
-## Trie 
-
-### Study notes
-
-### Notes
-Tries are special trees (prefix trees) that make searching and storing strings more efficient. Tries have many practical applications, such as conducting **searches** and providing **autocomplete**. It is helpful to know these common applications so that you can easily identify when a problem can be efficiently solved using a trie.
-
-Sometimes preprocessing a dictionary of **words** (given in a list) into a trie, will improve the efficiency of searching for a word of length k, among n words. Searching becomes O(k) instead of O(n).
-
-Be familiar with implementing, from scratch, a Trie class and its `add`, `remove` and `search` methods.
-
-### key words
-- implement trie [208](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
-- search: 421 
-
-### Corner cases
-
 
 ## Segment Tree 
 
