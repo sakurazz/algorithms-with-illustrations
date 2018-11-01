@@ -1,5 +1,6 @@
-# Tree Traversal Preorder 
+# Tree Traversal 
 
+以 Preorder 为例
 
 Typical: 
 
