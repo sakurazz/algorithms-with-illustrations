@@ -67,22 +67,7 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 
 ### Corner cases
 
-## Stack[LIFO]
 
-### Study notes
-
-### Notes
-Learn to recognize when the stack **LIFO** property is applicable. For example, **parsing** typically benefits from a stack. 
-
-Consider augmenting the basic stack or queue data structure to support additional operations, such as **finding the maximum element**. 
-
-### key words
-- LIFO: 901
-- nearest largest: 84, 85, 801, 739, 907, 221 (6 solved in 1 way)
-- save for later:
-- top-down: 
-- special order: 
-### Corner cases
 
 ## Heap 
 
