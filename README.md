@@ -14,7 +14,7 @@
 
 ## Lists [举一反三]
 
-| key 🔑 | typical 👻 | video 🎦 | notes 📒 | comments  |
+| key 🔑 | typical 👻 | video 🎦 | notes 📒 | comments(delete)  |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
 | Data Strcture| ---- | ---- | ---- | ---- |
 | Array Queue| [849](https://leetcode.com/problems/maximize-distance-to-closest-person/description/) |  | |
@@ -45,7 +45,7 @@
 | 算法思想| ❤️ | ❤️ | ❤️ | ❤️|
 | Sorting\| 57 |  | | | >merge/quick/heap/selection/insertion/bubble/counting/radix
 | Bucket Sort|  |  | |
-| DFS| 112， 105， 113， 329， 851 |   | |
+| DFS| 112， 105， 113， 329， 851 |<img src="https://i.imgur.com/RVGtn22.gif" alt="complement" width="200"/> <br> |   | |
 | DFS with memo| [913. Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/description/) | [913](https://youtu.be/WJ7uqznd_4s) | [913](https://leetcode.com/problems/cat-and-mouse/discuss/176268/Clean-Code-explained-in-detail-(Python))| DFS to DP |
 | BFS>traversal/component/SP/Topo|  |  | |
 | BFS>traversal| 133, 301 |  | |
@@ -79,7 +79,7 @@
 | 双标准| 678 |  | |
 | 满足/不满足| 836 |  | |
 | Granularity: zoom out | 918 |  | [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)| |
-| 补集思维 | 930.Binary Subarrays With Sum <br> 921 |  |<img src="https://i.imgur.com/0W32d8v.png" alt="complement" width="200"/> <br>[930](https://youtu.be/eRx56MI3Svo)  | |
+| 补集思维 | 930.Binary Subarrays With Sum <br> 921 | <img src="https://i.imgur.com/0W32d8v.png" alt="complement" width="200"/> <br>[930](https://youtu.be/eRx56MI3Svo) | | |
 | Math reduce | 494 |  | |
 
 
