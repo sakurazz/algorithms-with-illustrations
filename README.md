@@ -57,7 +57,8 @@
 | DP > choice| 97,120, 174， 678 |  | |
 | DP > variable | 188, 474 |  | |
 | DP > sequence aligment| 152 |  | |
-| DP > shortest path| 139 |  | |
+| DP > shortest path| [943.Find the Shortest Superstring](https://leetcode.com/problems/find-the-shortest-superstring/description/) <br> [139](https://leetcode.com/problems/word-break/description/),x,x| <img src="https://i.imgur.com/slovM3J.jpg" alt="dp tsp" width="200"/> <br>[TSP](https://www.youtube.com/watch?v=XaXsJJh-Q5Y)
+ | |
 | DP > for/recursive| 139 |  | |
 | DP > counting| 16, 70, 96 |  | |
 | DP > string | 5 |  | |
@@ -81,6 +82,8 @@
 | Granularity: zoom out | 918 |  | [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)| |
 | 补集思维 | 930.Binary Subarrays With Sum <br> 921 | <img src="https://i.imgur.com/0W32d8v.png" alt="complement" width="200"/> <br>[930](https://youtu.be/eRx56MI3Svo) | | |
 | Math reduce | 494 |  | |
+
+
 
 
 ## Tools
