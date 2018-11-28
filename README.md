@@ -16,7 +16,7 @@
 
 | key 🔑 | typical 👻 | videe/gif 🎦 | notes 📒 | comments(delete)  |
 | :--------: | :---------: | :---------: | :---------: | :---------: | 
-| Data Strcture| ---- | <img src="https://i.imgur.com/aguX78y.png" alt="complement" width="200"/> <br> | [Miniamal Actionable Knowledge and Experience](https://workflowy.com/s/f59936b6207/4BfdHI2F8dIwct5P) | ---- |
+| Data Strcture| ---- | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Miniamal Actionable Knowledge and Experience](https://workflowy.com/s/f59936b6207/4BfdHI2F8dIwct5P) | ---- |
 | Array Queue| [849](https://leetcode.com/problems/maximize-distance-to-closest-person/description/) |  | |
 | Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  | |**回眸**一笑，**原来**是你 |
 | Linked List|[2](https://leetcode.com/problems/add-two-numbers/description/),  25,141, 206,| [25](https://youtu.be/W0QkqzwB9qY) | | 增删查改转; Dummy node, reverse, |
