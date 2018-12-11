@@ -8,6 +8,7 @@
 | insertsort | xx | better for short arrays |  e.g. 10 or fewer elements | xx | xx |
 | counting sort | xx | O(n)|  e.g. integers in the range [0..255] | xx | xx |
 
+其他: merge/quick/heap/selection/insertion/bubble/counting/radix 
 
 **备注**：
 

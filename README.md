@@ -43,7 +43,7 @@
 | Hash| 1, 146 |  | |
 | Two Sum系列|  |  | |
 | 算法思想| ❤️ | ❤️ | ❤️ | ❤️|
-| Sorting\| 57 |  |>merge/quick/heap/selection/insertion/bubble/counting/radix | 
+| Sorting| 57 |  || 
 | Bucket Sort|  |  | |
 | DFS| 112， 105， 113， 329， 851 |<img src="https://i.imgur.com/RVGtn22.gif" alt="complement" width="200"/> <br> |   | |
 | DFS with memo| [913. Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/description/) | [913](https://youtu.be/WJ7uqznd_4s) | [913](https://leetcode.com/problems/cat-and-mouse/discuss/176268/Clean-Code-explained-in-detail-(Python))| 
