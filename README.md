@@ -18,8 +18,8 @@
 | :-------- | :---------: | :---------: | :---------: |  
 | Data Strcture| ---- | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md) | ---- |
 | Array Queue| [849](https://leetcode.com/problems/maximize-distance-to-closest-person/description/) |  | |
-| Array Stack(**回眸**一笑，**原来**是你)|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  | | 
-| Linked List|[2](https://leetcode.com/problems/add-two-numbers/description/),  25,141, 206,| [25](https://youtu.be/W0QkqzwB9qY) | 增删查改转; Dummy node, reverse,|  
+| Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  |**回眸**一笑 <br>**原来**是**你** | 
+| [Linked List](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/linked-list.md)|[2](https://leetcode.com/problems/add-two-numbers/description/),  25,141, 206,| [25](https://youtu.be/W0QkqzwB9qY) | |  
 | Tree Heap | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/), [215 kth](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [407](https://youtu.be/7niUr7LlviY) | [heap-407](https://github.com/WillWang-X/algorithms-delight/blob/master/cornerstone/heap-trapping-rain-water-II.ipynb) |
 | Tree Trie| [208](https://leetcode.com/problems/implement-trie-prefix-tree/description/), [211](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/), [212](https://leetcode.com/problems/word-search-ii/description/) ,[421](https://leetcode.com/problems/design-search-autocomplete-system/description/), [642](https://leetcode.com/problems/design-search-autocomplete-system/description/) |  | |
 | Segement Tree| [218], [850] |  | |
