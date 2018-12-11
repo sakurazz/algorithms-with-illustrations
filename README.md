@@ -15,7 +15,7 @@
 ## Lists [举一反三]
 
 | key 🔑 | typical 👻 | videe/gif 🎦 | notes 📒 | 
-| :--------: | :---------: | :---------: | :---------: |  
+| :-------- | :---------: | :---------: | :---------: |  
 | Data Strcture| ---- | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md) | ---- |
 | Array Queue| [849](https://leetcode.com/problems/maximize-distance-to-closest-person/description/) |  | |
 | Array Stack(**回眸**一笑，**原来**是你)|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  | | 
