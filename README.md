@@ -74,7 +74,7 @@
 | Backtracking | 39. Combination Sum |  | |
 | Math |  50, 279 |  | |
 | 思维方式 | ---| --- | --- | --- | 
-| Reverse	thinking | 88， 795, 777 |  | |
+| Reverse	thinking | 88， 795, 777 | <img src="https://i.imgur.com/1ghXxOf.gif" alt="reverse thinking" width="200"/>  | |
 | Definition| 261 |  | |
 | Object| 418 |  | |
 | 双标准| 678 |  | |
