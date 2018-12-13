@@ -17,6 +17,7 @@
 | key 🔑 | typical 👻 | videe/gif 🎦 | notes 📒 | 
 | :-------- | :---------: | :---------: | :---------: |  
 | Data Strcture| ---- | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md) | ---- |
+| Array |  |  | |
 | Array Queue| [849](https://leetcode.com/problems/maximize-distance-to-closest-person/description/) |  | |
 | Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  |**回眸**一笑 <br>**原来**是**你** | 
 | [Linked List](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/linked-list.md)|[2](https://leetcode.com/problems/add-two-numbers/description/),  25,141, 206,| [25](https://youtu.be/W0QkqzwB9qY) | |  
