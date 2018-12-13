@@ -38,6 +38,7 @@
 | String>anagram/palindrome|  |  | |
 | Two Pointer| 16, 18, 26, 349, 350 |  | |
 | Sliding Window| [159 Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/), [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/), [76](https://leetcode.com/problems/minimum-window-substring/)  |  |[159](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/sliding-window-159.md)|
+| fast and slow | [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/)<br> <br> [283 move zeros](https://leetcode.com/problems/move-zeroes/description/),142,? | <img src="https://i.imgur.com/mcog6YC.jpg" alt="fast&slow pointers" width="200"/> |快慢指针|
 | String>KMP|  |  | |
 | Sequence>Interval| 57 |  | |
 | Matrix| 73 |  | |
