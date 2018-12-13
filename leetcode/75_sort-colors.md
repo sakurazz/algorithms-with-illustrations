@@ -52,6 +52,7 @@ twoPoointer = the position we are going to take '2'
 Corner case:
 
 ```
+[]
 [0]
 [0, 1]
 [0, 0]
