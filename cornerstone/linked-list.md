@@ -1,6 +1,9 @@
 
 # Linked list 
 
+* [ ] 将《element》中的习题整理出来。
+
+
 ![linked list](https://i.imgur.com/xwQ842u.png)
 
 ## Linked List 
