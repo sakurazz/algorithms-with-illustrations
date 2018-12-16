@@ -47,7 +47,7 @@
 | 算法思想| ❤️ | ❤️ | ❤️ | ❤️|
 | Sorting| 57 |  || 
 | Bucket Sort|  |  | |
-| DFS| 112， 105， 113， 329， 851 |<img src="https://i.imgur.com/RVGtn22.gif" alt="complement" width="200"/> <br> |   | |
+| DFS| [46. Permutations](https://leetcode.com/problems/permutations/description/) <br><br>[112 Path], 105， 113， 329， 851 |<img src="https://i.imgur.com/RVGtn22.gif" alt="complement" width="200"/> <br> |   | detect cycle<br>|
 | DFS with memo| [913. Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/description/) | [913](https://youtu.be/WJ7uqznd_4s) | [913](https://leetcode.com/problems/cat-and-mouse/discuss/176268/Clean-Code-explained-in-detail-(Python))| 
 | BFS>traversal/component/SP/Topo|  |  | |
 | BFS>traversal| 133, 301 |  | |
