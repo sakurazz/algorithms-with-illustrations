@@ -12,11 +12,11 @@
 - Cover most **core** algorithms and design techniques
 - **Systemize** data structure and algorithms design techniques
 
-## Lists [举一反三]
+## Lists 
 
-| key 🔑 | typical 👻 | videe/gif 🎦 | notes 📒 | 
+| key 🔑 | typical problems👻 | videe/gif 🎦 | notes 📒 | 
 | :-------- | :---------: | :---------: | :---------: |  
-| Data Strcture| ---- | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md) | ---- |
+| Data Strcture| 举一(typical)<br><br>反三<br>(easy, medium, hard) | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md) | ---- |
 | [Array](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/array.md) | [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) <br><br> [26 duplicate](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/), [31 permute](https://leetcode.com/problems/next-permutation/description/), [41 missing](https://leetcode.com/problems/first-missing-positive/description/) | <img src="https://i.imgur.com/RZhvmoD.gif" alt="array" width="200"/> <br> | off-by-1, <br> from the back|
 | Array Queue| [849](https://leetcode.com/problems/maximize-distance-to-closest-person/description/) |  | |
 | Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  |**回眸**一笑 <br>**原来**是**你** | 
