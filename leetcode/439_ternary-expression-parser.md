@@ -53,7 +53,8 @@ Explanation: The conditional expressions group right-to-left. Using parenthesis,
 ## Idea
 
 1. 把Tenary expression变成binary Tree, 然后“T”往做，“F”往右。
-2. 问题就变成：Tenary expression to binary Tree了。 
+2. 问题就变成：Tenary expression to binary Tree了。
+	- 左子树建立好之后，如何判断左子树建好，然后回到上一个父亲节点呢。node.right and stack.  
 
 ## Code 
   
