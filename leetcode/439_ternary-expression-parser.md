@@ -54,7 +54,12 @@ Explanation: The conditional expressions group right-to-left. Using parenthesis,
 
 1. 把Tenary expression变成binary Tree, 然后“T”往做，“F”往右。
 2. 问题就变成：Tenary expression to binary Tree了。
-	- 左子树建立好之后，如何判断左子树建好，然后回到上一个父亲节点呢。node.right and stack.  
+	- 左子树建立好之后，如何判断左子树建好，然后回到上一个父亲节点呢。node.right and stack. 
+
+想法2:
+
+1. 用index定位到我改到位置，if"T", 则helper(i+2), 否则跳过 `F?(A):B`，跳过A, 都到B，如果都不是，则就是我们答案。
+	- 问题变成如何跳过B？ 特征是？(a?b:c)：，去数？：, 最后我们会达到`():`。
 
 ## Code 
   
@@ -96,3 +101,38 @@ class Solution(object):
             stack.append(node)
         return root
 ```  
+
+### solution2
+
+``` python 
+# Time: O(n) where n = len(expression)  cause I just interate the expression once 
+# Space: O(1)
+
+class Solution(object):
+    def parseTernary(self, expression):
+        """
+        :type expression: str
+        :rtype: str
+        """
+        def helper(i, expression):
+            if expression[i] == "T":
+                if i + 1 < len(expression) and expression[i+1] == "?":
+                    return helper(i+2, expression)
+                else:
+                    return "T"
+            elif expression[i] == "F":
+                if i + 1 < len(expression) and expression[i+1] == "?":
+                    stack, j = 1, i+1 
+                    # F?(F?a:b):3
+                    while stack > 0:
+                        j += 1
+                        if expression[j] == "?": stack += 1
+                        if expression[j] == ":": stack -= 1
+                    return helper(j+1, expression)
+                else:
+                    return "F"
+            else:
+                return expression[i]
+                
+        return helper(0, expression)
+```
