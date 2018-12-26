@@ -37,7 +37,7 @@
 | Binary| 371 |  | |
 | String>anagram/palindrome|  |  | |
 | Two Pointer| 16, 18, 26, 349, 350 |  | |
-| [Sliding Window](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/sliding-window-159.md) | [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/) <br><br> [26 remove](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/), [19 node](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/), [76 substring](https://leetcode.com/problems/minimum-window-substring/)  | <img src="https://i.imgur.com/aQlMXk0.png" alt="sliding window" width="200"/> <br> |满足自省|
+| [Sliding Window](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/sliding-window.md) | [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/) <br><br> [26 remove](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/), [19 node](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/), [76 substring](https://leetcode.com/problems/minimum-window-substring/)  | <img src="https://i.imgur.com/aQlMXk0.png" alt="sliding window" width="200"/> <br> |满足自省|
 | fast and slow | [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/)<br> <br> [283 move zeros](https://leetcode.com/problems/move-zeroes/description/),142,? | <img src="https://i.imgur.com/mcog6YC.jpg" alt="fast&slow pointers" width="200"/> |快慢指针|
 | String>KMP|  |  | |
 | Sequence>Interval| 57 |  | |
