@@ -69,6 +69,9 @@
 
 * 692. Top K Frequent Words
 * 164. Maximum Gap
+* 274. H-Index
+* 347. Top K Frequent Elements
+
 
 
 ## 实际应用
