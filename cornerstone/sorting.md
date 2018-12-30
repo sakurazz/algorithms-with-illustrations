@@ -23,6 +23,17 @@
 3. Most sorting routines are based **on a compare function** that takes two items as input and returns -1 if the first item is smaller them the second item, 0 if they are equal and 1 otherwise. However, it is also possible to use **numerical attributes** directly, e.g., **in radix sort.**
 4. **Heaps** can be helpful in sorting problems. Briefly, a max-heap (min-heap) stores keys drawn from an ordered set. It supports 0( log n) inserts and 0(1) time lookup for the maximum (minimum) element; the maximum (minimum) key can be deleted in 0( log n) time. 
 
+
+![compare](https://i.imgur.com/ZyzWmIG.png)
+
+**稳定性**：排序前后两个相等的数相对位置不变，则算法稳定。
+
+**稳定性得好处**：从一个键上排序，然后再从另一个键上排序，第一个键排序的结果可以为第二个键排序所用。
+
+
+* 1、堆排序、快速排序、希尔排序、直接选择排序**不是稳定**的排序算法；
+* 2、基数排序、冒泡排序、直接插入排序、折半插入排序、归并排序是**稳定**的排序算法。
+
 ## 典型应用
 
 Sorting problems come in two flavors: 
