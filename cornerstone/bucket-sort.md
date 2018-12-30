@@ -66,6 +66,10 @@
 * 3）每一位的数据范围不能太大，要可以用线性排序，否则基数排序的时间复杂度无法做到O(n)。
 * 反例: string字典序sort, 这种方法就用不了。
 
+3. 方式
+
+* Least significant digit(LSD) radix sorts: 适用于位数小的数列 
+* Most significant digit(MSD) radix sorts: 适合于位数大的数列
 
 ## 木桩训练
 
@@ -89,3 +93,8 @@
 <br>
 
 2018.12.28
+
+
+## log
+
+* 2018.12.29: update LSD, MSD of radix sorts
