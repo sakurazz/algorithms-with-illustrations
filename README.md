@@ -16,7 +16,7 @@
 
 | key 🔑 | typical problems👻 | videe/gif 🎦 | notes 📒 | 
 | :-------- | :---------: | :---------: | :---------: |  
-| Data Strcture| 举一(typical)<br><br>反三<br>(easy, medium, hard) | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md) | ---- |
+| Data Strcture| 🌟举一(typical)<br><br>反三<br>(👾easy, 👻medium, 👹hard) | <img src="https://i.imgur.com/aguX78y.png" alt="data structure mindmap" width="200"/> <br> | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md) | ---- |
 | [Array](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/array.md) | [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) <br><br> [26 duplicate](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/), [31 permute](https://leetcode.com/problems/next-permutation/description/), [41 missing](https://leetcode.com/problems/first-missing-positive/description/) | <img src="https://i.imgur.com/RZhvmoD.gif" alt="array" width="200"/> <br> | off-by-1, <br> from the back|
 | Array Queue| [849](https://leetcode.com/problems/maximize-distance-to-closest-person/description/) |  | |
 | Array Stack|[678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/), ❤️**84** |  |**回眸**一笑 <br>**原来**是**你** | 
@@ -68,7 +68,7 @@
 | 背包系列 |  | [01](https://www.youtube.com/watch?v=8LusJS5-AGo), [infinite](https://www.youtube.com/watch?v=jaNZ83Q3QGc&t=503s) | [knapsack](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/dp-knapsack.md)|
 | 股票系列 |  |  | |
 | Reduce & conquer | 240  |  | |
-| Divide & conquer |  |  | |
+| [Divide & conquer](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/divide-and-conquer.md) | 🌟[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) <br><br>👾[53 Maximum](https://leetcode.com/problems/maximum-subarray/), 👻[932 Beautiful](https://leetcode.com/problems/beautiful-array/), 👹[4 Median](https://leetcode.com/problems/median-of-two-sorted-arrays/) |<img src="https://i.imgur.com/fMLtVzX.png" alt="divide and conquer" width="200"/> |mergesort |
 | Dynamic & conquer |  |  | |
 | union and find | 323 |  | |
 | Greedy |  |  | |
