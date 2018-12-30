@@ -41,6 +41,7 @@ Check [76. Minimum Window Substring](https://willwang-x.github.io/2018/03/fast-a
 1. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
 1. [159 Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/)
 1. [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/)
+2. [443. String Compression](https://leetcode.com/problems/string-compression/): write, ahchor and**** read  和26很像的题目
 1. 438 Find All Anagrams in a String
 1. [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/)
 1. [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
