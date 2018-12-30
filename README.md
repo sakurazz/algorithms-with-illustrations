@@ -72,7 +72,7 @@
 | union and find | 323 |  | |
 | Greedy |  |  | |
 | Recursion | 78 |  | |
-| [Backtracking]() | [39. Combination Sum](https://leetcode.com/problems/combination-sum/) <br><br>  [401 watch](https://leetcode.com/problems/binary-watch/), [22 parentheses](https://leetcode.com/problems/generate-parentheses/), [51 n-queens](https://leetcode.com/problems/n-queens/) | <img src="https://i.imgur.com/2Y3D3fI.gif" alt="backtracking" width="200"/> |集合<br>数迷<br>递归求解<br>**触底**反弹|
+| [Backtracking](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/backtracking.md) | [39. Combination Sum](https://leetcode.com/problems/combination-sum/) <br><br>  [401 watch](https://leetcode.com/problems/binary-watch/), [22 parentheses](https://leetcode.com/problems/generate-parentheses/), [51 n-queens](https://leetcode.com/problems/n-queens/) | <img src="https://i.imgur.com/2Y3D3fI.gif" alt="backtracking" width="200"/> |集合<br>数迷<br>递归求解<br>**触底**反弹|
 | Math |  50, 279 |  | |
 | 思维方式 | ---| --- | --- |
 | Reverse	thinking | 88， 795, 777 | <img src="https://i.imgur.com/1ghXxOf.gif" alt="reverse thinking" width="200"/>  | |
