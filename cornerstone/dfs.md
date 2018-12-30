@@ -21,6 +21,21 @@
 ## Corner cases
 
 
+## Q&A
+
+### DFS vs Backtracking
+
+* [Backtracking](https://www.wikiwand.com/en/Backtracking) is a more general purpose algorithm.
+* [Depth-First search](https://www.wikiwand.com/en/Depth-first_search) is a specific form of **backtracking** related to searching tree structures. 
+
+> One starts at the root (selecting some node as the root in the graph case) and explores as far as possible along each branch before backtracking.
+
+It uses backtracking as part of its means of working with a tree, but is limited to a tree structure.
+
+Backtracking, though, can be used on any type of structure where portions of the domain can be eliminated - whether or not it is a logical tree. The Wiki example uses a chessboard and a specific problem - you can look at a specific move, and eliminate it, then backtrack to the next possible move, eliminate it, etc.
+
+from [What's the difference between backtracking and depth first search?](https://stackoverflow.com/questions/1294720/whats-the-difference-between-backtracking-and-depth-first-search)
+
 ## Exmaple 
 
 
