@@ -2,7 +2,7 @@
 
 |    排序算法    |思路 |  优缺点 | 应用场景| 典型题目 | 备注 | 
 | ---------- | --- | ---------- | --- | --- | --- |
-| quicksort | xx |runs 0(n**2) time in worst-case | 多数情况 | xx | xx |
+| quicksort | xx |runs 0(n**2) time in worst-case | 多数情况 | [sort color](https://leetcode.com/problems/sort-colors/description/) | xx |
 | mergesort | xx | stable but not in-place | xx | xx | xx |
 | heapsort | xx | in-place but not stable | nearly sorted | xx | xx |
 | insertsort | xx | better for short arrays |  e.g. 10 or fewer elements | xx | xx |
