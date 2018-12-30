@@ -90,3 +90,8 @@
 ## Tools
 
 - [Create graph from adjacency](https://repl.it/@WillWang42/adjacency-list-2-matrix)
+
+## Credit
+
+* @caomingkai
+* @davidxk
