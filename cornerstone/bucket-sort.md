@@ -60,17 +60,18 @@
 * 4）每次排序有序数据范围较小，可以使用桶排序或计数排序来完成。
 
 2.使用条件
-1）要求数据可以分割独立的“位”来比较；
-2）位之间由递进关系，如果a数据的高位比b数据大，那么剩下的地位就不用比较了；
-3）每一位的数据范围不能太大，要可以用线性排序，否则基数排序的时间复杂度无法做到O(n)。
+
+* 1）要求数据可以分割独立的“位”来比较；
+* 2）位之间由递进关系，如果a数据的高位比b数据大，那么剩下的地位就不用比较了；
+* 3）每一位的数据范围不能太大，要可以用线性排序，否则基数排序的时间复杂度无法做到O(n)。
 
 
 ## 木桩训练
 
-* [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)
-* 164. Maximum Gap
-* 274. H-Index
-* 347. Top K Frequent Elements
+* [692.Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)
+* 164.Maximum Gap
+* 274.H-Index
+* 347.Top K Frequent Elements
 
 
 
