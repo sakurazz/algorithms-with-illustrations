@@ -27,3 +27,14 @@ Consider augmenting the basic stack or queue data structure to support additiona
 ## Show me the code 
 
 - [ ] code
+
+
+## 木桩训练
+
+* [155. Min Stack](https://leetcode.com/problems/min-stack/) 🌟
+* [84.Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) (系列, 907 + 42? 85, 901, 907, 739)
+* [907.Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) 
+* [94.Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) (Iterative, 系列)!  pre-order, 394 🌟
+* [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
+* [770.Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) (系列)
+* [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 🌟
