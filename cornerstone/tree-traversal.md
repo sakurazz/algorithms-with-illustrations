@@ -1,11 +1,21 @@
 # Tree Traversal
 
+![inorder](https://i.imgur.com/qiONPX4.png)
 
 Typical: 
 
 - [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)
 - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 - [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
+
+## 木桩训练
+
+* [173. Binary Search Tree Iterator
+](https://leetcode.com/problems/binary-search-tree-iterator/)
+* [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+* [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)
+* [426. Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/)
+
 
 
 ## Preorder Traversal
