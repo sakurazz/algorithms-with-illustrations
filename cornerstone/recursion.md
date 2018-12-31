@@ -119,6 +119,11 @@ def fibonacci(n):
 
 因此，理解递归代码，就把它抽象成一个递推公式，不用想一层层的调用关系，不要试图用人脑去分解递归的每个步骤。
 
+## 木桩训练
+
+* [894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/)
+* 
+
 ## 实际应用
 
 * 推荐注册返佣金找到“最终推荐人”

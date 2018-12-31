@@ -71,7 +71,7 @@
 | Dynamic & conquer |  |  | |
 | union and find | 323 |  | |
 | Greedy |  |  | |
-| Recursion | 78<br><br> [687 longest](https://leetcode.com/problems/longest-univalue-path/), [698 subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/), [248 strobogrammatic系列](https://leetcode.com/problems/strobogrammatic-number-iii/) |  | |
+| [Recursion](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/recursion.md)? | 78<br><br> [687 longest](https://leetcode.com/problems/longest-univalue-path/), [698 subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/), [248 strobogrammatic系列](https://leetcode.com/problems/strobogrammatic-number-iii/) |  | |
 | [Backtracking](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/backtracking.md) | [39. Combination Sum](https://leetcode.com/problems/combination-sum/) <br><br>  [401 watch](https://leetcode.com/problems/binary-watch/), [22 parentheses](https://leetcode.com/problems/generate-parentheses/), [51 n-queens](https://leetcode.com/problems/n-queens/) | <img src="https://i.imgur.com/2Y3D3fI.gif" alt="backtracking" width="200"/> |集合<br>数迷<br>递归求解<br>**触底**反弹|
 | Math |  50, 279 |  | |
 | 思维方式 | ---| --- | --- |
