@@ -1,5 +1,7 @@
 # Recursion 
 
+![Recursion](https://i.imgur.com/SAyEmMY.gif)
+
 ## What？
 
 ### 递归需要满足的三个条件
