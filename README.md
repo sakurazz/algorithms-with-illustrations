@@ -30,7 +30,7 @@
 | Tree topo |  |  | |
 | [Tree](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/tree.md)? | [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)<br><br> |  | insert<br />delete<br />change<br />cycle<br /> |
 | Tree > search | 572, 112 |  | |
-| Graph>[cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)|  |  | |
+| Graph>[Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)|  |  | |
 | Undirected Graph|  |  | 判断环<br>|
 | Directed Graph|  |  | |
 | MST |  |  | |
