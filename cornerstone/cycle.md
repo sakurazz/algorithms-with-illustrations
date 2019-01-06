@@ -31,8 +31,7 @@ from [Wikiwand:Cycle graph](https://www.wikiwand.com/en/Cycle_graph)
 
 判断**整张图**是否有环
 
-<img src="https://i.imgur.com/jZpDJSq.png
-" alt="topological vs union-find" width=""/>
+<img src="https://i.imgur.com/jZpDJSq.png" alt="topological vs union-find" width=""/>
 
 环的性质：环中某点必然有**两条**伸出的边。
 
