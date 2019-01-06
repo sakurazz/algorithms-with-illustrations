@@ -30,7 +30,7 @@
 | Tree topo |  |  | |
 | [Tree](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/tree.md)? | [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)<br><br> |  | insert<br />delete<br />change<br />cycle<br /> |
 | Tree > search | 572, 112 |  | |
-| Graph>[Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)|  |  | |
+| [Graph>Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)| 🌟[S点一定到D点](https://willwang-x.github.io/2018/02/shift)<br><br>[202 happy](https://leetcode.com/problems/happy-number/), [207 course](https://leetcode.com/problems/course-schedule/), [685 connection](https://leetcode.com/problems/redundant-connection-ii/) | ![cycle](https://i.imgur.com/FYFs9Dp.png) | |
 | Undirected Graph|  |  | 判断环<br>|
 | Directed Graph|  |  | |
 | MST |  |  | |
