@@ -43,7 +43,7 @@
 | String>KMP|  |  | |
 | Sequence>Interval| 57 |  | |
 | Matrix| 73 |  | |
-| Hash| 1, 146 |  | |
+| Hash| 1, 146 |  <img src="https://i.imgur.com/HkRFYZu.gif" alt="hash" width="200"/>| |
 | Two Sum系列|  |  | |
 | 算法思想| ❤️ | ❤️ | ❤️ |
 | Sorting| 57 |  ||
