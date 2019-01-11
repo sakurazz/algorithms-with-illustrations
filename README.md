@@ -43,8 +43,7 @@
 | String>KMP|  |  | |
 | Sequence>Interval| 57 |  | |
 | Matrix| 73 |  | |
-| Hash| 1, 146 |  <img src="https://i.imgur.com/HkRFYZu.gif" alt="hash" width="200"/>| |
-| Two Sum系列|  |  | |
+| Hash| [325. Maximum Size Subarray Sum Equals k 系列](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) <br><br> 👾[1 sum系列](https://leetcode.com/problems/two-sum/), [49 group](https://leetcode.com/problems/group-anagrams/), [149 points](https://leetcode.com/problems/max-points-on-a-line/)|  <img src="https://i.imgur.com/HkRFYZu.gif" alt="hash" width="200"/>| |
 | 算法思想| ❤️ | ❤️ | ❤️ |
 | Sorting| 57 |  ||
 | [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692.Words](https://leetcode.com/problems/top-k-frequent-words/), [164 Gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
@@ -94,6 +93,7 @@
 - [Chrome extension: imagus](https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab?hl=en): enlarge images from links with a mouse hover
 - [Algorithm Visualizer](https://algorithm-visualizer.org/): an interactive online platform that viualizes algorithms from code.
 - [Pythontutor](http://www.pythontutor.com/visualize.html#mode=edit): visualize Python, Java, JavaScript, C, C++, Ruby code **execution**
+- [Leetcode题目全集](https://workflowy.com/s/BZDH.sN6esXSMsn): 便于多个标签过滤查找
 
 ## Credit
 
