@@ -43,7 +43,7 @@
 | String>KMP|  |  | |
 | Sequence>Interval| 57 |  | |
 | Matrix| 73 |  | |
-| Hash| [325. Maximum Size Subarray Sum Equals k 系列](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) <br><br> 👾[1 sum系列](https://leetcode.com/problems/two-sum/), [49 group](https://leetcode.com/problems/group-anagrams/), [149 points](https://leetcode.com/problems/max-points-on-a-line/)|  <img src="https://i.imgur.com/HkRFYZu.gif" alt="hash" width="200"/>| |
+| [Hash](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/hashmap.md)| [325. Maximum Size Subarray Sum Equals k 系列](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) <br><br> 👾[1 sum系列](https://leetcode.com/problems/two-sum/), [49 group](https://leetcode.com/problems/group-anagrams/), [149 points](https://leetcode.com/problems/max-points-on-a-line/)|  <img src="https://i.imgur.com/HkRFYZu.gif" alt="hash" width="200"/>| |
 | 算法思想| ❤️ | ❤️ | ❤️ |
 | Sorting| 57 |  ||
 | [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692.Words](https://leetcode.com/problems/top-k-frequent-words/), [164 Gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
