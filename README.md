@@ -23,7 +23,7 @@
 | [Linked List](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/linked-list.md)|[25. Reverse Nodes in k-Group](https://youtu.be/W0QkqzwB9qY) <br><br> [141 cycle](https://leetcode.com/problems/linked-list-cycle/description/), [2 add](https://leetcode.com/problems/add-two-numbers/description/), 👹[146 LRU](https://leetcode.com/problems/lru-cache/description/) | <img src="https://i.imgur.com/PM7Y8Mx.png" alt="linkedlist" width="200"/> | 加删查转 <br>虚头虚尾<br>快慢指针 |
 | [Heap](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/heap.md) | [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) <br><br> [743 delay](https://leetcode.com/problems/network-delay-time/), [215 kth](https://leetcode.com/problems/kth-largest-element-in-an-array/description/), 👹[857 workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | <img src="https://i.imgur.com/LHCxZOp.gif" alt="max heap" width="200"/> <br>[407](https://youtu.be/7niUr7LlviY) |  |
 |[Trie](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/trie.md)?|🌟[212. Word Search II](https://leetcode.com/problems/word-search-ii/)<br><br>👾[720 longest](https://leetcode.com/problems/longest-word-in-dictionary/),👻[421 XOR](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/),👹[642 autocomplete](https://leetcode.com/problems/design-search-autocomplete-system/description/) | <img src="https://i.imgur.com/w7j1TTW.gif" alt="trie" width="200"/> ||
-| Segement Tree| [218], [850] |  | |
+| [Segment Tree](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/segment-tree.md)| [850. Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/)<br><br> ?, [307 range](https://leetcode.com/problems/range-sum-query-mutable/), [732 calendar系列](https://leetcode.com/problems/my-calendar-iii/) |  <img src="https://i.imgur.com/PgWgqN6.png" alt="segement tree" width="200"/>| |
 | Binary Tree| [285](https://leetcode.com/problems/inorder-successor-in-bst/description/) |  | |
 | Binary Indexed Tree| [218] |  | |
 | [Tree>**Traversal**](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/tree-traversal.md) |  🌟[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)<br><br> [590 N-ary](https://leetcode.com/problems/n-ary-tree-postorder-traversal/), [173 iterator](https://leetcode.com/problems/binary-search-tree-iterator/) ,👹[145 postorder](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)|<img src="https://i.imgur.com/qiONPX4.png" alt="inorder" width="200"/>  | preorder<br />**inorder**<br />postoder |
@@ -94,6 +94,7 @@
 - [Algorithm Visualizer](https://algorithm-visualizer.org/): an interactive online platform that viualizes algorithms from code.
 - [Pythontutor](http://www.pythontutor.com/visualize.html#mode=edit): visualize Python, Java, JavaScript, C, C++, Ruby code **execution**
 - [Leetcode题目全集](https://workflowy.com/s/BZDH.sN6esXSMsn): 便于多个标签过滤查找
+- [Minimal examples of data structures and algorithms in Python](https://github.com/keon/algorithms)
 
 ## Credit
 
