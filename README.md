@@ -17,8 +17,8 @@
 | key 🔑 | typical problems👻 | videe/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
 | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md)⛓️| 🌟**举一**(Typical)<br><br>反三<br>(👾easy, 👻medium, 👹hard) | <img src="https://i.imgur.com/WFEQr48.png" alt="data structure mindmap" width="200"/> <br> |  逻辑结构<br>存储结构<br>**操作**方式|
-| Binary/Bit| 371 |  | |
-| String |  |  | anagram<br />palindrome<br> KMP|
+| Binary/Bit| 🌟[268. Missing Number](https://leetcode.com/problems/missing-number/)<br><br>[371 sum](https://leetcode.com/problems/sum-of-two-integers/), 👻[260 single](https://leetcode.com/problems/single-number-iii/), [411 unique](https://leetcode.com/problems/minimum-unique-word-abbreviation/) | <img src="https://i.imgur.com/eZIpvMm.jpg" alt="bit" width="200"/> | |
+| String | [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) <br><br> [67 add](https://leetcode.com/problems/add-binary/),👻[6 zigzag](https://leetcode.com/problems/zigzag-conversion/), [336 **palindrome**系列](https://leetcode.com/problems/palindrome-pairs/) | <img src="https://i.imgur.com/1MzpsFt.png" alt="string" width="200"/> | anagram<br />palindrome<br> KMP|
 | [Array](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/array.md) | 🌟[75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) <br><br> [26 duplicate](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/), [31 permute](https://leetcode.com/problems/next-permutation/description/), [41 missing](https://leetcode.com/problems/first-missing-positive/description/) | <img src="https://i.imgur.com/RZhvmoD.gif" alt="array" width="200"/> <br> | off-by-1, <br> from the back <br> matrix|
 | [Linked List](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/linked-list.md)|[25. Reverse Nodes in k-Group](https://youtu.be/W0QkqzwB9qY) <br><br> [141 cycle](https://leetcode.com/problems/linked-list-cycle/description/), [2 add](https://leetcode.com/problems/add-two-numbers/description/), 👹[146 LRU](https://leetcode.com/problems/lru-cache/description/) | <img src="https://i.imgur.com/PM7Y8Mx.png" alt="linkedlist" width="200"/> | 加删查转 <br>虚头虚尾<br>快慢指针 |
 | [Queue]()?| [849?](https://leetcode.com/problems/maximize-distance-to-closest-person/description/)<br><br> [346 stream](https://leetcode.com/problems/moving-average-from-data-stream/), [621 task](https://leetcode.com/problems/task-scheduler/), [363 rectangle](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/)|  <img src="https://i.imgur.com/VFhfyxe.png" alt="queue" width="200"/> ||
@@ -44,7 +44,6 @@
 |查找|||
 |排序/Sort|57||
 | [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692.Words](https://leetcode.com/problems/top-k-frequent-words/), [164 Gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
-|Bit manipulation|371||
 |组合|||
 |集合|||
 |树值|||
