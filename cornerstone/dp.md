@@ -25,10 +25,12 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 - choice: 120, 97, 174, [221 Matrix], 903, **322**
 - variable: 188, 474,
 - sequence aligment: [300](https://leetcode.com/problems/longest-increasing-subsequence/description/) , 152
-- shortest path: 
-- counting: 96 
+- shortest path: 943 
+- counting: 96, 16, 70, 96
 - string: 5 
 - DFS -> DP: 139, 678, 464 
+- 背包系列
+- 股票系列
 
 ## Corner cases
 

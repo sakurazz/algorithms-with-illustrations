@@ -5,10 +5,10 @@
 ## 基础知识
 
 ## 典型应用
-1. Traversal 
-2. Connected Components 
-3. Shortest Path 
-4. Topological 拓扑排序
+1. Traversal: 133, 301
+2. Connected Components: 200
+3. Shortest Path: 127,286
+4. Topological 拓扑排序: 269, 444, 207
 
 
 ## 木桩训练
