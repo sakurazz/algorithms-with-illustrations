@@ -3,7 +3,7 @@
 
 > When you understand something, then you can find the math to express that understanding. The math doesn't provide the **understanding**. The purpose of computing is **insight**, not numbers. The only real valuable thing is **intuition**.  
 > 
-> --- *Leslie Lamport & Richard Hamming & Albert Einstein*
+> by *Leslie Lamport & Richard Hamming & Albert Einstein*
 
 
 ## Features
@@ -76,12 +76,18 @@
 
 ## Tools
 
+Search:
+
+- [Leetcode题目全集](https://workflowy.com/s/BZDH.sN6esXSMsn): 便于多个标签过滤查找
+- [References](): Related books and courses.
+- [Minimal examples of data structures and algorithms in Python](https://github.com/keon/algorithms)
+
+Visualize: 
+
 - [Create graph from adjacency](https://repl.it/@WillWang42/adjacency-list-2-matrix): create the graph from the adjacency list
 - [Chrome extension: imagus](https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab?hl=en): enlarge images from links with a mouse hover
 - [Algorithm Visualizer](https://algorithm-visualizer.org/): an interactive online platform that viualizes algorithms from code.
 - [Pythontutor](http://www.pythontutor.com/visualize.html#mode=edit): visualize Python, Java, JavaScript, C, C++, Ruby code **execution**
-- [Leetcode题目全集](https://workflowy.com/s/BZDH.sN6esXSMsn): 便于多个标签过滤查找
-- [Minimal examples of data structures and algorithms in Python](https://github.com/keon/algorithms)
 
 ## Credit
 
