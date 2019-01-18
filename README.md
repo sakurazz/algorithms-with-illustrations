@@ -79,7 +79,7 @@
 Search:
 
 - [Leetcode题目全集](https://workflowy.com/s/BZDH.sN6esXSMsn): 便于多个标签过滤查找
-- [References](): Related books and courses.
+- [References](https://github.com/willwang-x/algorithms-with-illustrations/tree/master/references): Related books and courses.
 - [Minimal examples of data structures and algorithms in Python](https://github.com/keon/algorithms)
 
 Visualize: 
@@ -89,7 +89,7 @@ Visualize:
 - [Algorithm Visualizer](https://algorithm-visualizer.org/): an interactive online platform that viualizes algorithms from code.
 - [Pythontutor](http://www.pythontutor.com/visualize.html#mode=edit): visualize Python, Java, JavaScript, C, C++, Ruby code **execution**
 
-## Credit
+## Thanks
 
 * @caomingkai
 * @davidxkHeap
