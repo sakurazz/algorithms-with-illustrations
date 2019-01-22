@@ -25,3 +25,8 @@
 - 350 Intersection of Two Arrays II 
 - 454 4Sum II 
 - 535 Encode and Decode TinyURL
+
+
+## 实际应用
+
+- [instant-runoff voting](https://repl.it/@WillWang42/instant-runoff-voting): the hashtable is a good way to speed up calculation
