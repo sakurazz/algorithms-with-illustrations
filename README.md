@@ -53,7 +53,7 @@
 | BFS |  |  | 遍历<br>块<br>最短路径<br>拓扑排序|
 | [Divide & conquer](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/divide-and-conquer.md) | 🌟[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) <br><br>👾[53 Maximum](https://leetcode.com/problems/maximum-subarray/), 👻[932 Beautiful](https://leetcode.com/problems/beautiful-array/), 👹[4 Median](https://leetcode.com/problems/median-of-two-sorted-arrays/) |<img src="https://i.imgur.com/fMLtVzX.png" alt="divide and conquer" width="200"/> |mergesort |
 | [Binary Search](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/binary-search.md) | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/), 35 |<img src="https://i.imgur.com/7Wh8Jm3.gif" alt="binary search" width="200"/>  | 减治系列 <br> 搜索系列 |
-| DP |  |  | choice<br> variable<br>sequence<br>最短路径(TSP)<br>for/recursive<br>counting<br>string<br>DP2DFS<br>背包系列<br>股票系列|
+| [DP](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/dp.md) |  |  | choice<br> variable<br>sequence<br>最短路径(TSP)<br>for/recursive<br>counting<br>string<br>DP2DFS<br>背包系列<br>股票系列|
 | Greedy |  |  | |
 | Dynamic & conquer |  |  | |
 | Reduce & conquer | 240  |  | |
