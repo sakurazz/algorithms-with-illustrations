@@ -34,6 +34,10 @@
 ## Interview flow 
 
 
+### Before interview
+
+- Go through [Do and Don't](https://github.com/yangshun/tech-interview-handbook/blob/master/preparing/cheatsheet.md)
+
 ### Before coding ...  
 
 * First, let's write down some **test cases**💯 that helps us to understand the problem.
@@ -78,3 +82,16 @@
 * ---
 * Be proactive to think and propose **optimization** of your current code
 
+----
+**Questions** to ask:
+
+* tech stack 
+* product 
+* typical week 
+* engineering culture 
+
+More [quesions](https://github.com/yangshun/tech-interview-handbook/blob/master/non-technical/questions-to-ask.md)
+
+### After interview
+
+* Thank you letter 
