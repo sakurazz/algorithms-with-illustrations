@@ -273,3 +273,98 @@ class LRUCache(object):
 # param_1 = obj.get(key)
 # obj.put(key,value)
 ```
+
+### 改进：第四版代码
+
+* 写了 `add_node`, `delete_node`, `create_node`, `update_node` 等辅助函数来清晰化代码结构, 对比第二版的代码，好像第二版更好。
+
+``` python
+class ListNode():
+    def __init__(self, val):
+        self.val = val 
+        self.key = None 
+        self.next = None 
+        self.prev = None 
+        
+class DLinkedList():
+    def __init__(self, ListNode):
+        self.head = ListNode
+        self.tail = ListNode
+        self.next = None
+        self.head.next = self.tail
+        self.tail.prev = self.head 
+    
+class LRUCache(object):
+
+    def __init__(self, capacity):
+        """
+        :type capacity: int
+        """
+        self.capacity = capacity 
+        self.cache = {}
+        self.linked_list = DLinkedList(ListNode("Dummy"))
+
+
+    def get(self, key):
+        """
+        :type key: int
+        :rtype: int
+        """
+        if key in self.cache:
+            self.update_node(key)
+            return self.cache[key].val
+        else:
+            return -1 
+        
+
+    def put(self, key, value):
+        """
+        :type key: int
+        :type value: int
+        :rtype: void
+        """
+        if self.capacity == 0:
+            return 
+        
+        if key in self.cache:
+            self.cache[key].val = value 
+            self.update_node(key)
+        else:
+            if len(self.cache) >= self.capacity:
+                node = self.linked_list.head.next 
+                self.delete_node(node)
+                del self.cache[node.key]
+            self.create_node(key, value)
+
+    def create_node(self, key, val):
+        new_node = ListNode(val)
+        new_node.key = key
+        self.cache[key] = new_node
+        self.add_node(new_node, self.linked_list.tail.prev, self.linked_list.tail)
+
+        
+    def update_node(self, key):
+        if self.linked_list.tail.prev.key != key:
+            node = self.cache[key]
+            self.delete_node(node)
+            self.add_node(node, self.linked_list.tail.prev, self.linked_list.tail)
+           
+        
+    def delete_node(self, node):
+        node.prev.next = node.next 
+        node.next.prev = node.prev  
+    
+    
+    def add_node(self, node, prev_node, next_node):
+        node.prev = prev_node
+        prev_node.next = node 
+        node.next = next_node
+        next_node.prev = node 
+
+            
+
+# Your LRUCache object will be instantiated and called as such:
+# obj = LRUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)
+```
