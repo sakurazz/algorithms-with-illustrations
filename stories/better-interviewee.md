@@ -23,7 +23,7 @@
 
 ## 经验 
 
-* 面试当天，不要复习。保持**精力**，留给面试。
+* 面试当天，不要复习。保持**精力**，留给面试，保持平常心。
 * 不要想有所依赖，**当场思考**，可能比想要依赖记忆来得更流畅。
 * **Think aloud**固然好，但是不利于自己思考说时，可以说“Could you give me one minute to think? I tell you my idea later”, 会更好。因为有时**思考需要安静**，告诉面试官你在做什么即可。首先是**做题**(完成)，其次是传达(完美)。
 
@@ -90,8 +90,9 @@
 * typical week 
 * engineering culture 
 
-More [quesions](https://github.com/yangshun/tech-interview-handbook/blob/master/non-technical/questions-to-ask.md)
+👉 More [Quesions](https://github.com/yangshun/tech-interview-handbook/blob/master/non-technical/questions-to-ask.md)
 
 ### After interview
 
 * Thank you letter 
+* The **Code** that you haven't finished 
