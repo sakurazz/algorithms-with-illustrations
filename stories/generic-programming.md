@@ -1,6 +1,6 @@
 # Generic Programming
 
-> From 《冒号课堂》
+> From 《冒号课堂》 3.1 泛型范式——抽象你的算法
 
 ## 问题
 
