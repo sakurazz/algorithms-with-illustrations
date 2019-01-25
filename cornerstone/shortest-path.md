@@ -1,7 +1,9 @@
 # Shortest path 
 
 ## 1. 总结
-	
+
+<br>
+
 |算法|思想|适用情况|时间复杂度|空间复杂度|诞生时间|
 |:---:|:---:|----:|:---:|----:|:---:|----:|
 |BFS|蛮力搜索|不含权重|O(V·E)|O(V·E)|1959|
@@ -75,12 +77,77 @@ The cheapest price from city 0 to city 2 with at most 1 stop costs 200, as marke
 	
 **Bellman-ford algorithm**	
 
-<script src="https://gist.github.com/WillWang-X/4efb3251c02c1d39775cf7eed580b154.js"></script>
+```python
+# Time: O(E∗K), where E is the length of flights.
+# Space: O(n), the space used to store cur and pre
+# Reference: https://leetcode.com/problems/cheapest-flights-within-k-stops/solution/
+
+
+# Bellman-ford algorithm
+class Solution(object):
+    def findCheapestPrice(self, n, flights, src, dst, K):
+        """
+        :type n: int
+        :type flights: List[List[int]]
+        :type src: int
+        :type dst: int
+        :type K: int
+        :rtype: int
+        """
+        dist = [[float('inf')] * n for _ in xrange(2)] # [pre, cur] or [cur, pre]
+        dist[0][src] = dist[1][src] = 0
+        
+        for i in xrange(K+1):
+            for u, v, w in flights:
+                dist[i&1][v] = min(dist[i&1][v], dist[~i&1][u] + w)
+        
+        return dist[K&1][dst] if dist[K&1][dst] < float('inf') else -1
+```
+
 
 
 **Dijkstra's algorithm**
+
+```
+# Time:  O(E+nlogn), where E is the length of flights
+# Space: O(n), the size of the heap 
+# Reference: https://leetcode.com/problems/cheapest-flights-within-k-stops/solution/
+
+'''
+# Dijkstra's algorithm 
+If we continually extend our potential flightpaths in order of cost, we know once we've reached the destination dst that it was the lowest cost way to get there. 
+'''
+import collections
+class Solution(object):
+    def findCheapestPrice(self, n, flights, src, dst, K):
+        """
+        :type n: int
+        :type flights: List[List[int]]
+        :type src: int
+        :type dst: int
+        :type K: int
+        :rtype: int
+        """
+        graph = collections.defaultdict(dict)
+        for u, v, w in flights:
+            graph[u][v] = w
+        
+        best = {} # the best way to get any point 
+        pq =[(0, 0, src)] # cost A with B steps to get C
+        while pq:
+            cost, k, place = heapq.heappop(pq)
+            if k > K+1 or cost > best.get((k, place), float('inf')): continue 
+            if place == dst: return cost 
+            
+            for nei, wt in graph[place].iteritems():
+                newcost = cost + wt 
+                if newcost < best.get((k+1, nei), float('inf')):
+                    heapq.heappush(pq, (newcost, k+1, nei))
+                    best[k+1, nei] = newcost 
+                    
+        return -1 
+```
 	
-<script src="https://gist.github.com/WillWang-X/8ae3bd3a85bd07e0b406af133d78bc00.js"></script>
 
 **BFS**
 
