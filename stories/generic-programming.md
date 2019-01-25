@@ -24,11 +24,40 @@
 ``` c++
 template <class Iterator, class Act, class Test> 
 void process(Iterator begin, Iterator end, Act act, Test test) 
+
 // 对容器中在给定范围内（即起于begin止于end）所有满足给定条件的元 
 //素（即test（元素）==true）进行处理（即act（元素）） 
 { for ( ; begin != end; ++begin) // 从头至尾遍历容器内元素 
 	// 若当前元素满足条件，则对其采取行动 
 	if (test(*begin)) act(*begin); 
+}
+```
+
+For exmaple, 题6
+
+
+``` c++
+#include <iostream> 
+#include “process.h” // 前述process所在的头文件 
+
+using namespace std; 
+
+// 判断字符是否为非数字字符 
+bool notDigit(char c) 
+{ 
+	return (c < '0') || (c > '9'); 
+} 
+	
+// 打印非数字字符 
+void printNondigit(char c)
+{ 
+	cout << c << "不是数字字符" << endl; 
+} 
+
+int main() 
+{    
+    process(istream_iterator<char>(cin),istream_iterator<char>(),printNondigit, notDigit); 
+	return 0; 
 }
 ```
 
