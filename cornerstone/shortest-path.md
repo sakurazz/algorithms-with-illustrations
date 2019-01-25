@@ -4,7 +4,12 @@
 
 <br>
 
-|算法|思想|适用情况|时间复杂度|空间复杂度|诞生时间|
+|算法 |思想 | 适用情况|时间复杂度|空间复杂度|诞生时间|
+|:---:|:---:|----:|:---:|----:|:---:|----:|
+
+
+
+|算法 |思想 | 适用情况|时间复杂度|空间复杂度|诞生时间|
 |:---:|:---:|----:|:---:|----:|:---:|----:|
 |BFS|蛮力搜索|不含权重|O(V·E)|O(V·E)|1959|
 |Dijkstra|贪心思想|不含负权|O((V+E)logV)|O(E)|1956|
@@ -109,7 +114,7 @@ class Solution(object):
 
 **Dijkstra's algorithm**
 
-```
+``` python 
 # Time:  O(E+nlogn), where E is the length of flights
 # Space: O(n), the size of the heap 
 # Reference: https://leetcode.com/problems/cheapest-flights-within-k-stops/solution/
