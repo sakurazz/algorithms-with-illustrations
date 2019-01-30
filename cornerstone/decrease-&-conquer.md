@@ -1,10 +1,10 @@
 # Decrease and conquer 
 
 <center>
-<img src="https://i.imgur.com/Gu5jVjZ.png" alt="dcrease and conquer" width="200"/> 
+<img src="https://i.imgur.com/Gu5jVjZ.png" alt="decrease and conquer" width="200"/> 
 <br> 
+from *The design and analysis of algorithms*
 
-by [Anany](https://www.amazon.com/Introduction-Design-Analysis-Algorithms-3rd/dp/0132316811/ref=sr_1_1?s=books&ie=UTF8&qid=1548866452&sr=1-1&keywords=Introduction+to+the+Design+and+Analysis+of+Algorithms)
 </center>
 
 ## 基础知识
