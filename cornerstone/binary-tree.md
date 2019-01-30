@@ -16,7 +16,7 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 ## key words 
 
 
-- 基本操作
+- 基本操作(寻找特定节点)
 	- [156 upside down] 	
 	- [617 merge]
 	- [669 Trim] 
@@ -33,7 +33,7 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 	- [951 flip](https://leetcode.com/problems/flip-equivalent-binary-trees/)
 	- [971 Flip BT to Preorder]
 	- [99 recover]
-- 查看判断: 
+- 查看判断(判断树的性质) 
 	- [96 unique]	 
 	- [965 univalued] 
 	- [104 depth]
@@ -59,7 +59,8 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 	- [958 completeness]
 
 * Construct 
-* Convert 	
+* Convert: 树和其他数据结构的相互转换 	
+* 树的路径问题
 
 
 
