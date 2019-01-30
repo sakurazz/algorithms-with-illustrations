@@ -21,7 +21,7 @@ Problems:
 
 
 * Decrease by one 
-	* insertion sort
+	* **insertion sort**
 	* topological sorting 
 	* Generating Combinatorial Objects
 		* Generating Permutations
@@ -33,7 +33,7 @@ Problems:
 	* Josephus Problem
 * variable-size-decrease
 	* Euclid’s algorithm
-	* Computing a Median and the Selection Problem
+	* Computing a Median and the **Selection Problem**
 	* Interpolation Search
 	* Searching and Insertion in a Binary Search Tree
 	* The Game of Nim
