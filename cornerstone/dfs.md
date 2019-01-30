@@ -14,6 +14,7 @@
 * Exploration of a node is suspended as soon as another unexplored is found.
 * Uses **Stack** data structure to store Un-explored nodes.
 * DFS is faster and require **less memory**.
+* DFS for binary tree = Preorder traversal
 
 Some Applications:
 
@@ -28,7 +29,9 @@ Some Applications:
 - permutation: [46](https://repl.it/@WillWang42/permute)
 - detect cycle: [google](https://willwang-x.github.io/2018/02/shift)
 - connected component: 924, 928
-- **path** 
+- **path**
+- Topology Sort
+ 
 
 ## 最佳实践
 
@@ -141,3 +144,4 @@ from [What's the difference between backtracking and depth first search?](https:
 
 - [Depth-First Search and Breadth-First Search in Python](https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)
 - [Difference between BFS and DFS](https://www.thecrazyprogrammer.com/2017/06/difference-between-bfs-and-dfs.html): Non-Visited nodes, Visited nodes, Explored nodes
+- [深度优先搜索(DFS)小结](http://x-wei.github.io/dfs-summary.html#for-trees-dfs-with-depth)
