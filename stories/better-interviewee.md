@@ -96,3 +96,8 @@
 
 * Thank you letter 
 * The **Code** that you haven't finished 
+
+
+## Reference 
+
+*  Interviews Tips from [Vince Grimes](https://www.linkedin.com/in/vincegrimes/detail/recent-activity/shares/)
