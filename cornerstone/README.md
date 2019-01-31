@@ -1,5 +1,12 @@
 # Cornerstone 
 
+## Todo 
+
+* [ ] 扫描线算法(图形学)
+* [ ] 蓄水池算法: Reservoir Sampling
+* [ ] [flood fill（图形学）](https://www.wikiwand.com/zh-hans/Flood_fill)
+
+
 ## Template  
 
 *  **Insight**: the image to show the intution 

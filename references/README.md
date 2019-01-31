@@ -20,6 +20,7 @@ This repository is used to code for famous algorithm books below.
 * [ ] [王争：数据结构与算法之美](https://workflowy.com/s/ad0b7ab1c7c/vGhD5jWWw6RjE6Du) : 交互专栏，从实际开发场景出发，搞清算法基本概念和核心理论，算法精髓
 * [ ] [Elements of Programming Interviews in Python: The Insiders' Guide(2016)](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949) : 最佳**算法面试**准备手册。
 * [x] [The CS Detective(2016)](https://book.douban.com/subject/26871764/): 算法入门的**兴趣书**, 侦探小说融合算法。小朋友读《算法神探》，大朋友读《编程珠玑》。
+* [ ] [Algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/):  University of Illinois, Urbana-Champaign老师的在线更新算法书, 从1999年开始教算法, **可能**是一本集大成之作。
 
 
 ## Courses
