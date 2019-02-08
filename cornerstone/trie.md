@@ -4,7 +4,7 @@
 
 from https://moaazsidat.com/writings/2015/11/24/supercharging-react-with-immutablejs/
 
-## Notes
+## 基础知识
 
 Tries are special trees (prefix trees) that make searching and storing strings more efficient. Tries have many practical applications, such as conducting **searches** and providing **autocomplete**. It is helpful to know these common applications so that you can easily identify when a problem can be efficiently solved using a trie.
 
@@ -12,7 +12,6 @@ Sometimes preprocessing a dictionary of **words** (given in a list) into a trie,
 
 Be familiar with implementing, from scratch, a Trie class and its `add`, `remove` and `search` methods.
 
-## Why?
 
 ### Pros
 
@@ -26,16 +25,13 @@ The main disadvantage of tries is that they need lot of memory for storing the s
 
 The final conclusion is regarding tries data structure is **that they are faster but require huge memory for storing the strings.**
 
-## Key words
+## 典型应用
+
 - implement trie [208](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 - search: 421 
 
-## Corner cases
 
-## Example
-
-## Code
-
+## 最佳实践
 
 ``` python 
 # 208. Implement Trie (Prefix Tree)
@@ -104,7 +100,10 @@ class Trie:
 - [642. Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/)
 - [211. Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/)
 
-## Reference
+## Q&A 
 
-[Geeks Trie ](https://www.geeksforgeeks.org/advantages-trie-data-structure/)
+
+## Read More 
+
+[Geeks Trie](https://www.geeksforgeeks.org/advantages-trie-data-structure/)
 
