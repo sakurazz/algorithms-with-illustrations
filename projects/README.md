@@ -23,7 +23,7 @@
 
 * [安装到家的云主机](https://i.imgur.com/93Vt5MG.jpg): 分布式散热
 * [不加热的烘干机](https://i.imgur.com/TiXRU7j.jpg) : 水离开物体的方式有哪几种？有点类似，2升的水如何放到1升的水瓶中。
-* [热成像解开密码](https://bbs.pediy.com/thread-216706.htm): 痕迹包括哪些呢？温度也是一种。
+* [热成像解开密码](https://bbs.pediy.com/thread-216706.htm): 痕迹包括哪些呢？请系统思考，就像回答如何加快网络加载速度一样，每一个角度都要考虑到，温度也是一种。
 * [3D打印人像解开手机人类识别](https://www.leiphone.com/news/201812/0twki5QHbZQqyUFj.html): 将图片从二维/视频还原到三维。
 * [自行车的包装](https://i.imgur.com/xLAbNgU.jpg): 找到最简单的解决方案。
 
