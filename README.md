@@ -43,7 +43,7 @@
 | [Graph>Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)| 🌟[S点一定到D点](https://willwang-x.github.io/2018/02/shift)<br><br>[202 happy](https://leetcode.com/problems/happy-number/), [207 course](https://leetcode.com/problems/course-schedule/), [685 connection](https://leetcode.com/problems/redundant-connection-ii/) | <img src="https://i.imgur.com/FYFs9Dp.png" alt="detect cycle in the graph" width="200"/> | undirected<br>directed<br> |
 |查找|||
 |排序/Sort|57||
-| [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692.Words](https://leetcode.com/problems/top-k-frequent-words/), [164 Gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
+| [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692 top-k](https://leetcode.com/problems/top-k-frequent-words/), [164 gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
 |组合|||
 |集合|||
 |树值|||
