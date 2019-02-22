@@ -3,10 +3,11 @@
 
 * [ ] 将《element》中的习题整理出来。
 
+---
 
 ![linked list](https://i.imgur.com/xwQ842u.png)
 
-## Linked List 
+## 基础知识
 
 List problems often have a simple brute-force solution that uses 0(n) space, but a subtler solution that uses **the existing list nodes** to reduce space complexity to 0(1). 
 
@@ -18,7 +19,9 @@ It's easy to forget **to update next** (and previous for double linked list) for
 
 Algorithms operating on singly linked lists often benefit from using **two iterators**, one ahead of the other, or **one advancing quicker than the other**. 
  
-### Key words 
+## 典型应用
+
+
 - deletion O(1): moditfy the value or pointer 
 - dummy node: [2](https://leetcode.com/problems/add-two-numbers/description/)
 - reverse: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
@@ -34,7 +37,15 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 - Two nodes
 - Linked list has cycle. Clarify with the interviewer whether there can be a cycle in the list. Usually the answer is no.
 
-## Operation 
+## 最佳实践
+
+- create
+- insert
+	- 1) At the front of the linked list.
+	- 2) After a given node.
+	- 3) At the end of the linked list.
+- delete
+- sort 
 
 ### Create 
 

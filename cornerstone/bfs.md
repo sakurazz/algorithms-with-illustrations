@@ -19,6 +19,7 @@ Some Application:
 * Testing a graph for **bipartiteness**.
 
 ## 典型应用 Typical Problems
+
 1. Traversal: 133, 301
 2. Connected Components: 200, 261, 323
 3. Shortest Path: 🌟[126 word ladder], 127,286, 317, [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
