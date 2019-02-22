@@ -7,6 +7,7 @@ This repository is used to code for famous algorithm books below.
 3. [Cormen & Charles: Introduction to Algorithms (3rd, 2009)][3]: 功力**中层**(Leetcode 200+)之后，你需要的大块头**算法参考书**
 4. [Anany: Introduction to the Design and Analysis of Algorithms (3rd, 2011)][4] : 更加合理的算法分类方式，把常见算法分为**分治，减治，变治**三大类。 
 5. [Robert Sedgewick & Kevin:Algorithms (4th, 2011)][5]: 最好的算法入门教材(**Java**)，完整呈现了所有常用算法和数据结构，可视化算法，不但是在告诉你what，而且告诉你why，各种对比。
+	- [Github: 算法4精华笔记，通俗理解](https://github.com/MeandNi/Algorithms4-Common) 
 
 [1]:	https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880
 [2]:	https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358
