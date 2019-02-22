@@ -1,6 +1,8 @@
 # String 
 
-## Point
+
+
+## 基础知识
 
 Similar to arrays, string problems often have simple brute-force solutions that use 0(n) space solution, but subtler solutions that use the string itself to **reduce space** **complexity** to [Problems 7.6 and 7.4]
 
@@ -8,7 +10,12 @@ Understand the **implications** of a string type which is **immutable**, e.g., t
 
 Updating a mutable string from the front is slow, so see if it's possible to **write values from the back**. [Problem 7.4]
 
-## Key words
+## 典型应用
 
 - anagram
 - palindrome
+- match: KMP 
+
+## 最佳实践
+
+## 木桩训练
