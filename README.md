@@ -93,6 +93,13 @@ Language:
 - [Multi](https://github.com/davidxk/Algorithm-Implementations): Algorithm and data structure implementations in Python, C, C++ and Java
 
 
+Practice: 
+
+- [50+ Data Structure and Algorithms Interview Questions for Programmers](https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0): give you enough of an idea of the kinds of questions you can expect in a real programming job interview
+- Leetcode.com
+- Pramp.com
+
+
 
 ## Thanks
 
