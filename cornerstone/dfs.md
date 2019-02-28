@@ -69,8 +69,8 @@ dfs(graph, 'A') # {'E', 'D', 'F', 'A', 'C', 'B'}
 ```python
 def dfs(graph, start, visited=set()):
     visited.add(start)
-    for next in graph[start] - visited:
-        dfs(graph, next, visited)
+    for nxt in graph[start] - visited:
+        dfs(graph, nxt, visited)
     return visited
 
 dfs(graph, 'C') # {'E', 'D', 'F', 'A', 'C', 'B'}
@@ -86,11 +86,11 @@ def dfs_paths(graph, start, goal):
     stack = [(start, [start])]
     while stack:
         (vertex, path) = stack.pop()
-        for next in graph[vertex] - set(path):
-            if next == goal:
-                yield path + [next]
+        for nxt in graph[vertex] - set(path):
+            if nxt == goal:
+                yield path + [nxt]
             else:
-                stack.append((next, path + [next]))
+                stack.append((nxt, path + [nxt]))
 
 list(dfs_paths(graph, 'A', 'F')) # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]
 ```
@@ -103,8 +103,8 @@ def dfs_paths(graph, start, goal, path=None):
         path = [start]
     if start == goal:
         yield path
-    for next in graph[start] - set(path):
-        yield from dfs_paths(graph, next, goal, path + [next])
+    for nxt in graph[start] - set(path):
+        yield from dfs_paths(graph, nxt, goal, path + [nxt])
 
 list(dfs_paths(graph, 'C', 'F')) # [['C', 'F'], ['C', 'A', 'B', 'E', 'F']]
 ```
