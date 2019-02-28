@@ -35,6 +35,15 @@ Some Applications:
 
 ## 最佳实践
 
+- Graph 
+- Connected component 
+	- Iterative 
+	- Recursive
+- Paths
+	- Iterative
+	- Recursive
+- [Count Connected component](https://repl.it/@WillWang42/dfs-best-practice)
+
 **Graph**
 
 ``` python 
