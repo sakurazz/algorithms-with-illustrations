@@ -1,5 +1,11 @@
 # Sorting 总结
 
+> Stable: the relative order of elements with the same value is maintained. 
+> 
+> by [stackoverflow](https://stackoverflow.com/questions/20761396/why-selection-sort-can-be-stable-or-unstable)
+
+
+
 |    排序算法    |思路 |  优缺点 | 应用场景| 典型题目 | 备注 | 
 | ---------- | --- | ---------- | --- | --- | --- |
 | quicksort | xx |runs 0(n**2) time in worst-case | 多数情况 | [sort color](https://leetcode.com/problems/sort-colors/description/) | xx |
@@ -59,6 +65,7 @@ It's often the case that sorting can be implemented in **less space** than requi
 ## 最佳实践
 
 - [insertion sort](https://repl.it/@WillWang42/insertion-sort)
+- [selection sort](https://repl.it/@WillWang42/selection-sort)
 
 ## 木桩训练
 
