@@ -34,7 +34,6 @@
 * 1、堆排序、快速排序、希尔排序、直接选择排序**不是稳定**的排序算法；
 * 2、基数排序、冒泡排序、直接插入排序、折半插入排序、归并排序是**稳定**的排序算法。
 
-## 典型应用
 
 Sorting problems come in two flavors: 
  
@@ -50,6 +49,17 @@ For **specialized input**, e.g., a very small range of values, or a small number
 It's often the case that sorting can be implemented in **less space** than required by a brute-force approach. [Problem 14.2]
 
 
+
+## 典型应用
+
+- subsequent
+- a custom sorting routine
+- preprocess 
+
+## 最佳实践
+
+- [insertion sort](https://repl.it/@WillWang42/insertion-sort)
+
 ## 木桩训练
 
 1. [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/): 引申：350(Fllow up)
@@ -63,4 +73,7 @@ It's often the case that sorting can be implemented in **less space** than requi
 9. implement a fast sorting algorithm for lists
 10. compute a salary threshold
 
+## Thanks 
 
+- [经典排序算法动画](https://github.com/MisterBooo/Article)
+- [Sorting and Colours](https://benmosheron.gitlab.io/blog/2019/01/24/sorting.html): 用颜色可视化主要的排序算法，包含如何实现
