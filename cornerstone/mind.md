@@ -8,7 +8,7 @@
 - [x] Backtracking
 - [x] Sliding Window 
 - [ ] fast and slow 
-- [ ] Reverse thinking
+- [ ] Reverse thinking: 283. Move Zeroes(移非零)
 - [ ] complement: 补集思维
 - [ ] Math reduce: 49
 - [ ] define: 261, 997, 1022(余数)
