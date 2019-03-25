@@ -16,7 +16,8 @@
 - [ ] 双标准: 678 
 - [ ] 满足/不满足： 836 
 - [ ] Granularity|zoom out: [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md), 1001 (preprocess)
-- [ ] Edge case: 
+- [ ] Edge case: 1023
+- [ ] Index/坐标视角: 283. Move Zeroes, 
 
 
 
