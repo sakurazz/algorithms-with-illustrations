@@ -16,6 +16,12 @@
 
 ### data structrue
 
+- binary/Bit, string, array, linked list, queue, stack, 
+- set, disjoint set, 
+- graph, 
+- tree, binary tree, binary search tree, heap, trie, binary indexed tree, segment tree
+- sequence, hash
+
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
 | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md)⛓️| 🌟**举一**(Typical)<br><br>反三<br>(👾easy, 👻medium, 👹hard) | <img src="https://i.imgur.com/OUh1FBf.png" alt="data structure mindmap" width="200"/> <br> |  逻辑结构<br>存储结构<br>**操作**方式|
@@ -40,6 +46,8 @@
 
 ### problem type
 
+- Traversal, Shortest Path, Two pointer, Cycle, 查找，Sort, 组合，集合，数值，Math 
+
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
 | 问题类型❓| ❓❓❓❓❓❓❓❓❓❓ | <img src="https://i.imgur.com/GepTFcI.png" alt="problem type" width="200"/> | ❓❓ |
@@ -58,6 +66,8 @@
 
 ### algorithm idea  
 
+- DFS, BFS 
+- Divide & conquer, DP, Greedy, Dynamic & conquer, Decrease & conquer, Binary search
 
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
@@ -73,6 +83,7 @@
 
 ### way of thinking
 
+- Recursion, Backtracking, Siding Window, Fast and slow, Reverse thinking, Complement
 
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
