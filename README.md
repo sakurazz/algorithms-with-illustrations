@@ -14,6 +14,8 @@
 
 ## Lists 
 
+### data structrue
+
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
 | [Data Structure](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/data-structure.md)⛓️| 🌟**举一**(Typical)<br><br>反三<br>(👾easy, 👻medium, 👹hard) | <img src="https://i.imgur.com/OUh1FBf.png" alt="data structure mindmap" width="200"/> <br> |  逻辑结构<br>存储结构<br>**操作**方式|
@@ -35,6 +37,11 @@
 | [Segment Tree](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/segment-tree.md)| [850. Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/)<br><br> ?, [307 range](https://leetcode.com/problems/range-sum-query-mutable/), [732 calendar系列](https://leetcode.com/problems/my-calendar-iii/) |  <img src="https://i.imgur.com/PgWgqN6.png" alt="segement tree" width="200"/>| |
 | Sequence| 57 |  | Interval<br> Matrix73|
 | [Hash](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/hashmap.md)| [325. Maximum Size Subarray Sum Equals k 系列](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) <br><br> 👾[1 sum系列](https://leetcode.com/problems/two-sum/), [49 group](https://leetcode.com/problems/group-anagrams/), [149 points](https://leetcode.com/problems/max-points-on-a-line/)|  <img src="https://i.imgur.com/l1598o9.gif" alt="hash" width="200"/> <br> by [Inside python dict](https://just-taking-a-ride.com/inside_python_dict/chapter2.html)| |
+
+### problem type
+
+| key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
+| :-------- | :---------: | :----------: | :---------: |
 | 问题类型❓| ❓❓❓❓❓❓❓❓❓❓ | <img src="https://i.imgur.com/GepTFcI.png" alt="problem type" width="200"/> | ❓❓ |
 |遍历|||MST<br>|
 | [Tree>**Traversal**](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/tree-traversal.md) |  🌟[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)<br><br> [590 N-ary](https://leetcode.com/problems/n-ary-tree-postorder-traversal/), [173 iterator](https://leetcode.com/problems/binary-search-tree-iterator/) ,👹[145 postorder](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)|<img src="https://i.imgur.com/qiONPX4.png" alt="inorder" width="200"/>  | preorder<br />**inorder**<br />postoder<br> topo |
@@ -48,6 +55,12 @@
 |集合|||
 |树值|||
 | Math |  50, 279 |  | |
+
+### algorithm idea  
+
+
+| key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
+| :-------- | :---------: | :----------: | :---------: |
 | 算法思想❤️| ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ | <img src="https://i.imgur.com/9RJ5oGt.png" alt="algorithms insight" width="200"/> | ❤️❤️ |
 | [DFS](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/dfs.md)| 🌟[46. Permutations](https://leetcode.com/problems/permutations/description/)  <br><br>👾[112 **Path**系列](https://leetcode.com/problems/path-sum/submissions/1), 👻[105. Construct](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/), 👹[329. topological](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/) |<img src="https://i.imgur.com/RVGtn22.gif" alt="DFS" width="200"/> <br> | [探测环](https://willwang-x.github.io/2018/02/shift)<br>前序遍历<br>非递归 <br>拓扑排序<br>树深<br>**DFS with Memo 913**<br> |
 | [BFS](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bfs.md) | 🌟[490.The Maze系列](https://leetcode.com/problems/the-maze/) <br><br> 👾[107 level](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/), 👻[200 island](https://leetcode.com/problems/number-of-islands/), 👹[269 alien](https://leetcode.com/problems/alien-dictionary)| <img src="https://i.imgur.com/c0F4gTc.gif" alt="bfs" width="200"/> | 遍历<br>块<br>最短路径<br>拓扑排序|
@@ -57,6 +70,12 @@
 | Dynamic & conquer |  |  | |
 | [Decrease & conquer](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/decrease-%26-conquer.md) | 🌟[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)<br><br> [169 majority](https://leetcode.com/problems/majority-element/), [78 subsets](https://leetcode.com/problems/subsets/), 👹[4 median](https://leetcode.com/problems/median-of-two-sorted-arrays/) | <img src="https://i.imgur.com/Gu5jVjZ.png" alt="decrease and conquer" width="200"/> <br> by [Anany](https://www.amazon.com/Introduction-Design-Analysis-Algorithms-3rd/dp/0132316811/ref=sr_1_1?s=books&ie=UTF8&qid=1548866452&sr=1-1&keywords=Introduction+to+the+Design+and+Analysis+of+Algorithms) | 减一技术<br>binary search <br> size-decrease|
 | [Binary Search](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/binary-search.md) | 🌟[33. Search in **Rotated** **Sorted** Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) <br><br> 👾[35 insert](https://leetcode.com/problems/search-insert-position/), 👻[300 longest](https://leetcode.com/problems/longest-increasing-subsequence/), ? |<img src="https://i.imgur.com/7Wh8Jm3.gif" alt="binary search" width="200"/>  | 减治系列 <br> 搜索系列 |
+
+### way of thinking
+
+
+| key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
+| :-------- | :---------: | :----------: | :---------: |
 | [思维方式](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/mind.md)🤔️ | 🤔️🤔️🤔️🤔️🤔️🤔️🤔️🤔️🤔️🤔️| 🤔️🤔️🤔️🤔️🤔️ | 🤔️🤔️ |
 | [Recursion](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/recursion.md)? | 🌟[894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/)<br><br> 👾[687 longest](https://leetcode.com/problems/longest-univalue-path/), [698 subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/), [248 strobogrammatic系列](https://leetcode.com/problems/strobogrammatic-number-iii/) | <img src="https://i.imgur.com/SAyEmMY.gif" alt="recursion" width="200"/> |+hashmap <br>递归公式<br>终止条件|
 | [Backtracking](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/backtracking.md) | [39. Combination Sum](https://leetcode.com/problems/combination-sum/) <br><br>  [401 watch](https://leetcode.com/problems/binary-watch/), [22 parentheses](https://leetcode.com/problems/generate-parentheses/), [51 n-queens](https://leetcode.com/problems/n-queens/) | <img src="https://i.imgur.com/2Y3D3fI.gif" alt="backtracking" width="200"/> |集合<br>数迷<br>递归求解<br>**触底**反弹|
