@@ -2,32 +2,43 @@
 
 ![stack](https://i.imgur.com/lrLuOE0.gif)
 
-## Study
 
-- [ ] 学习资料
-
-## Notes
+## 基础知识
 
 Learn to recognize when the stack **LIFO** property is applicable. For example, **parsing** typically benefits from a stack. 
 
 Consider augmenting the basic stack or queue data structure to support additional operations, such as **finding the maximum element**. 
 
-## Key words
+### core
+
+- [ ] the typical use of stack can be abstracted into a depth-first walk?
+
+## 典型应用
+
 
 - LIFO: 901
-- nearest largest: 84, 85, 801, 739, 907, 221 (6 solved in 1 way)
+- **nearest largest**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
 - save for later:
 - top-down: 
 - special order: 
 
-## Corner cases
+## 最佳实践
 
-- [ ] 常见case
-
-## Show me the code 
-
-- [ ] code
-
+``` python 
+# to maintain an order in the stack (= save for later)
+def compare():
+	pass 
+	
+def deal():
+	pass
+	
+for i, num in enumerate(input):
+	while stack and compare(num, stack[-1]):
+		# hit the bottom 
+		last = stack.pop()
+		deal(last, input)
+	stack.append(i)
+```
 
 ## 木桩训练
 
@@ -38,3 +49,13 @@ Consider augmenting the basic stack or queue data structure to support additiona
 * [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 * [770.Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) (系列)
 * [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 🌟
+
+
+## Q & A
+
+- Q: stack 和 heap 有什么区别？
+	- 都在维持某种顺序，而stack通过pop()和push()完成，而heap需要进入容器之后二次处理得到。
+
+## Reference
+
+- [Stack and Queue, Why?](https://stackoverflow.com/questions/2074970/stack-and-queue-why): DFS + stack, BFS + queue	
