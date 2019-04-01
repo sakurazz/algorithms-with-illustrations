@@ -59,12 +59,12 @@ bfs(graph, 'A') # {'B', 'C', 'A', 'F', 'D', 'E'}
 def bfs_paths(graph, start, goal):
     queue = [(start, [start])]
     while queue:
-        (vertex, path) = queue.pop(0)
-        for next in graph[vertex] - set(path):
-            if next == goal:
-                yield path + [next]
+        vertex, path = queue.pop(0)
+        for nxt in graph[vertex] - set(path):
+            if nxt == goal:
+                yield path + [nxt]
             else:
-                queue.append((next, path + [next]))
+                queue.append((next, path + [nxt]))
 
 list(bfs_paths(graph, 'A', 'F')) # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]
 ```
@@ -79,7 +79,23 @@ def shortest_path(graph, start, goal):
 shortest_path(graph, 'A', 'F') # ['A', 'C', 'F']
 ```
 
+**Shortest Distance**
 
+``` python
+# bfs: 1. pop 2. check 3. add unseen neighbors
+def neighbor(node):
+	return graph[node]
+
+def shortest_depth(graph, start, goal):
+	seen, queue = set([start]), [(start, 0)]
+	while queue:
+		node, depth = queue.pop(0) # deque
+		if node == goal: return depth 
+		for nxt in neighbor[node] - seen:
+			queue.append((nxt, depth+1))
+			seen.add(nxt)
+	return -1	
+```
 
 
 ## 木桩训练
