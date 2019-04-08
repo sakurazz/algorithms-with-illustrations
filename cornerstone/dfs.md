@@ -29,7 +29,7 @@ Some Applications:
 - permutation: [46](https://repl.it/@WillWang42/permute)
 - detect cycle: [google](https://willwang-x.github.io/2018/02/shift)
 - connected component: 924, 928
-- **path**
+- **path**: 112
 - Topology Sort
  
 
@@ -108,10 +108,13 @@ list(dfs_paths(graph, 'A', 'F')) # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]
 
 ``` python
 def dfs_paths(graph, start, goal, path=None):
+	# edge case 
     if path is None:
         path = [start]
+	# base case     
     if start == goal:
         yield path
+    # general case
     for nxt in graph[start] - set(path):
         yield from dfs_paths(graph, nxt, goal, path + [nxt])
 
