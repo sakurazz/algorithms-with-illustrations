@@ -29,7 +29,7 @@ Some Applications:
 - permutation: [46](https://repl.it/@WillWang42/permute)
 - detect cycle: [google](https://willwang-x.github.io/2018/02/shift)
 - connected component: 924, 928
-- **path**: 112
+- **path**: 112, 1022
 - Topology Sort
  
 
