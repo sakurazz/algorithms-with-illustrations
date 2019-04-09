@@ -34,15 +34,53 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 
 ## 最佳实践
 
+- top down 
+- bottom up
+- 2D to 1D
+- 1D to O(1)
+
 ### top down 
 ``` python
+def min_edit_dist(self, word1: str, word2: str) -> int:
+    memo = {}
+    def dp(i, j):
+        if i == len(word1) or j == len(word2):
+            memo[(i,j)] = max(len(word1) - i, len(word2) - j)
+        if (i, j) not in memo:
+            if word1[i] == word2[j]:
+                memo[(i, j)] = dp(i+1, j+1)
+            else:
+                memo[(i, j)] = 1 + min(dp(i+1, j), dp(i, j+1), dp(i+1, j+1))
+        return memo[(i,j)]
+    return dp(0, 0)
 ```
 
 ### bottom up 
 ``` python
+def min_edit_dist(self, word1: str, word2: str) -> int:
+    M, N = len(word2), len(word1)
+    
+    # array to store the convertion history
+    dp = [[0] * (M + 1) for _ in range(N + 1)]
+    
+    # init boundaries
+    for i in range(N + 1):
+        dp[i][0] = i
+    for j in range(M + 1):
+        dp[0][j] = j
+    
+    # DP compute
+    for i in range(1, N+1):
+        for j in range(1, M+1):
+            if word1[i-1] == word2[j-1]:
+                dp[i][j] = dp[i-1][j-1]
+            else:
+                dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])
+    return dp[-1][-1]
 ```
 
 ## 木桩训练
+
 
 ## Explain 
 
