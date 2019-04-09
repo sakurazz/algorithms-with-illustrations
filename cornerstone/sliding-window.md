@@ -2,39 +2,64 @@
 
 ![sliding window](https://i.imgur.com/pWFuBCj.png)
 
-<center>在LinkedList中，就是<b>快慢指针</b>，在ArrayList中，就是<b>移动窗口</b>。</center>
-	
-<center>  在生活中，就是<b>骑驴找马</b>。 🦄  </center>
-<center> <b> (maintain a job while looking for a better one)
-  </b> </center>
+## 基础知识
 
-## 1. 模版 
+在LinkedList中，就是<b>快慢指针</b>，
+
+在ArrayList中，就是<b>移动窗口</b>。
+
+在生活中，就是<b>骑驴找马</b>。 🦄  
+
+## 典型应用
+
+- 快慢指针
+- string
+
+## 最佳实践
+
+### longest 
+
 ``` python 
 def sliding_window(arr):
 
 	longest = 0
-	start = 0
+	head = 0
 	visited = {}
 	# variable to count the condition 
 	
-	for i, num in enumerate(arr):
+	for tail, num in enumerate(arr):
 		# do sth. for num
 	
 		while not condition:
 			# do sth. 
 		  
-		longest = max(longest, i - start + 1)
+		longest = max(longest, tail - head + 1)
 		
 	return longest 
 ```
 
-## 2. 典型题目
+### shortest 
 
-Check [76. Minimum Window Substring](https://willwang-x.github.io/2018/03/fast-and-slow)
+``` python 
+def sliding_window(arr):
 
+	shortest = 0
+	head = 0
+	seats = {}
+	count = 0 
+	# variable to count the condition 
+	
+	for tail, num in enumerate(arr):
+		# do sth. for num
+	
+		while condition:
+			shortest = min(shortest, tail - head + 1)
+			# do sth.
+			
+	return shortest 
+```
 
-
-## 3. 木桩训练
+## 木桩训练
 
 1. [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)	
 1. [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) : 快慢指针, 注意Dummy Node.
@@ -45,3 +70,4 @@ Check [76. Minimum Window Substring](https://willwang-x.github.io/2018/03/fast-a
 1. 438 Find All Anagrams in a String
 1. [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/)
 1. [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
+2. LC76
