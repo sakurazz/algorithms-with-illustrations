@@ -3,9 +3,11 @@
 
 * [ ] 将《element》中的习题整理出来。
 
----
+
 
 ![linked list](https://i.imgur.com/xwQ842u.png)
+
+> A linked list is a linear data structure, the elements are not stored **at contiguous memory locations**. The elements in a linked list are linked using **pointers**.
 
 ## 基础知识
 
@@ -204,5 +206,9 @@ def deleteNode(self, key):
 
 [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/description/)
 
-## Reference 
+## Explain
+
+## Q&A
+
+## Thanks 
 
