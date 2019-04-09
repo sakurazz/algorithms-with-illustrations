@@ -22,5 +22,6 @@
 * 典型应用: Applications, Base
 * 最佳实践: Best Practice, Maps 
 * 木桩训练: Typical problems, Practice
+* Explain: The best way to learn is to teach!
 * Q&A: Question
 * Thanks: Read More 
