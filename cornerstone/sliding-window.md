@@ -71,3 +71,21 @@ def sliding_window(arr):
 1. [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/)
 1. [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
 2. LC76
+
+## Explain 
+
+- [LC76. Minimum Window Substring](https://www.pramp.com/challenge/wqNo9joKG6IJm67B6z34)
+	- We scan the input string `str` from left to right while maintaining two indices - `headIndex` and `tailIndex`.
+	- At each iteration, we **examine** a temporary substring `[str.charAt(headIndex),..., str.charAt(tailIndex)]` and **keep a copy of the shortest** valid substring we’ve seen so far. **Said differently**, we keep incrementing `tailIndex` until the above substring contains every unique character in `arr`.
+	- If the size of **the resulting substring** equals to `arr.length` then we return it since **by definition** there can’t be a shorter valid substring (otherwise, it’ll be missing 1 or more unique characters from arr).
+	- **Once we found a valid substring, we increment `headIndex` as long the substring remains valid.** At every increment we also **check if the current valid substring** is shorter than the previously kept one. If it is, we **update result to be the current substring**.
+	- We keep repeating the above steps in a loop until we either reach the end of the input string `str` or return the shortest valid substring, **whichever comes first.**
+	- To examine the **validity** of `str` substrings we use 2 **counters**:
+		- `uniqueCounter` (Integer) - the number of unique characters of `arr` that our current substring contains.
+		- `countMap` (Map/Hash Table) - the number of occurrences of each character of `arr` in our current substring.
+	- source: pramp
+ 
+
+## Q&A
+
+## Thanks
