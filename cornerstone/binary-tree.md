@@ -1,7 +1,9 @@
 # Binary tree
 
 
-## Points
+> A tree whose elements have at most 2 children.
+
+## 基础知识
 
  **Recursive algorithms** are well-suited to problems on trees. Remember to include space implicitly allocated on the **function call stack** when doing space complexity analysis. 
  
@@ -13,7 +15,7 @@ If each node has a **parent field**, use it to make your code simpler, and to re
 
 It's easy to make the **mistake** of treating a node that has a single child as a leaf. 
 
-## key words 
+## 典型应用
 
 
 - 基本操作(寻找特定节点)
@@ -62,7 +64,13 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 * Convert: 树和其他数据结构的相互转换 	
 * 树的路径问题
 
-
+## 最佳实践
 
 ## 木桩训练
+
+## Explain
+
+## Q&A
+
+## Thanks
 
