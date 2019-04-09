@@ -94,10 +94,8 @@ def min_edit_dist(self, word1: str, word2: str) -> int:
 	* Our solution will be built in two steps: first we’ll **find the editing distance**, and then **use it to construct the answer**. 
 	* First, let `dp(i, j)` = the minimum number of edits required **for the problem with strings** `source[i:]` and `target[j:]`. 
 	* We will perform what is known as “top-down dynamic programming.” What this means is: Since `dp(i, j)` may depend only on the values of `source[i]`, `target[j]`, `dp(i+1, j)`, `dp(i, j+1)`, and `dp(i+1, j+1)`, we can write a function `dp(i, j)` that returns the desired answer **recursively** **in terms of** these values. 
-	* **In general**, 
-	* when `source[i] == target[j]`, then `dp(i, j) = dp(i+1, j+1)`, because we simply write `source[i]`. 
-	* When `source[i] != target[j]`, then we **either** edited `source[i]` (subtraction) and **have the problem of transforming** `source[i+1:]` to `target[j:]` left over (which has answer `dp(i+1, j)`), **or** we edited `target[j]` (addition) and have the problem of transforming `source[i:]` to `target[j+1:]` left over (which has answer `dp(i, j+1)`).
-	* Constructing the Answer
+	* **In general**, when `source[i] == target[j]`, then `dp(i, j) = dp(i+1, j+1)`, because we simply write `source[i]`. When `source[i] != target[j]`, then we **either** edited `source[i]` (subtraction) and **have the problem of transforming** `source[i+1:]` to `target[j:]` left over (which has answer `dp(i+1, j)`), **or** we edited `target[j]` (addition) and have the problem of transforming `source[i:]` to `target[j+1:]` left over (which has answer `dp(i, j+1)`).
+	* **Constructing the Answer**
 	* Now we need to build our answer. We should **iterate through the source and target**, and in each step decide whether we need to delete or add another letter.
 	* To figure this out, we need to **leverage this information** available in `dp(i, j)`. When we have a decision to make between subtracting `source[i]` or adding `target[j]`, we will use our knowledge of the minimum edit distances `dp(i+1, j)` and `dp(i, j+1)` to make our decision.
 
