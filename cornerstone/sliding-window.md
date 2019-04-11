@@ -4,11 +4,15 @@
 
 ## 基础知识
 
-在LinkedList中，就是<b>快慢指针</b>，
+In any sliding window based problem we have two pointers. 
 
-在ArrayList中，就是<b>移动窗口</b>。
+One `right` pointer whose job is to expand the current window and then we have the `left` pointer whose job is to **contract** a given window. 
 
-在生活中，就是<b>骑驴找马</b>。 🦄  
+At any point in time only one of these pointers move and the other one remains fixed. 
+
+We keep **expanding** the window by moving the right pointer. When the window has all the desired characters, we contract (if possible) and save the smallest(or biggest) window till now.
+
+在LinkedList中，就是<b>快慢指针</b>，在ArrayList中，就是<b>移动窗口</b>。在生活中，就是<b>骑驴找马</b>。 🦄  
 
 ## 典型应用
 
@@ -73,6 +77,8 @@ def sliding_window(arr):
 2. LC76
 
 ## Explain 
+
+
 
 - [LC76. Minimum Window Substring](https://www.pramp.com/challenge/wqNo9joKG6IJm67B6z34)
 	- We scan the input string `str` from left to right while maintaining two indices - `headIndex` and `tailIndex`.
