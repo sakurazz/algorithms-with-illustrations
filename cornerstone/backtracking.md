@@ -30,6 +30,43 @@ def backtrack(path, nums, res):
 	return res 
 ```
 
+- simulate instead of passing a new list 
+
+``` python
+# use one to simulate `push`, `pop` instead of passing a new list.\
+# more effective 
+
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        res = []
+        def backtrack(path):
+            if len(path) == len(nums):
+                res.append(path[:])
+            for num in set(nums) - set(path):
+                path.append(num)
+                backtrack(path)
+                path.pop()
+            return res 
+        return backtrack([])
+```
+- use index instead of passing a list 
+ 
+``` python
+def permute(self, nums):
+
+    def backtrack(start, end):
+        if start == end:
+            ans.append(nums[:])
+        for i in range(start, end):
+            nums[start], nums[i] = nums[i], nums[start]
+            backtrack(start+1, end)
+            nums[start], nums[i] = nums[i], nums[start]
+            
+    ans = []
+    backtrack(0, len(nums))
+    return ans
+```
+
 
 ### path: subset(order)
 
