@@ -114,14 +114,18 @@ def backtrack(path, i, res, s):
 
 ## 木桩训练
 
-* [78. Subsets](https://leetcode.com/problems/subsets/)
-* [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+* [31. Next Permutation](https://leetcode.com/problems/next-permutation/)
+* [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+* [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
 * [46. Permutations](https://leetcode.com/problems/permutations/)
 * [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
-* [Combination Sum](https://leetcode.com/problems/combination-sum/)
-* [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+* [60. Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)
+* [78. Subsets](https://leetcode.com/problems/subsets/)
+* [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
 * [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
-* 
+* [266. Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)
+* [267. Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)
+
 
 
 ## Explain
