@@ -19,6 +19,7 @@ A heap is a good choice when you need to compute the k **largest** or k **smalle
 
 - [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 - [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+- [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
 
 ## Explain
 
