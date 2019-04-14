@@ -1,6 +1,12 @@
 # Graph 
 
-## Representation 
+## 基础知识
+
+## 典型应用
+
+## 最佳实践
+
+### representation 
 
 * adjacency matrix (effective with **dense** graphs)
 * adjacency list (effective with **sparse** graphs)
@@ -23,3 +29,9 @@ graph = {'A': set(['B', 'C']),
          'E': set(['B', 'F']),
          'F': set(['C', 'E'])}
 ```
+
+## Explain
+
+## Q&A
+
+## Thanks
