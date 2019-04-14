@@ -66,6 +66,12 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 
 ## 最佳实践
 
+- search 
+- recursively 
+- construct 
+- convert 
+- path 
+
 ## 木桩训练
 
 ## Explain
