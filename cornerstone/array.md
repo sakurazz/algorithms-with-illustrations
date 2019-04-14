@@ -2,7 +2,7 @@
 
 ![quick sort](https://i.imgur.com/mWp1gdR.gif)
 
-## Summary 
+## 基础知识
 
 Array problems often have simple brute-force solutions that use 0(n) space, but subtler solutions that **use the array itself** to **reduce space** complexity to 0(1). [Problem 1]
 
@@ -32,24 +32,37 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 *  processing the digits from the back 
 *  simulate the specification
 
+## 典型应用
 
-## [Java API](https://i.imgur.com/VNGOnCx.png)
+- substring(condition)
+- sorted array
 
-* Arrays
-	* asList()
-	* binarySearch(A, 641)
-	* copyOf(A)
-	* copyOFRange(A, 1, 5)
-	* equals(A, B)
-	* fill(A, 42)
-	* find(A, 28)
-	* sort(A)
-	* sort(A, cmp)
-	* toString() 
-* ArrayList 
-* List 
-* `new int[]{1,2,3}` : allocating and initializating an array 
-* `new Integer[3][]` : creates an array which will hold three rows, each of these must be explicitly assigned.
+## 最佳实践
+
+- [libraries]((https://i.imgur.com/VNGOnCx.png))
+- out of bounds
+- sort the array first 
+- pre-computation using hashing or a prefix/suffix sum/product
+- array used as a hashmap
+- sliding window
+- two pointers
+- use **index** instead of slicing when possible (O(1) vs O(n))
+- processing the element from the back
+- simulate
+- binary search 
+
+### out of bounds
+
+``` python
+def is_in(x, y, matrix):
+	return 0 <= x < len(matrix) and 0 <= y < len(matrix[0])
+```
+
+### corner case 
+
+- Empty sequence.
+- Sequence with 1 or 2 elements.
+- Sequence with repeated elements.
 
 ## 木桩训练
 
@@ -63,8 +76,6 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 8. [204. Count Primes](https://leetcode.com/problems/count-primes/description/) :  print all primes under N  ❤️
 9. [Reorder an array according to given indexes](https://www.geeksforgeeks.org/reorder-a-array-according-to-given-indexes/) Variant: Given an array A of integers representing a permutation, update A to represent the inverse permutation using only constant additional storage. 
 10. [31. Next Permutation](https://leetcode.com/problems/next-permutation/description/)
-	- Variant: Compute the fcth permutation under dictionary ordering, starting from the identity permutation (which is the first permutation in dictionary ordering).
-	- Variant: Given a permutation p, return the permutation corresponding to the previous permutation of p under dictionary ordering.
 11. Sample offline data
 12. Sample online data 
 13. Compute a random permutation
@@ -72,14 +83,11 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 15. Cenerate nonuniform random numbers
 16. [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) 
 17. [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) ❤️
-	* Variant: Given a sequence of integers P, compute a 2D array A whose spiral order is P. (Assume the size of P is n2 for some integer «.)
-	* Variant: Write a program to enumerate the first n pairs of integers (a,b) in spiral order, starting from (0, 0) followed by (1, 0). For example, if n = 10, your output should be (0, 0), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0), (-1, 1), (0, 1), (1, 1), (2, 1).
-	* Variant: Compute the spiral order for an m X n 2D array A.
-	* Variant: Compute the last element in spiral order for an m X n 2D array A in 0(1) time.
-	* Variant: Compute the fcth element in spiral order for an mxn 2D array A in 0(1) time. 
-
 18. [48. Rotate Image](https://leetcode.com/problems/rotate-image/description/)
-	* Variant:Implement an algorithm to reflect A,assumed to be an nXn 2Darray,about the horizontal axis of symmetry. Repeat the same for reflections about the vertical axis, the diagonal from top-left to bottom-right, and the diagonal from top-right to bottom-left.
- 	 
 19. compute a row in pascal's triangle:  Compute the nth row of Pascal's triangle using 0(n) space. ❤️
 
+## Explain
+
+## Q&A
+
+## Thanks
