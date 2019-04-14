@@ -1,12 +1,20 @@
 # Hashmap 
 
+## 基础知识
 
+- deal with exception
+- collision 
+- hash function
+- open hashing or closed hashing
+- loading factor
 
+## 典型应用
 
-##  key word 
+* cache: [523](https://leetcode.com/problems/continuous-subarray-sum/description/)
 
-* 保存历史: [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/description/)
+## 最佳实践
 
+- design a hashmap
 
 ## 木桩训练
 
@@ -26,7 +34,6 @@
 - 454 4Sum II 
 - 535 Encode and Decode TinyURL
 
-
-## 实际应用
+## More
 
 - [instant-runoff voting](https://repl.it/@WillWang42/instant-runoff-voting): the hashtable is a good way to speed up calculation
