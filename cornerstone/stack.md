@@ -1,9 +1,11 @@
 # Stack 
-<center>
+
 ![stack](https://i.imgur.com/lrLuOE0.gif)
-</center>
+
 
 > when to pop and push?
+> 
+> **Stack** is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
 
 ## 基础知识
 
@@ -22,7 +24,7 @@ Consider augmenting the basic stack or queue data structure to support additiona
 - **nearest largest**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
 - save for later:
 - top-down (DFS?): 
-- special order: 
+- special order:
 
 ## 最佳实践
 
@@ -53,6 +55,7 @@ for i, num in enumerate(input):
 * [770.Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) (系列)
 * [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 🌟
 
+## Explain
 
 ## Q & A
 
@@ -61,6 +64,6 @@ for i, num in enumerate(input):
 2. stack的优化有什么？
 	- 如果不关注过程，只在乎结果。可以使用变量`count`来标记，空间由`O(n)`到`O(1)`, 如[LC 1021](https://leetcode.com/problems/remove-outermost-parentheses/), 请试着用stack和count分别解决。是不是有一种在DP中，二维cache压缩成一维的感觉。
 
-## Reference
+## More
 
 - [Stack and Queue, Why?](https://stackoverflow.com/questions/2074970/stack-and-queue-why): DFS + stack, BFS + queue	
