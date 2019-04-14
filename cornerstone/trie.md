@@ -28,7 +28,7 @@ The final conclusion is regarding tries data structure is **that they are faster
 ## 典型应用
 
 - implement trie [208](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
-- search: 421 
+- search(string): 421 
 
 
 ## 最佳实践
@@ -92,16 +92,29 @@ class Trie:
 # param_2 = obj.search(word)
 # param_3 = obj.startsWith(prefix) 
 ```
+### build a trie
+
+inspired by [severb](https://leetcode.com/problems/add-and-search-word-data-structure-design/discuss/59555/python-trie-with-defaultdict-trick)
+
+``` python
+import collections
+
+def _trie():
+    return collections.defaultdict(_trie)
+
+TERMINAL = None
+```
 
 ## 木桩训练
 
-- [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/)
+- [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/) 🌟
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 - [642. Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/)
 - [211. Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/)
 
-## Q&A 
+## Explain
 
+## Q&A 
 
 ## Read More 
 
