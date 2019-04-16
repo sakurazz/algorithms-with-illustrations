@@ -18,6 +18,8 @@
 * [How Unix programmers at restaurants search menus for their favorite plate](https://dev.to/miguelmota/how-unix-programmers-at-restaurants-search-menus--46ad): 餐馆的Unix程序员如何搜索菜单中最喜欢的盘子？ 字符串处理在命令行中的应用
 * [计算机科学中最重要的 32 个算法](https://www3.risc.jku.at/people/ckoutsch/stuff/e_algorithms.html): 奥地利符号计算研究所（Research Institute for Symbolic Computation，简称 RISC）的 Christoph Koutschan 博士在自己的页面上发布了一篇文章，提到他做了一个调查，参与者大多数是计算机科学家，他请这些科学家投票选出最重要的算法。
 * [Fast Autocomplete Search for Your Website](https://24ways.org/2018/fast-autocomplete-search-for-your-website/): build a search engine that’s fast enough to support autocomplete (a.k.a. typeahead) search queries and can be hosted for free. 
+* [dumb-crypto](https://github.com/indutny/dumb-crypto): Dumb, but easily verifiable implementations of crypto algorithms
+
 
 ## 思维方式 from 现实
 
