@@ -1,10 +1,18 @@
 # Bit 
 
-<img src="https://i.imgur.com/S6s8tb6.png" alt="bit" width="200"/>
+<img src="https://i.imgur.com/S6s8tb6.png" alt="bit" width="400"/>
+
+> or, and, exculsive-or, not, <<, >>
 
 ## 基础知识
 
+source: [wiki](https://www.wikiwand.com/en/Bit_manipulation)
+
 Questions involving binary representations and bitwise operations are asked sometimes and you must be absolutely familiar with how to convert a number **from decimal form into binary form (and vice versa)** in your chosen programming language.
+
+Bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a word. Computer programming tasks that require bit manipulation include **low-level device control**, **error detection** and **correction** algorithms, **data compression**, **encryption** algorithms, and **optimization**. For most other tasks, modern programming languages allow the programmer to work directly with abstractions instead of bits that represent those abstractions. Source code that does bit manipulation makes use of the bitwise operations: **AND**, **OR**, **XOR**, **NOT**, and **bit shifts**.
+
+Bit manipulation, in some cases, can obviate or reduce the need to loop over a data structure and can give many-fold speed ups, as bit manipulations are processed in parallel, but the code can become more difficult to write and maintain.
 
 ## 典型应用
 
@@ -19,6 +27,9 @@ Some helpful utility snippets:
 - Turn off k<sup>th</sup> bit: `num &= ~(1 << k)`.
 - Toggle the k<sup>th</sup> bit: `num ^= (1 << k)`.
 - To check if a number is a power of 2, `num & num - 1 == 0`.
+- **Remove** last **1** bit: `A&(A-1)` e.g. 111 & 110, 110 & 101
+- Get all 1-bits: `~0`
+
 
 ``` python
 # binary/hexadecimal to decimal 
@@ -28,6 +39,36 @@ int('F', 16) # 15
 # decimal to binary
 bin(10)[2:] # '1010'
 ```
+### count `1`s
+
+``` python 
+def ones_in_bin(num):
+	count = 0
+	while n:
+		n = n&(n-1) # remove last one
+		count += 1
+	return count
+```
+
+### get sum of a and b 
+
+``` python
+def get_sum(a, b):
+  if b == 0: return a 
+  return get_sum(a^b, (a&b)<<1) # sum/remainder, carry/quotient
+```
+
+### missing number 
+
+``` python
+def missing_number(nums):
+	res = 0 
+	for i, num in enumerate(nums):
+		res ^= i ^ num
+	return res
+```
+
+- [more tricks @repl](https://repl.it/@WillWang42/bit-manipulation)
 
 ### corner cases
 
@@ -53,6 +94,7 @@ bin(10)[2:] # '1010'
 
 ## Q&A
 
-## Thanks 
+## More 
 
 - [handbooks](https://github.com/yangshun/tech-interview-handbook/tree/master/algorithms)
+- [A summary: how to use bit manipulation to solve problems easily and efficiently](https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
