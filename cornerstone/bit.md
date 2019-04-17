@@ -6,9 +6,9 @@
 
 Questions involving binary representations and bitwise operations are asked sometimes and you must be absolutely familiar with how to convert a number **from decimal form into binary form (and vice versa)** in your chosen programming language.
 
-
 ## 典型应用
 
+- XOR
 
 ## 最佳实践
 
@@ -43,6 +43,13 @@ bin(10)[2:] # '1010'
 - [1017. Convert to Base -2](https://leetcode.com/problems/convert-to-base-2/)
 
 ## Explain
+
+- [268. Missing Number](https://leetcode.com/problems/missing-number/)
+	- We can **harness the fact that XOR** is its own inverse to find the missing element in linear time.
+	- Because we know that `nums` contains n numbers and that it is missing exactly one number on the range [0..n−1], we know that *n* definitely replaces the missing number in `nums`. Therefore, if we initialize an integer to n and XOR it with every index and value, we will be left with the missing number. 
+
+
+
 
 ## Q&A
 
