@@ -17,7 +17,7 @@
 ### data structrue
 
 <h1 align="center">
-  <a href="https://www.wikiwand.com/en/List_of_data_structures"><img src="https://i.imgur.com/iJ5pGpD.png" alt="list of data structures" width=300"></a>
+  <a href="https://www.wikiwand.com/en/List_of_data_structures"><img src="https://i.imgur.com/iJ5pGpD.png" alt="list of data structures"></a>
 </h1>
 
 
