@@ -16,11 +16,16 @@
 
 ### data structrue
 
-- binary/Bit, string, array, linked list, queue, stack, 
-- set, disjoint set, 
-- graph, 
-- tree, binary tree, binary search tree, heap, trie, binary indexed tree, segment tree
-- sequence, hash
+<h1 align="center">
+  <a href="https://www.wikiwand.com/en/List_of_data_structures"><img src="https://i.imgur.com/iJ5pGpD.png" alt="list of data structures" width=300"></a>
+</h1>
+
+
+- binary/Bit, string, array, linked list, queue, stack; 
+- set, disjoint set;
+- graph;
+- tree, binary tree, binary search tree, heap, trie, binary indexed tree, segment tree;
+- sequence, hash.
 
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
