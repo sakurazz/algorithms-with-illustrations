@@ -72,6 +72,35 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 - convert 
 - path 
 
+### pass info to children, `target -= node.val` 
+
+``` python
+def max_ancestor_diff(self, node, high, low):
+    if not node:
+        return high - low
+    high = max(high, node.val)
+    low  = min(low,  node.val)
+    return max(max_ancestor_diff(node.left,  high, low), \
+               max_ancestor_diff(node.right, high, low))
+```
+
+### get info from children, `sum(path)`
+
+``` python
+def min_depth(self, root: TreeNode) -> int:
+    if not root: return 0
+        
+    children = [root.left, root.right]
+    if not any(children): return 1
+
+    min_ = float('inf')
+    for c in children:
+        if c:  min_ = min(min_depth(c), min_)
+        
+    return min_ + 1
+```
+
+
 ## 木桩训练
 
 ## Explain
