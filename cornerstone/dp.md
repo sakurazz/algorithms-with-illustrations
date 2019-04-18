@@ -4,6 +4,10 @@
 <img src="https://i.imgur.com/KHu7mL1.jpg" alt="dynamic programming" width="200"/> 
 </center>
 
+> Dynamic Programming is just a fancy way to say '**remembering stuff to save time later**'.
+> 
+> via [How should I explain dynamic programming to a 4-year-old?](https://qr.ae/TWTdxP)
+
 ## 基础知识
 
 - [Dynamic Programming – 7 Steps to Solve any DP Interview Problem](http://blog.refdash.com/dynamic-programming-tutorial-example/)
