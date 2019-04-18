@@ -40,6 +40,131 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 - recursively (reverse linked-list)
 - count, **reverse**, find the middle, merge
 
+### node class 
+
+``` python 
+Class Node:
+	def __init__(self, val):
+		self.val = val
+		self.next = None 
+```
+
+### reverse 
+
+``` python
+def reverse_node(head):
+	cur, pre = head, None
+	while cur:
+		cur.next, pre, cur = pre, cur, cur.next 
+	return pre
+"""
+   pre   -> cur -> cur.nxt 
+ cur.nxt <- pre <- cur 
+"""	
+```
+
+### merge
+
+``` python
+def merge_two(l1: ListNode, l2: ListNode) -> ListNode:
+    if l1 and l2:
+        if l1.val > l2.val: 
+            l1, l2 = l2, l1 
+        l1.next = merge_two(l1.next, l2)
+    return l1 or l2 
+```
+
+### add
+
+``` python
+def add_two_numbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+    carry = 0
+    n = dummy = ListNode(0)
+    while l1 or l2 or carry:
+        v1 = v2 = 0
+        if l1:
+            v1 += l1.val
+            l1 = l1.next 
+        if l2:
+            v2 += l2.val
+            l2 = l2.next 
+        carry, val = divmod(v1+v2+carry, 10)
+        n.next = ListNode(val)
+        n = n.next
+    return dummy.next 
+```
+
+### delete 
+
+``` python
+# to delete a node (except the tail) in a singly linked list, 
+# given only access to that node.
+def delete_node(self, node):
+    node.val  = node.next.val
+    node.next = node.next.next
+```
+
+### middle
+
+``` python
+def middle_node(self, head: ListNode) -> ListNode:
+    slow = fast = head
+    while fast and fast.next:
+        slow = slow.next 
+        fast = fast.next.next 
+    return slow
+```
+
+### reverse k 
+
+``` python
+def reverse_k_group(self, head: ListNode, k: int) -> ListNode:
+    # 1. edge case 
+    if k < 2: return head 
+    
+    # 2. base case 
+    node = head 
+    for _ in range(k):
+        if not node: 
+            return head
+        node = node.next 
+    
+    # 3. reverse 
+    cur, pre = head, None
+    for _ in range(k):
+        cur.next, pre, cur = pre, cur, cur.next 
+    
+    # 4. recursive 
+    head.next = reverse_k_group(cur, k)
+    return pre
+```
+
+### sort 
+
+``` python
+# merge sort
+def sort_list(self, head):
+    """
+    :type head: ListNode
+    :rtype: ListNode
+    """
+    # base case 
+    if not head or not head.next:
+        return head
+
+    # divide list into two parts
+    fast, slow = head.next, head
+    while fast and fast.next:
+        fast = fast.next.next
+        slow = slow.next
+    second = slow.next
+    slow.next = None
+
+    l = self.sortList(head)
+    r = self.sortList(second)
+    return self.merge_two(l, r)
+``` 
+
 ### corner cases
 
 - `None`
@@ -47,9 +172,11 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 - Two nodes
 - Linked list has cycle. Clarify with the interviewer whether there can be a cycle in the list. Usually the answer is no.
 
+
 ## 木桩训练
 
 * [ ] 将《element》中的习题整理出来。
+* 
 
 
 ## Explain
