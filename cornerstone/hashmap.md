@@ -1,5 +1,9 @@
 # Hashmap 
 
+<img src="https://i.imgur.com/l1598o9.gif" alt="hash" width="500"/> <br> 
+
+by [Inside python dict](https://just-taking-a-ride.com/inside_python_dict/chapter2.html)
+
 ## 基础知识
 
 - deal with exception
@@ -14,7 +18,37 @@
 
 ## 最佳实践
 
+- prefix sum
+- lowercase hashmap
 - design a hashmap
+
+### prefix sum
+
+``` python 
+def max_subarray_len(nums: List[int], k: int) -> int:
+    prefix_sum = {0: -1} # sum_ : index
+    sum_ ,size = 0, 0
+    for i, num in enumerate(nums):
+        sum_ += num
+        if sum_ - k in prefix_sum:
+            size = max(size, i - prefix_sum[sum_ - k])
+        if sum_ not in prefix_sum:
+            prefix_sum[sum_] = i 
+    return size
+```
+
+### lowercase hashmap
+
+``` python 
+def group_anagrams(self, strs: List[str]) -> List[List[str]]:
+    ans = collections.defaultdict(list)
+    for s in strs:
+        count = [0] * 26
+        for c in s:
+            count[ord(c) - ord('a')] += 1
+        ans[tuple(count)].append(s)
+    return list(ans.values())
+```
 
 ## 木桩训练
 
