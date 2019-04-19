@@ -3,15 +3,22 @@
 
 ## Best practice 
 
-edge case: [], [[]]
+### edge case: [], [[]]
 
 ``` python 
 if not matrix or not matrix[0]:
 	return 0
 ```
 
+### visited 
 
-get valid neighbors
+``` python
+m = len(matrix)
+n = len(matrix[0]) if m else 0 # []
+visited = [[False] * n for _ in range(m)]
+```
+
+### get valid neighbors
 
 ``` python 
 R = len(matrix)
@@ -23,7 +30,7 @@ def neighbors(r, c):
 	        yield nr, nc
 ```
 
-get component 
+#### get component 
 
 ``` python 
 def bfs(x, y):
