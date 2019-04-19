@@ -5,7 +5,7 @@
 
 > when to pop and push?
 > 
-> **Stack** is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+> **Stack** is a linear data structure which follows **a particular order** in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
 
 ## 基础知识
 
@@ -23,26 +23,67 @@ Consider augmenting the basic stack or queue data structure to support additiona
 - LIFO: 901
 - **nearest largest**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
 - save for later:
-- top-down (DFS?): 
+- top-down (DFS-style?): 
 - special order:
 
 ## 最佳实践
 
+### general (DFS style)
+
 ``` python 
 # to maintain an order in the stack (= save for later)
 # e.g. LC1019, nearest largest 
-def compare():
-	pass 
-	
-def deal():
-	pass
-	
 for i, num in enumerate(input):
+	# base case 
 	while stack and compare(num, stack[-1]):
 		# hit the bottom 
 		last = stack.pop()
-		deal(last, input)
+		# caculate...
+	# general case 
 	stack.append(i)
+```
+
+### dummy value 
+
+``` python
+def largest_rectangle_area(self, heights: List[int]) -> int:
+    heights.append(0)             # dummy value 
+    stack = [(float("-inf"), -1)] # dummy value: val, pos 
+    ans = 0
+    for i, num in enumerate(heights):
+        while num < stack[-1][0]: # no while stack and ...
+            h = stack.pop()[0]
+            w = i - stack[-1][1] - 1
+            ans = max(ans, h * w)
+        stack.append((num, i))
+    return ans
+```
+
+### save for later 
+
+``` python
+def decode_string(self, s: str) -> str:
+    stack = []
+    for i, char in enumerate(s):
+        if char == "]":
+            letters = ""
+            while stack and stack[-1] != "[":
+                letters = stack.pop() + letters
+            stack.pop() # pop "["
+            digits = ""
+            while stack and stack[-1].isdigit():
+                digits = stack.pop() + digits 
+            stack.append(int(digits) * letters)
+        else:
+            stack.append(char)
+    return "".join(stack)
+```
+
+```
+s = "3[a]2[bc]", return "aaabcbc".
+s = "3[a2[c]]", return "accaccacc".
+s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
+s = "10[a]", return "aaaaaaaaaa".
 ```
 
 ## 木桩训练
