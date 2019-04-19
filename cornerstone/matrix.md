@@ -10,12 +10,12 @@ if not matrix or not matrix[0]:
 	return 0
 ```
 
-### visited 
+### visited / seen
 
 ``` python
 R = len(matrix)
 C = len(matrix[0]) if m else 0 # []
-visited = [[False] * C for _ in range(R)]
+seen = [[False] * C for _ in range(R)]
 ```
 
 ### get valid neighbors
