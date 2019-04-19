@@ -48,6 +48,27 @@ def find_kth_largest(self, nums: 'List[int]', k: 'int') -> 'int':
 # 	return heapq.nlargest(k, nums)[-1]    
 ```
 
+### Dijkstra
+
+``` python
+def shortest(graph, start, dest):
+	hq = [(0, start)]
+	visited = set()
+	while hq:
+		cost, node = heapq.heappush(hq)
+		if node in visited:
+			continue 
+		if node == dest:
+			return cost
+		visited.add(node)
+		for child, dist in graph[node]:
+			heapq.heappush(hq, (cost+dist, child))
+	return "Not found"
+	
+graph = {1: [[2, 10], [4, 20]]}	
+```
+
+
 ## 木桩训练 
 
 - [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
