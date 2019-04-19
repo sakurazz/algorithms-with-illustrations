@@ -18,7 +18,7 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 ## 典型应用
 
 
-- 基本操作(寻找特定节点)
+- 基本**操作**(寻找特定节点)
 	- [156 upside down] 	
 	- [617 merge]
 	- [669 Trim] 
@@ -35,7 +35,7 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 	- [951 flip](https://leetcode.com/problems/flip-equivalent-binary-trees/)
 	- [971 Flip BT to Preorder]
 	- [99 recover]
-- 查看判断(判断树的性质) 
+- **查看**判断(判断树的性质) 
 	- [96 unique]	 
 	- [965 univalued] 
 	- [104 depth]
@@ -66,12 +66,44 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 
 ## 最佳实践
 
+- 操作，查看，计算
 - search 
 - recursively 
 - construct 
 - convert 
 - path 
 
+### recursive (merge)
+
+``` python
+def merge_trees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
+    if not t1: return t2
+    if not t2: return t1
+    t1.val += t2.val
+    t1.left  = self.merge_trees(t1.left, t2.left)
+    t1.right = self.merge_trees(t1.right, t2.right)
+    return t1
+```
+
+### iterative (view)
+
+``` python
+def right_side_view(self, root: TreeNode) -> List[int]:
+    if not root: return []
+    front = [root]
+    sight = []
+    while front:
+        sight.append(front[-1].val)
+
+        nxt = []
+        for node in front: 
+            if node.left:  nxt.append(node.left)
+            if node.right: nxt.append(node.right)
+        front = nxt 
+
+    return sight 
+
+```
 ### pass info to children, `target -= node.val` 
 
 ``` python
@@ -99,6 +131,13 @@ def min_depth(self, root: TreeNode) -> int:
         
     return min_ + 1
 ```
+
+### corner case 
+
+- root == `None`
+- negative value 
+- empty tree\ single node \ two nodes
+- Very skewed tree (like a linked list).
 
 
 ## 木桩训练
