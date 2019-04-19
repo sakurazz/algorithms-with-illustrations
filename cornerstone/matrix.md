@@ -13,9 +13,9 @@ if not matrix or not matrix[0]:
 ### visited 
 
 ``` python
-m = len(matrix)
-n = len(matrix[0]) if m else 0 # []
-visited = [[False] * n for _ in range(m)]
+R = len(matrix)
+C = len(matrix[0]) if m else 0 # []
+visited = [[False] * C for _ in range(R)]
 ```
 
 ### get valid neighbors
@@ -24,7 +24,7 @@ visited = [[False] * n for _ in range(m)]
 R = len(matrix)
 C = len(matrix[0]) if R  # [[]]
 
-def neighbors(r, c): 
+def neighbor(r, c): 
 	for nr, nc in ((r-1,c),(r,c-1),(r+1,c),(r,c+1)):
 	    if 0 <= nr < R and 0 <= nc < C:
 	        yield nr, nc
