@@ -33,6 +33,43 @@ The final conclusion is regarding tries data structure is **that they are faster
 
 ## 最佳实践
 
+### build a trie
+
+inspired by [severb](https://leetcode.com/problems/add-and-search-word-data-structure-design/discuss/59555/python-trie-with-defaultdict-trick)
+
+``` python
+import collections
+
+def _trie():
+    return collections.defaultdict(_trie)
+
+END = None
+```
+
+
+### [words to trie](https://repl.it/@WillWang42/trie)
+
+``` python
+import collections
+import functools
+
+def build_trie(words):
+  Trie = lambda: collections.defaultdict(Trie)
+  trie = Trie()
+  END = True
+
+  for i, word in enumerate(words):
+      functools.reduce(dict.__getitem__, word, trie)[END] = i
+  
+  for key, val in trie["a"].items():
+    print(key) # True, p, c
+
+words = ["a", "banana", "app", "appl", "ap", "apple", "acd"]
+build_trie(words)
+```
+
+### implement trie
+
 ``` python 
 # 208. Implement Trie (Prefix Tree)
 
@@ -92,25 +129,15 @@ class Trie:
 # param_2 = obj.search(word)
 # param_3 = obj.startsWith(prefix) 
 ```
-### build a trie
-
-inspired by [severb](https://leetcode.com/problems/add-and-search-word-data-structure-design/discuss/59555/python-trie-with-defaultdict-trick)
-
-``` python
-import collections
-
-def _trie():
-    return collections.defaultdict(_trie)
-
-TERMINAL = None
-```
 
 ## 木桩训练
 
+- [211. Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/)
 - [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/) 🌟
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 - [642. Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/)
-- [211. Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/)
+- [720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)
+
 
 ## Explain
 
