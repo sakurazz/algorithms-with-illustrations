@@ -11,7 +11,7 @@ In computer science, a disjoint-set data structure (also called a `union–find`
 
 ## 典型应用
 
-* Find component 
+* Find component (in dynamic graph)
 * Detect cycle for the whole graph
 * MST
 
