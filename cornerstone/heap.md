@@ -91,6 +91,21 @@ class tuplebyfirst(tuple):
         return self[0] < other[0]    
 ```
 
+``` python
+# heapq.merge(*data)
+def merge_k_lists(self, lists: List[ListNode]) -> ListNode:
+    def vals(node):
+        while node:
+            yield node.val
+            node = node.next
+
+    dummy = last = ListNode(None)
+    for val in heapq.merge(*map(vals, lists)):
+        last.next = last = ListNode(val)
+
+    return dummy.next
+```
+
 ## 木桩训练 
 
 - [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
