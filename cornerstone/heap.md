@@ -20,6 +20,7 @@ A heap is a good choice when you need to compute the k **largest** or k **smalle
 - min heap
 - max heap
 - shortest path + Dijkstra
+- merge k sorted
 
 
 ### min heap: benchmark
@@ -68,6 +69,27 @@ def shortest(graph, start, dest):
 graph = {1: [[2, 10], [4, 20]]}	
 ```
 
+### merge k sorted 
+
+``` python
+def merge_K_lists(self, lists: List[ListNode]) -> ListNode:
+    dummy = cur = ListNode(0)
+    hq = [tuplebyfirst((n.val, n)) for n in lists if n]
+    heapq.heapify(hq)
+    
+    while hq:
+        v, n = heapq.heappop(hq)
+        if n.next:
+            heapq.heappush(hq, tuplebyfirst((n.next.val, n.next)))
+        cur.next = n
+        cur = cur.next 
+    return dummy.next
+
+class tuplebyfirst(tuple):
+    "tuple that sorts only on first element"
+    def __lt__(self, other):
+        return self[0] < other[0]    
+```
 
 ## 木桩训练 
 
