@@ -20,7 +20,7 @@
 * 直觉输入: Insight
 * 基础知识: Notes, Core 
 * 典型应用: Applications, Base
-* 最佳实践: Best Practice, Maps 
+* 最佳实践: Best Practice, Maps (+ try 1)
 * 木桩训练: Typical problems, Practice
 * Explain: The best way to learn is to teach!
 * Q&A: Question
