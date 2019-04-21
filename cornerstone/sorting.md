@@ -81,6 +81,12 @@ It's often the case that sorting can be implemented in **less space** than requi
 9. implement a fast sorting algorithm for lists
 10. compute a salary threshold
 
+
+## Explain
+
+- Leverage the sort function of your languages library. Usually, it will have support for either a custom comparison function.
+
+
 ## Thanks 
 
 - [经典排序算法动画](https://github.com/MisterBooo/Article)
