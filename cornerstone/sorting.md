@@ -66,6 +66,7 @@ It's often the case that sorting can be implemented in **less space** than requi
 
 - [insertion sort](https://repl.it/@WillWang42/insertion-sort)
 - [selection sort](https://repl.it/@WillWang42/selection-sort)
+- custom sort 
 
 ## 木桩训练
 

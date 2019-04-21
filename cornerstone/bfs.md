@@ -64,7 +64,7 @@ def bfs_paths(graph, start, goal):
             if nxt == goal:
                 yield path + [nxt]
             else:
-                queue.append((next, path + [nxt]))
+                queue.append((nxt, path + [nxt]))
 
 list(bfs_paths(graph, 'A', 'F')) # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]
 ```
