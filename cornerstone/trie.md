@@ -38,34 +38,21 @@ The final conclusion is regarding tries data structure is **that they are faster
 inspired by [severb](https://leetcode.com/problems/add-and-search-word-data-structure-design/discuss/59555/python-trie-with-defaultdict-trick)
 
 ``` python
-import collections
-
 def _trie():
-    return collections.defaultdict(_trie)
-
-END = None
+    return collections.defaultdict(_trie)  
+```
+``` python
+trie = lambda : collections.defaultdict(_trie)   
 ```
 
 
 ### [words to trie](https://repl.it/@WillWang42/trie)
 
 ``` python
-import collections
-import functools
-
 def build_trie(words):
-  Trie = lambda: collections.defaultdict(Trie)
-  trie = Trie()
-  END = True
-
-  for i, word in enumerate(words):
-      functools.reduce(dict.__getitem__, word, trie)[END] = i
-  
-  for key, val in trie["a"].items():
-    print(key) # True, p, c
-
-words = ["a", "banana", "app", "appl", "ap", "apple", "acd"]
-build_trie(words)
+  trie = _trie()
+  for _, word in enumerate(words):
+      functools.reduce(dict.__getitem__, word, trie)["#"] = None
 ```
 
 ### implement trie
@@ -137,6 +124,7 @@ class Trie:
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 - [642. Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/)
 - [720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)
+- [1032. Stream of Characters](https://leetcode.com/problems/stream-of-characters/)
 
 
 ## Explain
