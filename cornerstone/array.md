@@ -58,6 +58,39 @@ def is_in(x, y, matrix):
 	return 0 <= x < len(matrix) and 0 <= y < len(matrix[0])
 ```
 
+### prefix sum (subarry sum)
+
+``` python
+for i in range(1, len(nums)):
+    nums[i] += A[i-1]
+```
+
+### caculate all possible combinations
+
+```  python
+# all possible two subarray sum for i < j  (L < M)
+# keep track of max(L) before a fixed `M`
+          L(M)
+         --
+      -- 
+   --
+--
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+		    ----
+			  M(L)
+```
+
+``` python
+left = 0
+res = 0 
+for i in range(1, len(nums)):
+	left = max(left, cacluate_left(i))
+	res = max(left + nums[i], res)
+``` 
+
+- Pracetice: 1031, 1041  
+
+
 ### corner case 
 
 - Empty sequence.
