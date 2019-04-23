@@ -66,7 +66,79 @@ It's often the case that sorting can be implemented in **less space** than requi
 
 - [insertion sort](https://repl.it/@WillWang42/insertion-sort)
 - [selection sort](https://repl.it/@WillWang42/selection-sort)
+- [quick sort](https://repl.it/@WillWang42/quick-sort) 
+- [merge sort](https://repl.it/@WillWang42/merge-sort) 
+- counting sort
 - custom sort 
+
+### quick sort 
+
+``` python
+def quick_sort(nums, head, tail):
+  if head < tail:
+    split_point = partition(nums, head, tail)
+    quick_sort(nums, head, split_point-1)
+    quick_sort(nums, split_point+1, tail)
+  return nums
+    
+def partition(nums, head, tail):
+  pivot, L, R = head, head + 1, tail 
+  while L <= R:
+    while L <= R and nums[L] <= nums[pivot]:
+      L += 1
+    while L <= R and nums[R] >= nums[pivot]:
+      R -= 1
+    if L <= R:
+      nums[L], nums[R] = nums[R], nums[L]
+
+  nums[head], nums[R] = nums[R], nums[head]
+  return R 
+```
+- Try [75](https://leetcode.com/problems/sort-colors/description/)
+
+### merge sort 
+
+``` python
+def merge_sort(nums):
+  if len(nums) > 1:
+    mid = len(nums) // 2
+    left_half = nums[:mid]
+    right_half = nums[mid:]
+
+    merge_sort(left_half)
+    merge_sort(right_half)
+
+    i, j, k = 0, 0, 0
+    while i < len(left_half) and j < len(right_half):
+      if left_half[i] <= right_half[j]:
+        nums[k] = left_half[i]
+        i += 1
+      else:
+        nums[k] = right_half[j]
+        j += 1
+      k += 1
+    nums[k:] = left_half[i:] or right_half[j:]
+    
+  return nums
+```
+
+- Try [148](https://leetcode.com/problems/sort-list/)
+
+### insertion sort 
+
+We consider an application of the **decrease-by-one technique** tosorting an array `A[0..n − 1]`. Following the technique’s idea, we assume that the smaller problem of sorting the array `A[0..n − 2]` has already been solved to give us a sorted array of size `n − 1`: `A[0]≤ . . . ≤ A[n − 2]`. 
+
+How can we take advantage of **this solution to the smaller problem** to get a solution to the original problem by **taking into account the element `A[n − 1]`**?  by [Anany](https://www.amazon.com/Introduction-Design-Analysis-Algorithms-3rd/dp/0132316811)
+
+``` python
+def insertion_sort(nums):
+  for i, num in enumerate(nums[1:]):
+    j = i
+    while j >= 0 and nums[j] > num:
+      nums[j], nums[j+1] = nums[j+1], nums[j]
+      j -=1 
+  return nums
+```
 
 ## 木桩训练
 
