@@ -26,17 +26,16 @@ if not matrix or not matrix[0]:
 ### visited / seen
 
 ``` python
+if not matrix: 
+	raise "ValueError"
 R = len(matrix)
-C = len(matrix[0]) if R else 0 # []
+C = len(matrix[0])
 seen = [[False] * C for _ in range(R)]
 ```
 
 ### get valid neighbors
 
 ``` python 
-R = len(matrix)
-C = len(matrix[0]) if R  # [[]]
-
 def neighbor(r, c): 
 	for nr, nc in ((r-1,c),(r,c-1),(r+1,c),(r,c+1)):
 	    if 0 <= nr < R and 0 <= nc < C:
@@ -62,7 +61,38 @@ def dfs(x, y):
 
 ### shortest path 
 
+``` python
+def shortest_dist(maze: List[List[int]], start: List[int], destination: List[int]) -> int:
+    R, C = len(maze), len(maze[0])
+    
+    seen = [[False] * C for _ in range(R)]
+    heap = [(0, start[0], start[1])]
+    
+    while heap:
+        d, x, y = heapq.heappop(heap)
+        # edge case 
+        if seen[x][y]: continue 
+        seen[x][y] = True 
+        # base case 
+        if [x, y] == destination:
+            return d
+        # general case 
+        for step, i, j in neighbor(x, y, maze):
+            heapq.heappush(heap, (d + step, i, j))
+    return -1
+```
+``` python    
+def neighbor(r, c, maze):
+    R, C = len(maze), len(maze[0])
+    for dr, dc in [(0, -1), (0, 1), (1, 0), (-1, 0)]:
+        nr, nc, step = r, c, 0
+        while 0 <= nr + dr < R and 0 <= nc + dc < C and maze[nr+dr][nc+dc] == 0:
+            nr, nc = nr+dr, nc+dc
+            step += 1
+        yield step, nr, nc  
+```
 
+- Try: [505](https://leetcode.com/problems/the-maze-ii/)
 
 ## 木桩训练
 
