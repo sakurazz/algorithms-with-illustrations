@@ -62,7 +62,7 @@
 | Two Pointer| 16, 18, 26, 349, 350 <br> <br> 👻 [1021 pair](https://leetcode.com/problems/best-sightseeing-pair/)|  | |
 | [Graph>Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)| 🌟[S点一定到D点](https://willwang-x.github.io/2018/02/shift)<br><br>[202 happy](https://leetcode.com/problems/happy-number/), [207 course](https://leetcode.com/problems/course-schedule/), [685 connection](https://leetcode.com/problems/redundant-connection-ii/) | <img src="https://i.imgur.com/FYFs9Dp.png" alt="detect cycle in the graph" width="200"/> | undirected<br>directed<br> |
 |查找|||
-|排序/[Sorting](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/sorting.md)|57||
+|排序/[Sorting](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/sorting.md)|57| <img src="https://i.imgur.com/iddTsnm.gif" alt="sorting" width="200"/> | undirected<br>directed<br> [Sorting and Colours](https://benmosheron.gitlab.io/blog/2019/01/24/sorting.html)|
 | [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692 top-k](https://leetcode.com/problems/top-k-frequent-words/), [164 gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
 |组合|||
 |集合|||
@@ -85,6 +85,10 @@
 | Dynamic & conquer |  |  | |
 | [Decrease & conquer](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/decrease-%26-conquer.md) | 🌟[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)<br><br> [169 majority](https://leetcode.com/problems/majority-element/), [78 subsets](https://leetcode.com/problems/subsets/), 👹[4 median](https://leetcode.com/problems/median-of-two-sorted-arrays/) | <img src="https://i.imgur.com/Gu5jVjZ.png" alt="decrease and conquer" width="200"/> <br> by [Anany](https://www.amazon.com/Introduction-Design-Analysis-Algorithms-3rd/dp/0132316811/ref=sr_1_1?s=books&ie=UTF8&qid=1548866452&sr=1-1&keywords=Introduction+to+the+Design+and+Analysis+of+Algorithms) | 减一技术<br>binary search <br> size-decrease|
 | [Binary Search](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/binary-search.md) | 🌟[33. Search in **Rotated** **Sorted** Array](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) <br><br> 👾[35 insert](https://leetcode.com/problems/search-insert-position/), 👻[300 longest](https://leetcode.com/problems/longest-increasing-subsequence/), 👹[354 envelopes](https://leetcode.com/problems/russian-doll-envelopes/)  |<img src="https://i.imgur.com/7Wh8Jm3.gif" alt="binary search" width="200"/>  | 减治系列 <br> 搜索系列 |
+
+
+
+
 
 ### way of thinking
 
