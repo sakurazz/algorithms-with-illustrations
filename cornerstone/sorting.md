@@ -163,3 +163,4 @@ def insertion_sort(nums):
 
 - [经典排序算法动画](https://github.com/MisterBooo/Article)
 - [Sorting and Colours](https://benmosheron.gitlab.io/blog/2019/01/24/sorting.html): 用颜色可视化主要的排序算法，包含如何实现
+- [Sorting Algorithms Visualized](https://imgur.com/gallery/voutF)
