@@ -138,6 +138,6 @@ class LRUCache:
 ## More
 
 - [instant-runoff voting](https://repl.it/@WillWang42/instant-runoff-voting): the hashtable is a good way to speed up calculation
-- 防止用户信息被“脱库”：使用MD5加密，针对字典攻击，引入盐(Salt)。
-- 区块链和哈希算法：区块链是一块块区块组成的，每个区块分为两部分：区块头和区块体。
+- 防止用户信息被“[脱库](https://www.wired.com/story/facebook-passwords-plaintext-change-yours/)”：使用MD5加密，针对字典攻击，引入盐(Salt)。
+- [区块链](https://www.wikiwand.com/en/Blockchain)和哈希算法：区块链是一块块区块组成的，每个区块分为两部分：区块头和区块体。
 区块头保存着 「自己区块体」 和 「上一个区块头」 的哈希值。因为这种链式关系和哈希值的唯一性，只要区块链上任意一个区块被修改过，后面所有区块保存的哈希值就不对了。区块链使用的是 SHA256 哈希算法，计算哈希值非常耗时，如果要篡改一个区块，就必须重新计算该区块后面所有的区块的哈希值，短时间内几乎不可能做到。
