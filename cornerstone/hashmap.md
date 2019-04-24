@@ -116,7 +116,7 @@ class LRUCache:
 		- 链表法更加普适, 因为链表对**内存**利用比开放寻址高，因为需要才创建，而不需要提前申请空间。另外，链表法中的链表可以被修改为**动态查找数据结构**，比如红黑树、跳表，来避免散列表时间复杂度退化成O(n)，抵御散列冲突攻击, 如 Java 中 LinkedHashMap。
 		- 小规模数据、装载因子小时，使用open hashing。 如 Java中的ThreadLocalMap。
 
-### 2. Hwo to design a good hash algorithm?
+### 2. How to design a good hash algorithm?
 
 * **单向**哈希： 从哈希值不能反向推导出哈希值。
 * **篡改**无效： 对输入敏感，哪怕原始数据只修改一个Bit，最后得到的哈希值也大不相同。
