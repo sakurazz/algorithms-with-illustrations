@@ -41,6 +41,11 @@ Try: [15](https://leetcode.com/problems/3sum/), [18](https://leetcode.com/proble
 ## 木桩训练
 
 - [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+- [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+- [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
+- [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+- [828. Unique Letter String](https://leetcode.com/problems/unique-letter-string/)
 
 ## Explain 
 
