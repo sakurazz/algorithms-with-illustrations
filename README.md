@@ -69,7 +69,7 @@
 |树值|||
 | Math |  50, 279 |  | |
 
-### algorithm idea  
+### design technique 
 
 - DFS, BFS 
 - Divide & conquer, DP, Greedy, Dynamic & conquer, Decrease & conquer, Binary search
