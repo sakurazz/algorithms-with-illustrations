@@ -21,7 +21,7 @@
 </h1>
 
 
-- binary/Bit, string, array, linked list, queue, stack; 
+- binary/bit, string, array, linked list, queue, stack; 
 - set, disjoint set;
 - graph;
 - tree, binary tree, binary search tree, heap, trie, binary indexed tree, segment tree;
