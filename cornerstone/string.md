@@ -13,18 +13,11 @@ Updating a mutable string from the front is slow, so see if it's possible to **w
 
 ## 典型应用
 
-1. anagram: 
-	- sort, hashmap or counter 
-2. palindrome
- 	- a == a[::-1] 
-3. match
-	- KMP?
-	- Rabin Karp
-4. max/min valid **substring**
-	- counter
-	- sliding window 
-5. search 
-	- trie 
+1. anagram: sort, hashmap or counter 
+2. palindrome: a == a[::-1] 
+3. match: KMP? Rabin Karp?
+4. max/min valid **substring**: counter, sliding window 
+5. search: trie 
 
 ## 最佳实践
 
