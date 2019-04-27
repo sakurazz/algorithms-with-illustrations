@@ -14,6 +14,7 @@ A heap is a good choice when you need to compute the k **largest** or k **smalle
 
 - top / lowest k: [347](https://leetcode.com/problems/top-k-frequent-elements/description/)
 - shortest path: [787]
+- merge k lists
 
 ## 最佳实践
 
@@ -34,6 +35,8 @@ def find_kth_largest(nums: List[int], k: int) -> int:
         if len(heap) > k:
             heapq.heappop(heap)
     return heap[0]
+
+# Time: O(nlogk) where n = len(nums)    
 ```
 
 ### max heap: keep poping 
@@ -47,7 +50,17 @@ def find_kth_largest(self, nums: 'List[int]', k: 'int') -> 'int':
     return -result 
     
 # 	return heapq.nlargest(k, nums)[-1]    
+# Time: O(n + klogn) where n = len(nums)
 ```
+
+### k closest 
+
+``` python
+def k_closest(points: List[List[int]], K: int) -> List[List[int]]:
+    return heapq.nsmallest(K, points, key = lambda x: x[0]*x[0] + x[1]*x[1])
+```
+
+- [973](https://leetcode.com/problems/k-closest-points-to-origin/)
 
 ### Dijkstra
 
@@ -115,6 +128,15 @@ def merge_k_lists(self, lists: List[ListNode]) -> ListNode:
 ## Explain
 
 ## Q&A
+
+### 1. How many ways do we have to find k largest element? 
+
+n = len(array)
+
+- sort:  `O(nlogn + k)`
+- min heap: `O(nlogk)`
+- max heap: `O(n + klogn)` 
+- quick select: `O(n)`
 
 ## Thanks
 
