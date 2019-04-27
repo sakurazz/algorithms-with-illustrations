@@ -8,9 +8,9 @@
 
 ## Features
 
-- Provide the **intution** behind every typical algorithm problem 
-- Cover most **core** algorithms and design techniques
-- **Systemize** data structure and algorithms design techniques
+- **Insight**: provide intuition behind every concept
+- **Core**: best practice for every typical problem
+- **Map**: data structure, problem types, design techniques, ways of thinking
 
 ## Lists 
 
