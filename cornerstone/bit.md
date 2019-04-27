@@ -16,7 +16,7 @@ Bit manipulation, in some cases, can obviate or reduce the need to loop over a d
 
 ## 典型应用
 
-- XOR
+- XOR (消消乐)
 
 ## 最佳实践
 
@@ -26,8 +26,8 @@ Some helpful utility snippets:
 - `num &= ~(1 <<k)`: **Turn off** k<sup>th</sup> bit. e.g. (0, 1) -> **0**
 - `num ^=  (1 << k)`: **Toggle** the k<sup>th</sup> bit. e.g. (0->1, 1-> 0)
 - Check if k<sup>th</sup> bit is set: `num & (1 << k) != 0`.
-- Check if a number is a power of 2, `num & num - 1 == 0`.
-- **Remove** last **1** bit: `A&(A-1)` e.g. 111 & 110, 110 & 101
+- Check if a number is a power of 2, `A & A - 1 == 0`. e.g. 8(1000), 8-1 (111) -> 0000
+- **Remove** last **1** bit: `A&(A-1)` e.g. num: xxx1000, num-1: xxx0111
 - Get all 1-bits: `~0`
 
 ### binary/hexadecimal to decimal
