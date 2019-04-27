@@ -6,6 +6,12 @@
 
 * [ ] [CLASSIFICATION OF DATA STRUCTURE WITH DIAGRAM – DATA STRUCTURE NOTES
 ](https://www.csetutor.com/classification-of-data-structure-with-diagram/) : 图标
+2. [Data Structures for  Coding Interviews](https://www.interviewcake.com/article/java/data-structures-coding-interview)
+3. [The Technical Interview Cheat Sheet.md](https://gist.github.com/TSiege/cbb0507082bb18ff7e4b)
+4. [Choosing the Right Data Structure to solve problems](http://careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/)
+5. [Data Structures — Diving Into Data Structures (Part 1)
+](http://careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/)
+6. [Choosing the Right Collection](https://www.codeproject.com/Articles/1095822/Choosing-The-Right-Collection)
 	
 ## 基本知识	
 	
@@ -111,8 +117,13 @@ e.g. LRU (linked list + hashmap)
 ### 数据运算(Operation)
 	
 <img src="https://i.imgur.com/lLcuACt.png" alt="operation comparasion" width="400"/> <br>	
+
+- 需要修改的图。(或者使用阵营九宫图)
+
+<a href="http://bigocheatsheet.com/"><img src="https://i.imgur.com/62wQHWe.png" alt="data structure mindmap" width="600"/></a>
+
 		
-- 需要修改的图。
+
 	
 1. **Create**: 建立(Create)一个数据结构；
 1. **Destroy**: 消除(Destroy)一个数据结构；
@@ -122,6 +133,19 @@ e.g. LRU (linked list + hashmap)
 1. **Access**: 对一个数据结构进行访问(Access)；
 1. **Modify**: 对一个数据结构(中的数据元素)进行修改(Modify)
 1. **Sort**: 对一个数据结构进行排序(Sort)；
+	
+## 最佳实践 
+
+### 如何选择数据结构？
+
+source: [In which scenario do I use a particular STL container?](https://stackoverflow.com/questions/471432/in-which-scenario-do-i-use-a-particular-stl-container)
+
+![STL C++](https://i.stack.imgur.com/G70oT.png)
+<br><br>
+
+source: [未知]
+
+![](https://i.imgur.com/qzdlGjB.jpg)
 	
 ## 参考
 
@@ -137,4 +161,3 @@ e.g. LRU (linked list + hashmap)
 1. [Python Data Structures Tutorial](https://www.datacamp.com/community/tutorials/data-structures-python)
 1. [ ] [图解图的存储结构](https://blog.csdn.net/wstz_5461/article/details/78290682)
 1. [List of data structures](https://www.wikiwand.com/en/List_of_data_structures)
-2. [Data Structures for  Coding Interviews](https://www.interviewcake.com/article/java/data-structures-coding-interview)
