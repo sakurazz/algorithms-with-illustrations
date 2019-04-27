@@ -21,11 +21,11 @@
 </h1>
 
 
-- binary/bit, string, array(hash), linked list, queue, stack; 
-- set, disjoint set;
-- graph;
-- tree, binary tree, binary search tree, heap, trie, binary indexed tree, segment tree;
-- sequence, hash.
+- binary/bit, string, array(hash), linked list, queue, stack 
+- set: disjoint set
+- graph
+- tree: binary tree, binary search tree, heap, trie, binary indexed tree, segment tree
+- sequence, hash
 
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
