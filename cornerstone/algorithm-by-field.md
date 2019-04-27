@@ -21,7 +21,8 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 |computational geometric ||
 |combinatorial||
 |/sequence |matching, selection, search, merge, permutations, alignment, sorting, Subsequences, Substrings|
-|//selection|[quickselect](),|
+|//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort)|
+|//[selection](https://www.wikiwand.com/en/Selection_algorithm)|[quickselect](https://repl.it/@WillWang42/quickselect),|
 |//permutations|[Fisher–Yates](https://repl.it/@WillWang42/Fisher-Yates-shuffle),|
 |medical |
 |cryptography |
