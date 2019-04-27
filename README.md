@@ -115,7 +115,9 @@ Search:
 
 - [Leetcode题目全集](https://workflowy.com/s/BZDH.sN6esXSMsn): 便于多个标签过滤查找
 - [References](https://github.com/willwang-x/algorithms-with-illustrations/tree/master/references): Related books and courses.
-- [Minimal examples of data structures and algorithms in Python](https://github.com/keon/algorithms)
+- [Examples](https://github.com/keon/algorithms): Minimal and clean example implementations of data structures and algorithms in Python 3.
+
+
 
 Visualize: 
 
