@@ -138,6 +138,13 @@ e.g. LRU (linked list + hashmap)
 
 ### 如何选择数据结构？
 
+- 数据量是否可知?
+- 是否要求有序?
+- pop顺序要求?
+- 是否需要duplicate?
+- 查找 vs 插入?
+	- keys?	 
+
 source: [In which scenario do I use a particular STL container?](https://stackoverflow.com/questions/471432/in-which-scenario-do-i-use-a-particular-stl-container)
 
 ![STL C++](https://i.stack.imgur.com/G70oT.png)
