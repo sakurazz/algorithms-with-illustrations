@@ -131,12 +131,12 @@ def merge_k_lists(self, lists: List[ListNode]) -> ListNode:
 
 ### 1. How many ways do we have to find k largest element? 
 
-n = len(array)
+n = len(nums)
 
-- sort:  `O(nlogn + k)`
-- min heap: `O(nlogk)`
-- max heap: `O(n + klogn)` 
-- quick select: `O(n)`
+- sort:  `O(nlogn + 1)` sort and return `nums[-k]`
+- min heap: `O(nlogk)` maintain a min heap of size of k and return `heaps[0]`
+- max heap: `O(n + klogn)` heapify and pop k times
+- quick select: `O(n)` 
 
 ## Thanks
 

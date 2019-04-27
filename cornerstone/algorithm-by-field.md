@@ -20,7 +20,8 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 |string ||
 |computational geometric ||
 |combinatorial||
-|/sequence ||
+|/sequence |matching, selection, search, merge, permutations, alignment, sorting, Subsequences, Substrings|
+|//selection|[quickselect](),|
 |//permutations|[Fisher–Yates](https://repl.it/@WillWang42/Fisher-Yates-shuffle),|
 |medical |
 |cryptography |
