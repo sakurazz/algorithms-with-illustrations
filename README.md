@@ -48,32 +48,36 @@
 
 ### problem type
 
-- Traversal, Shortest Path, Two pointer, Cycle, 查找，Sort, 组合，集合，数值，Math 
+> list of algorithms [classified by field](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/algorithm-by-field.md)
 
-| key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
+- 遍历: 树(前中后)，图(MST)
+- 查找: 序列(sub)，树(环)，图(最短路径)
+- 排序，组合，集合，数值(Math) 
+
+| type 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
-| 问题类型❓| ❓❓❓❓❓❓❓❓❓❓ | <img src="https://i.imgur.com/GepTFcI.png" alt="problem type" width="200"/> | ❓❓ |
+| 问题类型❓|  | <img src="https://i.imgur.com/GepTFcI.png" alt="problem type" width="200"/> | ❓❓ |
 |遍历|||MST<br>|
 | [Tree>**Traversal**](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/tree-traversal.md) |  🌟[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)<br><br> [590 N-ary](https://leetcode.com/problems/n-ary-tree-postorder-traversal/), [173 iterator](https://leetcode.com/problems/binary-search-tree-iterator/) ,👹[145 postorder](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)|<img src="https://i.imgur.com/qiONPX4.png" alt="inorder" width="200"/>  | preorder<br />**inorder**<br />postoder<br> topo |
-| [Shortest Path](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/shortest-path.md)| 🌟[787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/) <br><br> 👾[743 delay](https://leetcode.com/problems/network-delay-time/), 👻[542 01-matrix](https://leetcode.com/problems/01-matrix/), 👹[943 superstring](https://leetcode.com/problems/find-the-shortest-superstring/description/) | <img src="https://i.imgur.com/3xMv2L6.gif" alt="bfs shortest path" width="200"/> <br> [tower-defense](https://www.redblobgames.com/pathfinding/tower-defense/) | [TSP系列](https://www.youtube.com/watch?v=XaXsJJh-Q5Y)<br>BFS<br> Dijkstra<br>Bellman|
-| [Two Pointers](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/two-pointers.md)| 🌟[18. 4Sum](https://leetcode.com/problems/4sum/) <br> <br> 👾[344 reverse](https://leetcode.com/problems/reverse-string/) 👻 [11 container](https://leetcode.com/problems/container-with-most-water/), [632 range](https://leetcode.com/problems/smallest-range/)|  <img src="https://i.imgur.com/8IL9VOS.png" alt="two pointers" width="200"/> <br> | |
-| [Graph>Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)| 🌟[S点一定到D点](https://willwang-x.github.io/2018/02/shift)<br><br>[202 happy](https://leetcode.com/problems/happy-number/), [207 course](https://leetcode.com/problems/course-schedule/), [685 connection](https://leetcode.com/problems/redundant-connection-ii/) | <img src="https://i.imgur.com/FYFs9Dp.png" alt="detect cycle in the graph" width="200"/> | undirected<br>directed<br> |
 |查找|||
+| [Two Pointers](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/two-pointers.md)| 🌟[18. 4Sum](https://leetcode.com/problems/4sum/) <br> <br> 👾[344 reverse](https://leetcode.com/problems/reverse-string/) 👻 [11 container](https://leetcode.com/problems/container-with-most-water/), [632 range](https://leetcode.com/problems/smallest-range/)|  <img src="https://i.imgur.com/8IL9VOS.png" alt="two pointers" width="200"/> <br> | |
+| [Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)| 🌟[S点一定到D点](https://willwang-x.github.io/2018/02/shift)<br><br>[202 happy](https://leetcode.com/problems/happy-number/), [207 course](https://leetcode.com/problems/course-schedule/), [685 connection](https://leetcode.com/problems/redundant-connection-ii/) | <img src="https://i.imgur.com/FYFs9Dp.png" alt="detect cycle in the graph" width="200"/> | undirected<br>directed<br> |
+| [Shortest Path](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/shortest-path.md)| 🌟[787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/) <br><br> 👾[743 delay](https://leetcode.com/problems/network-delay-time/), 👻[542 01-matrix](https://leetcode.com/problems/01-matrix/), 👹[943 superstring](https://leetcode.com/problems/find-the-shortest-superstring/description/) | <img src="https://i.imgur.com/3xMv2L6.gif" alt="bfs shortest path" width="200"/> <br> [tower-defense](https://www.redblobgames.com/pathfinding/tower-defense/) | [TSP系列](https://www.youtube.com/watch?v=XaXsJJh-Q5Y)<br>BFS<br> Dijkstra<br>Bellman|
 |排序/[Sorting](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/sorting.md)|57| <img src="https://i.imgur.com/iddTsnm.gif" alt="sorting" width="200"/> | undirected<br>directed<br> [Sorting and Colours](https://benmosheron.gitlab.io/blog/2019/01/24/sorting.html)|
 | [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692 top-k](https://leetcode.com/problems/top-k-frequent-words/), [164 gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
 |组合|||
 |集合|||
-|树值|||
-| Math |  50, 279 |  | |
+|数值|50, 279||
 
 ### design technique 
 
 - DFS, BFS 
-- Divide & conquer, DP, Greedy, Dynamic & conquer, Decrease & conquer, Binary search
+- Divide & conquer, DP, Greedy 
+- Binary search，Decrease & conquer，Dynamic & conquer
 
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
 | :-------- | :---------: | :----------: | :---------: |
-| 算法思想❤️| ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ | <img src="https://i.imgur.com/9RJ5oGt.png" alt="algorithms insight" width="200"/> | ❤️❤️ |
+| 算法思想❤️|  | <img src="https://i.imgur.com/9RJ5oGt.png" alt="algorithms insight" width="200"/> | ❤️❤️ |
 | [DFS](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/dfs.md)| 🌟[46. Permutations](https://leetcode.com/problems/permutations/description/)  <br><br>👾[112 **Path**系列](https://leetcode.com/problems/path-sum/submissions/1), 👻[105. Construct](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/), 👹[329. topological](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/) |<img src="https://i.imgur.com/RVGtn22.gif" alt="DFS" width="200"/> <br> | [探测环](https://willwang-x.github.io/2018/02/shift)<br>前序遍历<br>非递归 <br>拓扑排序<br>树深<br>**DFS with Memo 913**<br> |
 | [BFS](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bfs.md) | 🌟[490.The Maze系列](https://leetcode.com/problems/the-maze/) <br><br> 👾[107 level](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/), 👻[200 island](https://leetcode.com/problems/number-of-islands/), 👹[269 alien](https://leetcode.com/problems/alien-dictionary)| <img src="https://i.imgur.com/c0F4gTc.gif" alt="bfs" width="200"/> | 遍历<br>块<br>最短路径<br>拓扑排序|
 | [Divide & conquer](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/divide-and-conquer.md) | 🌟[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) <br><br>👾[53 Maximum](https://leetcode.com/problems/maximum-subarray/), 👻[932 Beautiful](https://leetcode.com/problems/beautiful-array/), 👹[4 Median](https://leetcode.com/problems/median-of-two-sorted-arrays/) |<img src="https://i.imgur.com/fMLtVzX.png" alt="divide and conquer" width="200"/> |mergesort |
@@ -115,12 +119,12 @@ Search:
 
 Visualize: 
 
-- [Create graph from adjacency](https://repl.it/@WillWang42/adjacency-list-2-matrix): create the graph from the adjacency list
-- [Chrome extension: imagus](https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab?hl=en): enlarge images from links with a mouse hover
-- [Algorithm Visualizer](https://algorithm-visualizer.org/): an interactive online platform that viualizes algorithms from code.
+- [DS Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [Pythontutor](http://www.pythontutor.com/visualize.html#mode=edit): visualize Python, Java, JavaScript, C, C++, Ruby code **execution**
+- [Graph](https://repl.it/@WillWang42/adjacency-list-2-matrix): create the graph from the adjacency list
+- [imagus](https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab?hl=en): enlarge images from links with a mouse hover
+- [Visualizer](https://algorithm-visualizer.org/): an interactive online platform that viualizes algorithms from code.
 - [codelike](https://www.codelike.in/):  given most animated view of data structures like binary tree, binary search tree, avl tree, red black tree, linked list and so on.
-- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
 Language:
 
@@ -131,9 +135,9 @@ Language:
 
 Practice: 
 
-- [50+ Data Structure and Algorithms Interview Questions for Programmers](https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0): give you enough of an idea of the kinds of questions you can expect in a real programming job interview
-- Leetcode.com
-- Pramp.com
+- [50+](https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0): give you enough of an idea of the kinds of questions you can expect in a real programming job interview
+- [Leetcode](https://leetcode.com): Practice real interview questions
+- [Pramp](https://www.pramp.com/invt/zpbVbZv7EYtGmrm10BqK): Mock Interview
 
 
 
