@@ -19,9 +19,9 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 | graph ||
 |string ||
 |computational geometric ||
-|combinatorial||
-|/sequence |matching, selection, search, merge, permutations, alignment, sorting, subsequences, substrings|
-|//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort)|
+|combinatorial/||
+|/sequence/ |matching, selection, search, merge, permutations, alignment, sorting, subsequences, substrings|
+|//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort), [selection-sort](https://repl.it/@WillWang42/selection-sort), [insertion-sort](https://repl.it/@WillWang42/insertion-sort)|
 |//[selection](https://www.wikiwand.com/en/Selection_algorithm)|[quickselect](https://repl.it/@WillWang42/quickselect),|
 |//permutations|[Fisher–Yates](https://repl.it/@WillWang42/Fisher-Yates-shuffle),|
 |medical |
