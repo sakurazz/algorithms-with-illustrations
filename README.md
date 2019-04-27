@@ -8,8 +8,8 @@
 
 ## Features
 
-- **Insight**: provide intuition behind every concept
-- **Core**: best practice for every typical problem
+- **Insight**: intuition, connect, debug
+- **Core**: basics, application, best practice, typical problems, explanation, Q&A
 - **Map**: data structure, problem types, design techniques, ways of thinking
 
 ## Lists 
