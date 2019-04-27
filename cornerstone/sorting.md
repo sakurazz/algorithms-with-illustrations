@@ -140,6 +140,19 @@ def insertion_sort(nums):
   return nums
 ```
 
+### custom sort 
+
+``` python
+def reorder_log_files(logs: List[str]) -> List[str]:
+    def f(log):
+        id_, rest = log.split(" ", 1)
+        return (0, rest, id_) if rest[0].isalpha() else (1,)
+
+    return sorted(logs, key = f) 
+```
+
+- [937](https://leetcode.com/problems/reorder-log-files/), [1029](https://leetcode.com/problems/two-city-scheduling/), [1030](https://leetcode.com/problems/matrix-cells-in-distance-order/)
+
 ## 木桩训练
 
 1. [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/): 引申：350(Fllow up)
