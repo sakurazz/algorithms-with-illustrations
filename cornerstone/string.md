@@ -1,23 +1,30 @@
 # String 
 
+<img src="https://i.imgur.com/1MzpsFt.png" alt="string" width="200"/> 
 
 
 ## 基础知识
 
-Similar to arrays, string problems often have simple brute-force solutions that use 0(n) space solution, but subtler solutions that use the string itself to **reduce space** **complexity** to [Problems 7.6 and 7.4]
+Similar to arrays, string problems often have simple brute-force solutions that use O(n) space solution, but subtler solutions that use the string itself to **reduce space** **complexity**.
 
-Understand the **implications** of a string type which is **immutable**, e.g., the need to allocate a new string when concatenating immutable strings. Know alternatives to immutable strings, e.g., an array of characters or a StringBuilder in Java. [Problem 7.6]
+Understand the implications of a string type which is **immutable**, e.g., the need to allocate a new string when concatenating immutable strings. Know alternatives to immutable strings, e.g., an array of characters or a `StringBuilder` in Java.
 
-Updating a mutable string from the front is slow, so see if it's possible to **write values from the back**. [Problem 7.4]
+Updating a mutable string from the front is slow, so see if it's possible to **write values from the back**.
 
 ## 典型应用
 
-- anagram: 
+1. anagram: 
 	- sort, hashmap or counter 
-- palindrome
- 	- a == a[::-1] ? 
-- match: KMP
-- substring 
+2. palindrome
+ 	- a == a[::-1] 
+3. match
+	- KMP?
+	- Rabin Karp
+4. max/min valid **substring**
+	- counter
+	- sliding window 
+5. search 
+	- trie 
 
 ## 最佳实践
 
