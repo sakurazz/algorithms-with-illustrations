@@ -34,9 +34,10 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 
 ## 典型应用
 
-- sub array(condition)
-- sub sequence
-- sorted array
+- **subarray**: two pointer, sliding window
+- **subsequence**
+- **sorted array**: binary search
+- **valid pairs**
 
 ## 最佳实践
 
