@@ -9,7 +9,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 - [x] Backtracking
 - [ ] Complement: 补集思维
 - [ ] Define: 261, 997, 1022(余数)
-- [ ] Edge case: 1023
+- [x] Edge case
 - [ ] Fast and slow 
 - [ ] Index/坐标视角: 283. Move Zeroes, 
 - [x] Granularity|zoom out
@@ -26,6 +26,9 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 --- 
 
+- Edge case 
+	- 1023 
+	- [1033](https://leetcode.com/problems/moving-stones-until-consecutive/): edge case, `1,2,4` or `1,3,11` 识别出edge case题目就解出来了 
 - Granularity
 	- [815](https://leetcode.com/problems/bus-routes/): 将一个bus路线看作一个点，然后用BFS去做 
 	- [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)
@@ -37,6 +40,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 	- [202](https://leetcode.com/problems/happy-number/): happy number，[Explanation](https://leetcode.com/problems/happy-number/discuss/56919/Explanation-of-why-those-posted-algorithms-are-mathematically-valid) 
 	- [957](https://leetcode.com/problems/prison-cells-after-n-days/): 一共就365天
 	- [1015](https://leetcode.com/problems/smallest-integer-divisible-by-k/): 同余且余数有限，会进入循环，所以第二次遇到相同余数，就进入循环了。
+	- [1036](https://leetcode.com/problems/escape-a-large-maze/): 发现只有200个blocked pointer, 围城面积有限，从关注圈，变成关注点，如何跑出去。
 - [x] **Reduction**: 把问题降维，从而用一个已知的解法解决。
 	- LC 354 信封二维问题 可以转换成 一维的 LC300 longest sub sequence 
 	- LC 1029, 二维比较，可以通过做差变成一维比较。
