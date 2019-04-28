@@ -52,7 +52,7 @@
 | [Heap](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/heap.md) | 🌟[407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) <br><br> 👾[743 delay](https://leetcode.com/problems/network-delay-time/), 👻[215 kth](https://leetcode.com/problems/kth-largest-element-in-an-array/description/), 👹[857 workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | <img src="https://i.imgur.com/l7hnVq8.gif" alt="trapping-rain-water-2-heap from https://youtu.be/cJayBq38VYw" width="200"/> <br>[407](https://youtu.be/7niUr7LlviY) |  |
 |[Trie](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/trie.md)?|🌟[212. Word Search II](https://leetcode.com/problems/word-search-ii/)<br><br>👾[720 longest](https://leetcode.com/problems/longest-word-in-dictionary/),👻[421 XOR](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/),👹[642 autocomplete](https://leetcode.com/problems/design-search-autocomplete-system/description/) | <img src="https://i.imgur.com/w7j1TTW.gif" alt="trie" width="200"/> ||
 
-### problem type
+### [problem type](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/algorithm-by-field.md)
 
 > list of algorithms [classified by field](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/algorithm-by-field.md)
 
@@ -97,7 +97,7 @@
 
 
 
-### way of thinking
+### [way of thinking](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/mind.md)
 
 - Recursion, Backtracking, Siding Window, Fast and slow, Reverse thinking, Complement
 
