@@ -30,6 +30,7 @@ Some Application:
 - connected component 
 - path
 - shortest distance
+- traverse layer by layer(depth)
 
 **Graph**
 
@@ -101,6 +102,32 @@ def shortest_depth(graph, start, goal):
 	return -1	
 ```
 
+### traverse layer by layer 
+
+``` python
+front = [start]
+depth = 0
+while front:
+	nxt = []
+	for node in front:
+		for child in children(node):
+			nxt.append(child)
+	front = nxt 
+	depth += 1	
+```
+
+``` python
+seen, targets = set(), set()
+queue = [(node, 1) for node in seen]
+for node, depth in queue:
+    if node in targets: return depth
+    for nei in graph[node]:
+        if nei not in seen:
+            seen.add(nei)
+            queue.append((nei, depth+1))
+```
+
+- Try [815](https://leetcode.com/problems/bus-routes/)
 
 ## 木桩训练
 
