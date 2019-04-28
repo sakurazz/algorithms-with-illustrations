@@ -115,6 +115,7 @@ def shortest_depth(graph, start, goal):
 1. 207 Course Schedule 
 1. 269 Alien Dictionary 
 1. 444 Sequence Reconstruction ❹
+2. [815. Bus Routes](https://leetcode.com/problems/bus-routes/)
 
 ## Q&A
 
