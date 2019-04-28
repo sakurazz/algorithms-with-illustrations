@@ -68,7 +68,9 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 
 - 操作，查看，计算
 - search 
-- recursively 
+- **recursive** 
+- iterative
+- pass info to/from children (sum or target) 
 - construct 
 - convert 
 - path 
