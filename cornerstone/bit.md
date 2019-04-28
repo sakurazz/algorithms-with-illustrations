@@ -17,6 +17,7 @@ Bit manipulation, in some cases, can obviate or reduce the need to loop over a d
 ## 典型应用
 
 - XOR (消消乐)
+- Bit state
 
 ## 最佳实践
 
@@ -70,6 +71,30 @@ def missing_number(nums):
 ```
 
 - [more tricks @repl](https://repl.it/@WillWang42/bit-manipulation)
+
+### Bit states
+
+``` python
+def shortest_path_length(self, graph: List[List[int]]) -> int:
+    N = len(graph)
+    # bit state
+    q = collections.deque(( 1 << x, x) for x in range(N))
+    dist = collections.defaultdict(lambda: N*N)
+    for x in range(N): dist[1 << x, x] = 0 
+    
+    while q:
+        cover, head = q.popleft()
+        d = dist[cover, head]
+        if cover == 2**N - 1: return d
+        for child in graph[head]:
+        	# update bit state
+            cover2 = cover | (1 << child) 
+            if d + 1 < dist[cover2, child]:
+                dist[cover2, child] = d + 1
+                q.append((cover2, child))
+```
+
+- Try [847](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
 
 ### corner cases
 
