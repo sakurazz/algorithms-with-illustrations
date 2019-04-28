@@ -25,6 +25,7 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 
 ## 典型应用
 
+- [**Longest common subsequence**](https://leetcode.com/problems/uncrossed-lines/): top down or bottom up, O(n) - O(1)
 - choice: 120, 97, 174, [221 Matrix], 903, **322**
 - variable: 188, 474,
 - sequence aligment: [300](https://leetcode.com/problems/longest-increasing-subsequence/description/) , 152
@@ -83,8 +84,25 @@ def min_edit_dist(self, word1: str, word2: str) -> int:
     return dp[-1][-1]
 ```
 
+### LCS
+
+``` python
+def longest_common_subsquence(A: List[int], B: List[int]) -> int:
+    dp, m, n = collections.defaultdict(int), len(A), len(B)
+    for i in range(m):
+        for j in range(n):
+            dp[i, j] = max(dp[i - 1, j - 1] + (A[i] == B[j]), 
+				           dp[i - 1, j], 
+				           dp[i, j - 1])
+    return dp[m - 1, n - 1]
+```
+
+- Try [516](https://leetcode.com/problems/longest-palindromic-subsequence/), [1035](https://leetcode.com/problems/uncrossed-lines/), 
+
+
 ## 木桩训练
 
+- [1035. Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/): Typical! LCS
 
 ## Explain 
 
