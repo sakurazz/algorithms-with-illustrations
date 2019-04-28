@@ -20,23 +20,23 @@ Algorithms operating on singly linked lists often benefit from using **two itera
  
 ## 典型应用
 
-- deletion O(1): moditfy the value or pointer 
 - dummy node: [2](https://leetcode.com/problems/add-two-numbers/description/)
-- reverse: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
-- partition: merge two lists
-- linked list ~= array 
+- delete in O(1): moditfy the value or pointer 
 - two pointer (fast/slow pointers)
-	- get the kth from last node 
 	- detect cycle 
-	- getting the middle node 
+	- get the middle node 
+	- get the kth from last node 
+- reverse: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
+- merge: merge k 
 
 ## 最佳实践
 
 - [create](https://repl.it/@WillWang42/linked-list)
 - insert (front, given node, end)
+- adding a dummy node ([LC117](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/), LC146)
+- add
 - deletiton: modify(values, LC450) or change(pointers)
 - sort([LC147](https://leetcode.com/problems/insertion-sort-list/description/)) 
-- adding a dummy node ([LC117](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/), LC146)
 - recursively (reverse linked-list)
 - count, **reverse**, find the middle, merge
 
@@ -139,7 +139,7 @@ def reverse_k_group(self, head: ListNode, k: int) -> ListNode:
     return pre
 ```
 
-### sort 
+### merge sort 
 
 ``` python
 # merge sort
@@ -160,8 +160,8 @@ def sort_list(self, head):
     second = slow.next
     slow.next = None
 
-    l = self.sortList(head)
-    r = self.sortList(second)
+    l = self.sort_list(head)
+    r = self.sort_list(second)
     return self.merge_two(l, r)
 ``` 
 
@@ -176,7 +176,6 @@ def sort_list(self, head):
 ## 木桩训练
 
 * [ ] 将《element》中的习题整理出来。
-* 
 
 
 ## Explain
