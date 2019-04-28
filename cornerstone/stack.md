@@ -1,6 +1,6 @@
 # Stack 
 
-![stack](https://i.imgur.com/lrLuOE0.gif)
+![stack](https://i.imgur.com/W0LDr8g.png)
 
 
 > when to pop and push?
