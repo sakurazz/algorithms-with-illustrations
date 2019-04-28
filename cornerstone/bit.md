@@ -16,7 +16,7 @@ Bit manipulation, in some cases, can obviate or reduce the need to loop over a d
 
 ## 典型应用
 
-- XOR (消消乐)
+- XOR `^` (消消乐)
 - Bit state
 
 ## 最佳实践
@@ -27,9 +27,17 @@ Some helpful utility snippets:
 - `num &= ~(1 <<k)`: **Turn off** k<sup>th</sup> bit. e.g. (0, 1) -> **0**
 - `num ^=  (1 << k)`: **Toggle** the k<sup>th</sup> bit. e.g. (0->1, 1-> 0)
 - Check if k<sup>th</sup> bit is set: `num & (1 << k) != 0`.
-- Check if a number is a power of 2, `A & A - 1 == 0`. e.g. 8(1000), 8-1 (111) -> 0000
+- Check if A == 2<sup>?</sup>::: `A&(A-1) == 0`. e.g. 8(1000), 8-1 (111) -> 0000
 - **Remove** last **1** bit: `A&(A-1)` e.g. num: xxx1000, num-1: xxx0111
 - Get all 1-bits: `~0`
+
+---
+
+- base 10 to base 2 
+- count `1`s by `A&(A-1)`
+- get sum of a and b (& ^)
+- missing number `^`
+- bit states - `(1 << k) | state`
 
 ### binary/hexadecimal to decimal
 
@@ -72,7 +80,7 @@ def missing_number(nums):
 
 - [more tricks @repl](https://repl.it/@WillWang42/bit-manipulation)
 
-### Bit states
+### bit states
 
 ``` python
 def shortest_path_length(self, graph: List[List[int]]) -> int:
