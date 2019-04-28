@@ -46,6 +46,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 	- LC 1029, 二维比较，可以通过做差变成一维比较。
 	- LC 85 二维求最大长方形，可以降为一维 成 LC84 
 	- [LC 763](https://leetcode.com/problems/partition-labels/): valid sbtring, track所有字母的个数(多个) 变成 只 track index在最后的字母(1个)
+	- [1035](https://leetcode.com/problems/uncrossed-lines/) uncrossed line 可以被reduced to `longest common subsequence`
 
 
 
