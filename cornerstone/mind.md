@@ -20,11 +20,15 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 - [x] Reduction
 - [ ] Recursion
 - [x] Sliding Window 
+- [ ] safest way(greedy)
 - [ ] 双标准: 678 
 - [ ] 满足/不满足： 836 
 
 --- 
 
+- [x] Safest way(greedy)
+	- [942](https://leetcode.com/problems/di-string-match/): 最安全方法就是选最大，留有余地 
+	- [31](https://leetcode.com/problems/next-permutation/): 找到decreasing subarray[...](https://leetcode.com/problems/next-permutation/solution/)
 - [x] **Litmited** states: -> cycle -> hashmap 
 	- [202](https://leetcode.com/problems/happy-number/): happy number，[Explanation](https://leetcode.com/problems/happy-number/discuss/56919/Explanation-of-why-those-posted-algorithms-are-mathematically-valid) 
 	- [957](https://leetcode.com/problems/prison-cells-after-n-days/): 一共就365天
