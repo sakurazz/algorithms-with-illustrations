@@ -26,7 +26,7 @@ Some helpful utility snippets:
 - `num |=  (1 << k)`: **Set** k<sup>th</sup> bit. e.g. (0 or 1) -> **1**
 - `num &= ~(1 <<k)`: **Turn off** k<sup>th</sup> bit. e.g. (0, 1) -> **0**
 - `num ^=  (1 << k)`: **Toggle** the k<sup>th</sup> bit. e.g. (0->1, 1-> 0)
-- Check if k<sup>th</sup> bit is set: `num & (1 << k) != 0`.
+- Check if k<sup>th</sup> bit is set: `num & (1 << k) != 0`. aka. 0 or 1?
 - Check if A == 2<sup>?</sup>::: `A&(A-1) == 0`. e.g. 8(1000), 8-1 (111) -> 0000
 - **Remove** last **1** bit: `A&(A-1)` e.g. num: xxx1000, num-1: xxx0111
 - Get all 1-bits: `~0`
