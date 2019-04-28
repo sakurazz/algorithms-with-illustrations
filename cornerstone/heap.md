@@ -12,6 +12,7 @@ A heap is a good choice when you need to compute the k **largest** or k **smalle
 
 ## 典型应用
 
+- first in, best out 
 - top / lowest k: [347](https://leetcode.com/problems/top-k-frequent-elements/description/)
 - shortest path: [787]
 - merge k lists
@@ -82,7 +83,7 @@ def shortest(graph, start, dest):
 graph = {1: [[2, 10], [4, 20]]}	
 ```
 
-### merge k sorted 
+### merge k sorted? 
 
 ``` python
 def merge_K_lists(self, lists: List[ListNode]) -> ListNode:
