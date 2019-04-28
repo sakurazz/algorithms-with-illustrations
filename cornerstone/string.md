@@ -52,6 +52,18 @@ for word in words:
 		if c not in cur: cur[c] = {}
 		cur = cur[c]
 ```
+or simpler 
+
+``` python
+_trie = lambda : collections.defaultdict(_trie)
+```
+
+``` python
+def words_trie(words):
+	trie = _trie()
+	for _, word in enumerate(words):
+		functools.reduce(dict.__getitem__, word, trie)["#"] = None 
+```
 
 ### KMP(dive deep)
 
