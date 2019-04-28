@@ -18,14 +18,18 @@ Some Application:
 * Finding all nodes within **one** connected component.
 * Testing a graph for **bipartiteness**.
 
-## 典型应用 Typical Problems
+## 典型应用
 
 1. Traversal: 133, 301
 2. Connected Components: 200, 261, 323
 3. Shortest Path: 🌟[126 word ladder], 127,286, 317, [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
 4. Topological 拓扑排序: 207, 269, 444, 631 
 
-## 最佳实践 Best Practice 
+## 最佳实践
+
+- connected component 
+- path
+- shortest distance
 
 **Graph**
 
@@ -38,7 +42,7 @@ graph = {'A': set(['B', 'C']),
          'F': set(['C', 'E'])}
 ``` 
 
-**Connected Component** 
+### connected component 
 
 ``` python 
 def bfs(graph, start):
@@ -53,7 +57,7 @@ def bfs(graph, start):
 bfs(graph, 'A') # {'B', 'C', 'A', 'F', 'D', 'E'}
 ```
 
-**Path** 
+### path
 
 ``` python 
 def bfs_paths(graph, start, goal):
@@ -79,7 +83,7 @@ def shortest_path(graph, start, goal):
 shortest_path(graph, 'A', 'F') # ['A', 'C', 'F']
 ```
 
-**Shortest Distance**
+### shortest distance
 
 ``` python
 # bfs: 1. pop 2. check 3. add unseen neighbors
@@ -111,6 +115,16 @@ def shortest_depth(graph, start, goal):
 1. 207 Course Schedule 
 1. 269 Alien Dictionary 
 1. 444 Sequence Reconstruction ❹
+
+## Q&A
+
+### 1. BFS 和 Dijsktra 的关系？
+
+Edge == 1, Dijsktra 退化成 BFS。因为如果每一条权值相同，即无权图，那么从源(Source)开始访问图(Graph)遇到节点的最小深度就等于到该节点的最短路径，因此Priority Queue就退化成了Queue, `Dijkstra`算法就退化成了BFS。
+
+- [787. Cheapest Flights Within K Stops
+](https://leetcode.com/problems/cheapest-flights-within-k-stops/): BFS is not a good choice
+- [847. Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/): use BFS instead Dijkstra
 
 ## Reference 
 
