@@ -62,13 +62,13 @@ graph = {'A': set(['B', 'C']),
 
 ```python 
 def dfs(graph, start):
-    visited, stack = set(), [start]
+    seen, stack = set(), [start]
     while stack:
         vertex = stack.pop()
-        if vertex not in visited:
-            visited.add(vertex)
-            stack.extend(graph[vertex] - visited)
-    return visited
+        if vertex not in seen:
+            seen.add(vertex)
+            stack.extend(graph[vertex] - seen)
+    return seen
 
 dfs(graph, 'A') # {'E', 'D', 'F', 'A', 'C', 'B'}
 ```
@@ -76,11 +76,11 @@ dfs(graph, 'A') # {'E', 'D', 'F', 'A', 'C', 'B'}
 **Recursive**
 
 ```python
-def dfs(graph, start, visited=set()):
-    visited.add(start)
-    for nxt in graph[start] - visited:
-        dfs(graph, nxt, visited)
-    return visited
+def dfs(graph, start, seen=set()):
+    seen.add(start)
+    for nxt in graph[start] - seen:
+        dfs(graph, nxt, seen)
+    return seen
 
 dfs(graph, 'C') # {'E', 'D', 'F', 'A', 'C', 'B'}
 ```
@@ -121,6 +121,17 @@ def dfs_paths(graph, start, goal, path=None):
 list(dfs_paths(graph, 'C', 'F')) # [['C', 'F'], ['C', 'A', 'B', 'E', 'F']]
 ```
 
+## 木桩训练 
+
+* [112. Path Sum](https://leetcode.com/problems/path-sum/submissions/1)
+* [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
+* [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/description/)
+* [329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
+* [851. Loud and Rich](https://leetcode.com/problems/loud-and-rich/description/)
+* subset
+* [1034. Coloring A Border](https://leetcode.com/problems/coloring-a-border/): conditional DFS
+
+
 ## Q&A
 
 ### DFS vs Backtracking
@@ -135,21 +146,6 @@ It uses backtracking as part of its means of working with a tree, but is limited
 Backtracking, though, can be used on any type of structure where portions of the domain can be eliminated - whether or not it is a logical tree. The Wiki example uses a chessboard and a specific problem - you can look at a specific move, and eliminate it, then backtrack to the next possible move, eliminate it, etc.
 
 from [What's the difference between backtracking and depth first search?](https://stackoverflow.com/questions/1294720/whats-the-difference-between-backtracking-and-depth-first-search)
-
-
-
-
-
-
-
-## 木桩训练 
-
-* [112. Path Sum](https://leetcode.com/problems/path-sum/submissions/1)
-* [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
-* [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/description/)
-* [329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
-* [851. Loud and Rich](https://leetcode.com/problems/loud-and-rich/description/)
-* subset
 
 
 ## Thanks 
