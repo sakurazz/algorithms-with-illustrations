@@ -12,7 +12,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 - [ ] Edge case: 1023
 - [ ] Fast and slow 
 - [ ] Index/坐标视角: 283. Move Zeroes, 
-- [ ] Granularity|zoom out: [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md), 1001 (preprocess)
+- [x] Granularity|zoom out
 - [ ] Limited states
 - [ ] Math reduce: 49
 - [ ] Object: 418 
@@ -26,6 +26,10 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 --- 
 
+- Granularity
+	- [815](https://leetcode.com/problems/bus-routes/): 将一个bus路线看作一个点，然后用BFS去做 
+	- [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)
+	- 1001 (preprocess)
 - [x] Safest way(greedy)
 	- [942](https://leetcode.com/problems/di-string-match/): 最安全方法就是选最大，留有余地 
 	- [31](https://leetcode.com/problems/next-permutation/): 找到decreasing subarray[...](https://leetcode.com/problems/next-permutation/solution/)
@@ -38,7 +42,6 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 	- LC 1029, 二维比较，可以通过做差变成一维比较。
 	- LC 85 二维求最大长方形，可以降为一维 成 LC84 
 	- [LC 763](https://leetcode.com/problems/partition-labels/): valid sbtring, track所有字母的个数(多个) 变成 只 track index在最后的字母(1个)
-- 
 
 
 
