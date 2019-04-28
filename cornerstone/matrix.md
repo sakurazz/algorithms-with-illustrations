@@ -33,6 +33,22 @@ C = len(matrix[0])
 seen = [[False] * C for _ in range(R)]
 ```
 
+### traversal
+
+``` python
+def max_increase_keeping_skyline(grid: List[List[int]]) -> int:
+    row_maxes = [max(row) for row in grid]
+    col_maxes = [max(col) for col in zip(*grid)]
+    
+    return sum(min(row_maxes[r], col_maxes[c]) - val 
+              for r, row in enumerate(grid)
+              for c, val in enumerate(row))
+              
+# row, col = the best name   
+```
+
+- Try [807](https://leetcode.com/problems/max-increase-to-keep-city-skyline/)
+
 ### get valid neighbors
 
 ``` python 
