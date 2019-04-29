@@ -71,10 +71,11 @@ def shortest(graph, start, dest):
 	visited = set()
 	while hq:
 		cost, node = heapq.heappush(hq)
-		if node in visited:
-			continue 
-		if node == dest:
-			return cost
+		# edge case 
+		if node in visited: continue 
+		# base case 
+		if node == dest: return cost
+		# general case 
 		visited.add(node)
 		for child, dist in graph[node]:
 			heapq.heappush(hq, (cost+dist, child))
