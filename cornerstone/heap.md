@@ -86,6 +86,22 @@ graph = {1: [[2, 10], [4, 20]]}
 ### merge k sorted? 
 
 ``` python
+1 -> 5 -> 8 -> 10
+2 -> 9 -> 12
+4 -> 7 -> 11
+
+heap = [1, 2, 4] 
+```
+
+
+``` python
+class tuplebyfirst(tuple):
+    "tuple that sorts only on first element"
+    def __lt__(self, other):
+        return self[0] < other[0]   
+```
+
+``` python
 def merge_K_lists(self, lists: List[ListNode]) -> ListNode:
     dummy = cur = ListNode(0)
     hq = [tuplebyfirst((n.val, n)) for n in lists if n]
@@ -97,12 +113,7 @@ def merge_K_lists(self, lists: List[ListNode]) -> ListNode:
             heapq.heappush(hq, tuplebyfirst((n.next.val, n.next)))
         cur.next = n
         cur = cur.next 
-    return dummy.next
-
-class tuplebyfirst(tuple):
-    "tuple that sorts only on first element"
-    def __lt__(self, other):
-        return self[0] < other[0]    
+    return dummy.next 
 ```
 
 ``` python
