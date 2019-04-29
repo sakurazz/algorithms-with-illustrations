@@ -6,11 +6,12 @@
 
 Array problems often have simple brute-force solutions that use 0(n) space, but subtler solutions that **use the array itself** to **reduce space** complexity to 0(1).
 
-Filling an array from the front is slow, so see if it's possible to **write values from the back**. 
 
-Instead of deleting an entry (which requires moving all entries to its right), consider **overwriting** it. 
+Front -> Back:
 
-When dealing with integers encoded by an array consider **processing the digits from the back** of the array. Alternately, reverse the array so the **least-significant digit** is the first entry.
+* Filling an array **from the front** is slow, so see if it's possible to **write values from the back**. 
+* Instead of deleting an entry (which requires moving all entries to its right), consider **overwriting** it. When dealing with integers encoded by an array consider **processing the digits from the back** of the array. 
+* Alternately, reverse the array so the **least-significant digit** is the first entry.
 
 Be comfortable with writing code that operates on **subarrays**. 
 
@@ -28,8 +29,8 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 
 *  reduce space 
 *  overwriting 
-*  write values from the back
-*  processing the digits from the back 
+*  front to back (write or process)
+*  used as hashmap
 *  simulate the specification
 
 ## 典型应用
@@ -42,16 +43,19 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 ## 最佳实践
 
 - [libraries]((https://i.imgur.com/VNGOnCx.png))
-- out of bounds
-- sort the array first 
-- pre-computation: hashing or a prefix/suffix sum/product
-- array used as a hashmap
-- sliding window
-- two pointers
-- use **index** instead of slicing when possible (O(1) vs O(n))
-- processing the element from the back
-- simulate
-- binary search 
+- preprocess: 
+	- sort the array first 
+	- hashing (val -> index) 
+	- a prefix/suffix sum/product
+- search 
+	- sliding window / two pointers
+	- use **index** instead of slicing when possible (O(1) vs O(n))
+	- binary search 
+	- out of bounds
+	- array used as a hashmap
+- access / change
+	- processing the element from the back
+	- simulate
 
 ### out of bounds
 
