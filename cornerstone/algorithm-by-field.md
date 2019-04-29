@@ -18,10 +18,11 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 | sorting              | |
 | merge              | |
 | numerical | |
-| graph ||
 |string ||
 |computational geometric ||
-|combinatorial/||
+|Combinatorial/|General combinatorial, Graph, Sequence|
+| /graph/|Graph drawing, Network theory, **Routing for graphs**, Graph search, Subgraphs|
+| //routing| MST(Borůvka, Prim, [kruskal](https://repl.it/@WillWang42/MST-Kruskal), Reverse-delete)|
 |/sequence/ |matching, selection, search, merge, permutations, alignment, sorting, subsequences, substrings|
 |//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort), [selection-sort](https://repl.it/@WillWang42/selection-sort), [insertion-sort](https://repl.it/@WillWang42/insertion-sort)|
 |//[selection](https://www.wikiwand.com/en/Selection_algorithm)|[quickselect](https://repl.it/@WillWang42/quickselect),|
