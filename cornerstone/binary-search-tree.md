@@ -19,6 +19,7 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 - isBST
 - inorder generator
 - kth smalllest (iterative)
+- delete a node in BST? 
 
 
 ### isBST
