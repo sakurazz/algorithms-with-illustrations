@@ -98,6 +98,12 @@ s = "10[a]", return "aaaaaaaaaa".
 
 ## Explain
 
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+	- It is the same as the question that just have one kind of bracket. We use a hashmap to store the relationship between open and close brackets. Now, hashmap is an abstraction of **brackets** relationship.
+		- **Push** the present character into stack if it's an opening symbol else **pop** a character from stack and **check** if it matches with the present character ( if it matches don't do anything else immediately return `false` )
+		- **Note** - At any point of time if stack is empty and present character is a closing bracket return `false` immediately
+		- **Termination** - if stack is empty return `true` else return `false`	
+
 ## Q & A
 
 1. stack 和 heap 有什么区别？
