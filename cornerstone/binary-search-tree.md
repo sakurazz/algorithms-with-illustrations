@@ -65,6 +65,36 @@ def kth_smallest(root: TreeNode, k: int) -> int:
         root = node.right 
 ``` 
 
+### smallest node 
+
+``` python
+# smallest node in a sub BST
+def _smallest(self, node):
+    while node.left:
+        node = node.left 
+    return node.val
+```
+
+
+### delete the node 
+
+``` python
+def delete_node(root: TreeNode, key: int) -> TreeNode:
+    if not root:
+        return root
+    
+    if root.val == key:
+        if not root.left:  return root.right
+        if not root.right: return root.left
+        root.val   = self._smallest(root.right)
+        root.right = self.deleteNode(root.right, root.val)
+    elif root.val < key:
+        root.right = self.deleteNode(root.right, key)
+    else:
+        root.left  = self.deleteNode(root.left, key)
+        
+    return root 
+```
 
 ## 木桩训练
 
