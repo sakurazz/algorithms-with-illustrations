@@ -1,5 +1,7 @@
 # Algorithms By field of study
 
+- [ ] Cover all frequently-used algorithms by field and build somthing like [Minimal](https://github.com/keon/algorithms)
+
 ## What
 
 source: [wiki](https://www.wikiwand.com/en/Algorithm#/By_field_of_study)
