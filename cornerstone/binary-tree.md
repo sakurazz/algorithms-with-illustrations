@@ -109,27 +109,33 @@ def right_side_view(self, root: TreeNode) -> List[int]:
     return sight 
 
 ```
-### pass info to children, `target -= node.val` 
+### pass info to children, e.g. 算了再说 `target -= node.val` 
 
 ``` python
 def max_ancestor_diff(self, node, high, low):
+	# Base Case 
     if not node:
         return high - low
+    # Do sth.
     high = max(high, node.val)
     low  = min(low,  node.val)
+    # General Case 
     return max(max_ancestor_diff(node.left,  high, low), \
                max_ancestor_diff(node.right, high, low))
 ```
 
-### get info from children, `sum(path)`
+### get info from children, e.g. 最后再算`sum(path)`
 
 ``` python
 def min_depth(self, root: TreeNode) -> int:
+	# Edge Case 
     if not root: return 0
         
+    # Base Case 
     children = [root.left, root.right]
     if not any(children): return 1
-
+	
+	# General Case 
     min_ = float('inf')
     for c in children:
         if c:  min_ = min(min_depth(c), min_)
