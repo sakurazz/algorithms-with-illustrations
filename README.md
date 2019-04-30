@@ -133,6 +133,7 @@ Visualize:
 - [imagus](https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab?hl=en): enlarge images from links with a mouse hover
 - [Visualizer](https://algorithm-visualizer.org/): an interactive online platform that viualizes algorithms from code.
 - [codelike](https://www.codelike.in/):  given most animated view of data structures like binary tree, binary search tree, avl tree, red black tree, linked list and so on.
+- [mind-palace](https://workflowy.com/s/0-x-palace/wl1ogOpj0IU7juyl)
 
 Language:
 
