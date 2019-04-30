@@ -33,6 +33,10 @@ The final conclusion is regarding tries data structure is **that they are faster
 
 ## 最佳实践
 
+- build a trie 
+- [delete subtrie bwtween two words](https://repl.it/@WillWang42/delete-subtrie-recursively)
+- BFS in a trie: 1032 
+
 ### build a trie
 
 inspired by [severb](https://leetcode.com/problems/add-and-search-word-data-structure-design/discuss/59555/python-trie-with-defaultdict-trick)
