@@ -23,11 +23,11 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 - dummy node: [2](https://leetcode.com/problems/add-two-numbers/description/)
 - delete in O(1): moditfy the value or pointer 
 - two pointer (fast/slow pointers)
-	- detect cycle 
-	- get the middle node 
-	- get the kth from last node 
+	- kth: get the kth from last node 
+	- middle: get the middle node 
+	- cycle: detect cycle 
 - reverse 2 or K: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
-- merge 2 or K: merge k 
+- merge 2 or K
 
 ## 最佳实践
 
@@ -49,30 +49,6 @@ Class Node:
 		self.next = None 
 ```
 
-### reverse 
-
-``` python
-def reverse_node(head):
-	cur, pre = head, None
-	while cur:
-		cur.next, pre, cur = pre, cur, cur.next 
-	return pre
-"""
-   pre   -> cur -> cur.nxt 
- cur.nxt <- pre <- cur 
-"""	
-```
-
-### merge
-
-``` python
-def merge_two(l1: ListNode, l2: ListNode) -> ListNode:
-    if l1 and l2:
-        if l1.val > l2.val: 
-            l1, l2 = l2, l1 
-        l1.next = merge_two(l1.next, l2)
-    return l1 or l2 
-```
 
 ### add
 
@@ -104,6 +80,10 @@ def delete_node(self, node):
     node.next = node.next.next
 ```
 
+### kth(back)
+
+
+ 
 ### middle
 
 ``` python
@@ -114,6 +94,25 @@ def middle_node(self, head: ListNode) -> ListNode:
         fast = fast.next.next 
     return slow
 ```
+
+### cycle 
+
+
+
+### reverse 
+
+``` python
+def reverse_node(head):
+	cur, pre = head, None
+	while cur:
+		cur.next, pre, cur = pre, cur, cur.next 
+	return pre
+"""
+   pre   -> cur -> cur.nxt 
+ cur.nxt <- pre <- cur 
+"""	
+```
+
 
 ### reverse k 
 
@@ -138,6 +137,20 @@ def reverse_k_group(self, head: ListNode, k: int) -> ListNode:
     head.next = reverse_k_group(cur, k)
     return pre
 ```
+
+
+### merge
+
+``` python
+def merge_two(l1: ListNode, l2: ListNode) -> ListNode:
+    if l1 and l2:
+        if l1.val > l2.val: 
+            l1, l2 = l2, l1 
+        l1.next = merge_two(l1.next, l2)
+    return l1 or l2 
+```
+
+### merge k 
 
 ### merge sort 
 
@@ -175,7 +188,7 @@ def sort_list(self, head):
 
 ## 木桩训练
 
-* [ ] 将《element》中的习题整理出来。
+
 
 
 ## Explain
