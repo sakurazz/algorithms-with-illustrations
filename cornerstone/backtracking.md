@@ -71,6 +71,19 @@ def permute(self, nums):
 ### path: subset(order)
 
 ``` python 
+# 1, 2, 3 
+
+	       []
+		/   |  \
+	   1   2    3
+	  / \   \
+	 2   3   3    
+ 	 |
+     3 
+```
+
+
+``` python 
 # remove `nums`, `res` if you write a nested function
 def backtrack(path, i, nums, res):
 	# base case 
@@ -80,6 +93,8 @@ def backtrack(path, i, nums, res):
 		backtrack(path + [nums[nxt]], nxt+1, nums, res)
 	return res 
 ```
+
+- Try: [78](https://leetcode.com/problems/subsets/)
 
 ### path: combination sum(early stop)
 
@@ -98,7 +113,7 @@ def backtrack(path, i, target, res, nums):
 	return res 
 ```
 
-## path: palindrome partitioning(condition)
+### path: palindrome partitioning(condition)
 
 ``` python 
 def backtrack(path, i, res, s):
