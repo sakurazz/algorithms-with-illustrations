@@ -134,7 +134,7 @@ list(dfs_paths(graph, 'C', 'F')) # [['C', 'F'], ['C', 'A', 'B', 'E', 'F']]
 
 ## Q&A
 
-### DFS vs Backtracking
+### 1. DFS vs Backtracking
 
 * [Backtracking](https://www.wikiwand.com/en/Backtracking) is a more general purpose algorithm.
 * [Depth-First search](https://www.wikiwand.com/en/Depth-first_search) is a specific form of **backtracking** related to searching tree structures. 
@@ -148,8 +148,35 @@ Backtracking, though, can be used on any type of structure where portions of the
 from [What's the difference between backtracking and depth first search?](https://stackoverflow.com/questions/1294720/whats-the-difference-between-backtracking-and-depth-first-search)
 
 
+### 2. DFS vs BFS for Binary Tree
+
+source: [geeksforgeeks](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
+
+* Breadth First Traversal (Or Level Order Traversal)
+* Depth First Traversals
+	* Inorder Traversal (Left-Root-Right)
+	* Preorder Traversal (Root-Left-Right)
+	* Postorder Traversal (Left-Right-Root)
+
+All four traversals require **O(n) time** as they visit every node exactly once. There is difference in terms of **extra space** required.
+
+It is evident that extra space required for Level order traversal is likely to be more when tree is **more balanced** and extra space for Depth First Traversal is likely to be more when tree is **less balanced**.
+
+
+How to Pick one?
+
+* **Extra Space** can be one factor (Explained above)
+	* If the tree is very **deep** and solutions are rare, depth first search (DFS) might take an extremely long time, but BFS could be faster.
+	* If the tree is very **wide**, a BFS might need too much memory, so it might be completely impractical.
+	* If solutions are **frequent** but located **deep** in the tree, BFS could be impractical.
+	* If the search tree is very **deep** you will need to **restrict** the search depth for depth first search (DFS), anyway (for example with **iterative deepening**).
+* Depth First Traversals are typically **recursive** and recursive code requires **function call overheads**.
+* The most important points is, BFS starts visiting **nodes** from root while DFS starts visiting nodes from **leaves**. So if our problem is to search something that is more likely to closer to **root**, we would prefer **BFS**. And if the target node is close to a **leaf**, we would prefer **DFS**.
+
+
 ## Thanks 
 
 - [Depth-First Search and Breadth-First Search in Python](https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)
 - [Difference between BFS and DFS](https://www.thecrazyprogrammer.com/2017/06/difference-between-bfs-and-dfs.html): Non-Visited nodes, Visited nodes, Explored nodes
 - [深度优先搜索(DFS)小结](http://x-wei.github.io/dfs-summary.html#for-trees-dfs-with-depth)
+- [When is it practical to use Depth-First Search (DFS) vs Breadth-First Search (BFS)?](https://stackoverflow.com/questions/3332947/when-is-it-practical-to-use-depth-first-search-dfs-vs-breadth-first-search-bf)
