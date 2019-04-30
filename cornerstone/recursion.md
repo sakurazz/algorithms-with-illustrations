@@ -121,6 +121,19 @@ def fibonacci(n):
 
 因此，理解递归代码，就把它抽象成一个递推公式，不用想一层层的调用关系，不要试图用人脑去分解递归的每个步骤。
 
+### 4. Recursion vs Iteration?
+
+source: [geeksforgeeks](https://www.geeksforgeeks.org/difference-between-recursion-and-iteration/) - Read More
+
+
+* **Time Complexity**: Finding the Time complexity of Recursion is more difficult than that of Iteration.
+* **Usage**: Usage of either of these techniques is a trade-off between time complexity and size of code. If time complexity is the point of focus, and number of recursive calls would be large, it is better to use iteration. However, if time complexity is not an issue and shortness of code is, recursion would be the way to go.
+* **Overhead**: Recursion has a large amount of Overhead as compared to Iteration.
+* **Infinite Repetition**: Infinite Repetition in recursion can lead to CPU crash but in iteration, it will stop when memory is exhausted.
+
+
+
+
 ## 木桩训练
 
 * [894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/)
