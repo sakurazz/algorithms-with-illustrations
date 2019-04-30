@@ -24,7 +24,7 @@ Consider augmenting the basic stack or queue data structure to support additiona
 - **nearest largest**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
 - save for later:
 - top-down (DFS-style?): 
-- special order:
+- special(discrete) order
 
 ## 最佳实践
 
@@ -43,7 +43,7 @@ for i, num in enumerate(input):
 	stack.append(i)
 ```
 
-### dummy value 
+### dummy value (nearest largest) 
 
 ``` python
 def largest_rectangle_area(self, heights: List[int]) -> int:
@@ -95,6 +95,7 @@ s = "10[a]", return "aaaaaaaaaa".
 * [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 * [770.Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) (系列)
 * [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 🌟
+* [496. Next Greater Element I 系列](https://leetcode.com/problems/next-greater-element-i/) 🌟 
 
 ## Explain
 
@@ -108,6 +109,9 @@ s = "10[a]", return "aaaaaaaaaa".
 
 1. stack 和 heap 有什么区别？
 	- 都在维持某种顺序，而stack通过pop()和push()完成，而heap需要进入容器之后二次处理得到。
+	- Stack: Last in, First out -> When pop? -> Discrete Order (需要照顾原始数组Index)
+	- Heap: Last in, Best out (定制化能力更强)
+	- Queue: First in, First out
 2. stack的优化有什么？
 	- 如果不关注过程，只在乎结果。可以使用变量`count`来标记，空间由`O(n)`到`O(1)`, 如[LC 1021](https://leetcode.com/problems/remove-outermost-parentheses/), 请试着用stack和count分别解决。是不是有一种在DP中，二维cache压缩成一维的感觉。
 
