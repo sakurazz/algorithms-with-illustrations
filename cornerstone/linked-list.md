@@ -26,8 +26,8 @@ Algorithms operating on singly linked lists often benefit from using **two itera
 	- detect cycle 
 	- get the middle node 
 	- get the kth from last node 
-- reverse: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
-- merge: merge k 
+- reverse 2 or K: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
+- merge 2 or K: merge k 
 
 ## 最佳实践
 
