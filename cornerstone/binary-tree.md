@@ -79,9 +79,12 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 
 ``` python
 def merge_trees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
+	# Base Case 
     if not t1: return t2
     if not t2: return t1
+    # Do sth.
     t1.val += t2.val
+    # General Case
     t1.left  = self.merge_trees(t1.left, t2.left)
     t1.right = self.merge_trees(t1.right, t2.right)
     return t1
