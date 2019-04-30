@@ -37,6 +37,23 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 - 股票系列
 
 
+重叠子问题 选择 增加一个变量 多个变量 数列问题 最短路径
+
+* Fibonacci 经典型
+* Choices
+* Add variables (背包系列)
+* Sequence alignment
+* Shortest Paths
+
+Other:
+
+* ❶ Fibonacci 一步两步: f(n) = f(n-1) + f(n-2)
+* ❷ 96 Unique Binary Search Trees
+* ❸ Sequence alignment
+* ❹ Add variables (背包系列 🎒 )
+* ❺ choices
+* ❻ Maximum Product Subarray VS Maximum Sum Subarray
+
 ## 最佳实践
 
 - top down 
@@ -103,6 +120,24 @@ def longest_common_subsquence(A: List[int], B: List[int]) -> int:
 ## 木桩训练
 
 - [1035. Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/): Typical! LCS
+* 62 Unique Paths
+* 70 Climbing Stairs ❶
+* 120 Triangle
+* 174 Dungeon Game ❷
+* 123 Best Time to Buy and Sell Stock III
+* 53 Maximum Subarray(与股票对应，完全对应)
+* 474 Ones and Zeroes ❸
+* 97 Interleaving String
+* 115 Distinct Subsequences ❹
+* 139 Word Break ❺
+* 96 Unique Binary Search Trees
+* 152 Maximum Product Subarray
+* 3 Longest Substring Without Repeating Characters
+* 53 Maximum Subarray
+* 152 Maximum Product Subarray
+* 416 Partition Equal Subset Sum
+* 474 Ones and Zeroes
+* 600 Non-negative Integers without Consecutive Ones
 
 ## Explain 
 
