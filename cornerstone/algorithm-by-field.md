@@ -26,7 +26,7 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 |//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort), [selection-sort](https://repl.it/@WillWang42/selection-sort), [insertion-sort](https://repl.it/@WillWang42/insertion-sort)|
 |//[selection](https://www.wikiwand.com/en/Selection_algorithm)|[quickselect](https://repl.it/@WillWang42/quickselect),|
 |//permutations|[Fisher–Yates](https://repl.it/@WillWang42/Fisher-Yates-shuffle),|
-|//substrings|Longest common substring, substring search(Aho–Corasick, Boyer–Moore, [KMP](https://repl.it/@WillWang42/substring-KMP), Rabin–Karp, Zhu–Takaoka), Ukkonen's, Matching wildcards|
+|//[substrings](https://www.wikiwand.com/en/Substring)|Longest common substring, substring search(Aho–Corasick, Boyer–Moore, [KMP](https://repl.it/@WillWang42/substring-KMP), Rabin–Karp, Zhu–Takaoka), Ukkonen's, Matching wildcards|
 |medical |
 |cryptography |
 | data compression|
