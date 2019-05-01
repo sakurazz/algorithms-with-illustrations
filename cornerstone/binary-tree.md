@@ -9,9 +9,9 @@
  
 Some tree problems have simple brute-force solutions that use 0(n) space solution, but subtler solutions that uses the **existing tree nodes** to reduce space complexity to 0( 1). 
 
-Consider **left- and right-skewed trees** when doing complexity analysis. Note that 0(h) complexity, where h is the tree height, translates into 0(log n) complexity for balanced trees, but 0(n) complexity for skewed trees. [Problem 10.12]
+Consider **left- and right-skewed trees** when doing complexity analysis. Note that 0(h) complexity, where h is the tree height, translates into 0(log n) complexity for balanced trees, but 0(n) complexity for skewed trees. 
 
-If each node has a **parent field**, use it to make your code simpler, and to reduce time and space complexity. [Problem 10.10]
+If each node has a **parent field**, use it to make your code simpler, and to reduce time and space complexity. 
 
 It's easy to make the **mistake** of treating a node that has a single child as a leaf. 
 
@@ -66,14 +66,16 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 
 ## 最佳实践
 
-- 操作，查看，计算
-- search 
-- **recursive** 
-- iterative
-- pass info to/from children (sum or target) 
-- construct 
-- convert 
-- path 
+ 
+- search
+	- **recursive** 
+	- iterative
+- calculate
+	- pass info to children (target)
+	- get infor from children (sum) 
+	- path sum
+- modify 
+
 
 ### recursive (merge)
 
