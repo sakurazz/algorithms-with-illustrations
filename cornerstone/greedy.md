@@ -1,9 +1,23 @@
 # Greedy
 
+<img src="https://i.imgur.com/1aDfDOW.png" alt="greedy" width="200"/>
+
+
 > 做对了，叫**艺高人胆大，四两拨千斤**。
 > 做错了，叫一意孤行，执迷不悟。
 
 ## 基础知识
+
+source: [wiki](https://www.wikiwand.com/en/Greedy_algorithm)
+
+A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of **making the locally optimal choice** at each stage with the intent of finding a global optimum. In many problems, a greedy strategy does not usually produce an optimal solution, but nonetheless a greedy heuristic may yield locally optimal solutions that approximate a globally optimal solution in a reasonable amount of time.
+
+Greedy algorithms produce good solutions on some mathematical problems, but not on others. Most problems for which they work will have two properties: 
+
+* Greedy choice property
+* Optimal substructure
+
+
 
 ## 典型应用
 
@@ -30,6 +44,11 @@
 - heap 
 
 ## 木桩训练
+
+- [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
+- [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/)
+- [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
+- [135. Candy](https://leetcode.com/problems/candy/)
 
 ## Q & A 
 
