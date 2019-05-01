@@ -104,8 +104,9 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 
 ### [way of thinking](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/mind.md)
 
-- Recursion, Backtracking, 
-- Two pointer, Siding Window, Fast and slow,
+- Induction & Deduction
+- Recursion, Backtracking
+- Two pointer, Siding window, Fast and slow
 - Reverse thinking, Complement
 
 | key 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
