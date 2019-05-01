@@ -1,6 +1,7 @@
 # Algorithms By field of study
 
 - [ ] Cover all frequently-used algorithms by field and build somthing like [Minimal](https://github.com/keon/algorithms)
+- ‼️ This documentation will be updated in the main README.
 
 ## What
 

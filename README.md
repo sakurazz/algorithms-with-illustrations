@@ -16,9 +16,36 @@
 
 - **Insight**: intuition, connect, debug
 - **Core**: basics, application, best practice, typical problems, explanation, Q&A
-- **Map**: data structure, problem types, design techniques, ways of thinking
+- **Map**: problem type -> (data structure, design techniques) -> ways of thinking
 
 ## Lists 
+
+### [problem type](https://www.wikiwand.com/en/List_of_algorithms) (11)
+
+source: [wiki](https://www.wikiwand.com/en/Algorithm#/By_field_of_study)
+
+Every field of science has its own problems and needs efficient algorithms. Related problems in one field are often studied together.
+
+Fields tend to overlap with each other, and algorithm advances in one field may improve those of other, sometimes completely unrelated, fields. For example, dynamic programming was invented for optimization of resource consumption in industry but is now used in solving a broad range of problems in many fields.
+
+| Field            | Algorithms   |
+| ----------          | ------------ |
+|[**Combinatorial**](https://www.wikiwand.com/en/Combinatorics)/3|General combinatorial, Graph, [Sequence](https://www.wikiwand.com/en/Sequences)|
+|**/general**|
+| **/graph/5**|Graph drawing, Network theory, **Routing for graphs**, Graph search, Subgraphs|
+| //routing| MST(Borůvka, [prim](https://repl.it/@WillWang42/MST-Prim), [kruskal](https://repl.it/@WillWang42/MST-Kruskal), Reverse-delete)|
+|**/sequence/**9 |matching, selection, search, merge, permutations, alignment, sorting, subsequences, substrings|
+|//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort), [selection-sort](https://repl.it/@WillWang42/selection-sort), [insertion-sort](https://repl.it/@WillWang42/insertion-sort)|
+|//[selection](https://www.wikiwand.com/en/Selection_algorithm)|[quickselect](https://repl.it/@WillWang42/quickselect),|
+|//permutations|[Fisher–Yates](https://repl.it/@WillWang42/Fisher-Yates-shuffle),|
+|//[substrings](https://www.wikiwand.com/en/Substring)|Longest common substring, substring search(Aho–Corasick, Boyer–Moore, [KMP](https://repl.it/@WillWang42/substring-KMP), Rabin–Karp, Zhu–Takaoka), Ukkonen's, Matching wildcards|
+|[**Computational Math**](https://www.wikiwand.com/en/Computational_mathematics)/|
+|[**Computational science**](https://www.wikiwand.com/en/Computational_science)|
+|...|
+
+
+
+
 
 ### data structrue
 
@@ -52,28 +79,6 @@
 | [Heap](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/heap.md) | 🌟[407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) <br><br> 👾[743 delay](https://leetcode.com/problems/network-delay-time/), 👻[215 kth](https://leetcode.com/problems/kth-largest-element-in-an-array/description/), 👹[857 workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | <img src="https://i.imgur.com/l7hnVq8.gif" alt="trapping-rain-water-2-heap from https://youtu.be/cJayBq38VYw" width="200"/> <br>[407](https://youtu.be/7niUr7LlviY) |  |
 |[Trie](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/trie.md)?|🌟[212. Word Search II](https://leetcode.com/problems/word-search-ii/)<br><br>👾[720 longest](https://leetcode.com/problems/longest-word-in-dictionary/),👻[421 XOR](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/),👹[642 autocomplete](https://leetcode.com/problems/design-search-autocomplete-system/description/) | <img src="https://i.imgur.com/w7j1TTW.gif" alt="trie" width="200"/> ||
 
-### [problem type](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/algorithm-by-field.md)
-
-> list of algorithms [classified by field](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/algorithm-by-field.md)
-
-- 遍历: 树(前中后)，图(MST)
-- 查找: 序列(sub)，树(环)，图(最短路径)
-- 排序，组合，集合，数值(Math) 
-
-| type 🔑 | typical problems👻 | video/gif 🎦 | notes 📒 |
-| :-------- | :---------: | :----------: | :---------: |
-| 问题类型❓|  | <img src="https://i.imgur.com/GepTFcI.png" alt="problem type" width="200"/> | ❓❓ |
-|遍历|||MST<br>|
-| [Tree>**Traversal**](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/tree-traversal.md) |  🌟[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)<br><br> [590 N-ary](https://leetcode.com/problems/n-ary-tree-postorder-traversal/), [173 iterator](https://leetcode.com/problems/binary-search-tree-iterator/) ,👹[145 postorder](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)|<img src="https://i.imgur.com/qiONPX4.png" alt="inorder" width="200"/>  | preorder<br />**inorder**<br />postoder<br> topo |
-|查找|||
-| [Two Pointers](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/two-pointers.md)| 🌟[18. 4Sum](https://leetcode.com/problems/4sum/) <br> <br> 👾[344 reverse](https://leetcode.com/problems/reverse-string/) 👻 [11 container](https://leetcode.com/problems/container-with-most-water/), [632 range](https://leetcode.com/problems/smallest-range/)|  <img src="https://i.imgur.com/8IL9VOS.png" alt="two pointers" width="200"/> <br> | |
-| [Cycle](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/cycle.md)| 🌟[S点一定到D点](https://willwang-x.github.io/2018/02/shift)<br><br>[202 happy](https://leetcode.com/problems/happy-number/), [207 course](https://leetcode.com/problems/course-schedule/), [685 connection](https://leetcode.com/problems/redundant-connection-ii/) | <img src="https://i.imgur.com/FYFs9Dp.png" alt="detect cycle in the graph" width="200"/> | undirected<br>directed<br> |
-| [Shortest Path](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/shortest-path.md)| 🌟[787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/) <br><br> 👾[743 delay](https://leetcode.com/problems/network-delay-time/), 👻[542 01-matrix](https://leetcode.com/problems/01-matrix/), 👹[943 superstring](https://leetcode.com/problems/find-the-shortest-superstring/description/) | <img src="https://i.imgur.com/3xMv2L6.gif" alt="bfs shortest path" width="200"/> <br> [tower-defense](https://www.redblobgames.com/pathfinding/tower-defense/) | [TSP系列](https://www.youtube.com/watch?v=XaXsJJh-Q5Y)<br>BFS<br> Dijkstra<br>Bellman|
-|排序/[Sorting](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/sorting.md)|57| <img src="https://i.imgur.com/iddTsnm.gif" alt="sorting" width="200"/> | undirected<br>directed<br> [Sorting and Colours](https://benmosheron.gitlab.io/blog/2019/01/24/sorting.html)|
-| [Bucket Sort](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/cornerstone/bucket-sort.md)| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) <br><br> [274 H-Index](https://leetcode.com/problems/h-index/), [692 top-k](https://leetcode.com/problems/top-k-frequent-words/), [164 gap](https://leetcode.com/problems/maximum-gap/) |<img src="https://i.imgur.com/kCUdihh.gif" alt="radix sort" width="200"/>| 外部排序<br>基数排序<br>颗粒度<br>|
-|组合|||
-|集合|||
-|数值|50, 279||
 
 ### design technique 
 
@@ -122,6 +127,8 @@ Search:
 - [Leetcode题目全集](https://workflowy.com/s/BZDH.sN6esXSMsn): 便于多个标签过滤查找
 - [References](https://github.com/willwang-x/algorithms-with-illustrations/tree/master/references): Related books and courses.
 - [Examples](https://github.com/keon/algorithms): Minimal and clean example implementations of data structures and algorithms in Python 3.
+- [repl/algorithms-by-field](https://repl.it/repls/folder/algorithms-by-field)
+
 
 
 
