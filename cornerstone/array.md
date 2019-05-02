@@ -35,10 +35,10 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 
 ## 典型应用
 
-- **valid pairs**
+- **target**: sorted -> binary search
+- **pairs** (x subarray): dp
 - **subarray**: two pointer, sliding window
-- **subsequence**
-- **sorted array**: binary search
+- **subsequence**: stack?
 
 ## 最佳实践
 
@@ -71,7 +71,21 @@ for i in range(1, len(nums)):
     nums[i] += A[i-1]
 ```
 
-### caculate all possible combinations
+### caculate all pairs
+
+``` python
+def max_profit(prices: List[int]) -> int:
+    maxprofit = 0
+    if len(prices) <= 1:
+        return 0
+    minprice = prices[0]
+    for i in range(1, len(prices)):
+        maxprofit = max(prices[i] - minprice, maxprofit)
+        minprice = min(prices[i], minprice)
+    return maxprofit 
+```
+
+More general case: subarray and caculation involved. 
 
 ```  python
 # all possible two subarray sum for i < j  (L < M)
@@ -94,7 +108,7 @@ for i in range(1, len(nums)):
 	res = max(left + nums[i], res)
 ``` 
 
-- Pracetice: 1031, 1041  
+- Pracetice: [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/), [1031](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/), 1041  
 
 
 ### corner case 
