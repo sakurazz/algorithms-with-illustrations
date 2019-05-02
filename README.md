@@ -152,6 +152,7 @@ Language:
 
 - [Python](https://github.com/OmkarPathak/pygorithm): A Python module for learning all major algorithms
 - [Java](https://github.com/MeandNi/Algorithms4-Common): 算法4精华笔记，通俗理解
+- [Javascript](https://github.com/trekhleb/javascript-algorithms): Implemented in JavaScript with explanations and links to further readings
 - [Multi](https://github.com/davidxk/Algorithm-Implementations): Algorithm and data structure implementations in Python, C, C++ and Java
 
 
