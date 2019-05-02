@@ -39,7 +39,9 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 |//[selection](https://www.wikiwand.com/en/Selection_algorithm)|[quickselect](https://repl.it/@WillWang42/quickselect),|
 |//permutations|[Fisher–Yates](https://repl.it/@WillWang42/Fisher-Yates-shuffle),|
 |//[substrings](https://www.wikiwand.com/en/Substring)|Longest common substring, substring search(Aho–Corasick, Boyer–Moore, [KMP](https://repl.it/@WillWang42/substring-KMP), Rabin–Karp, Zhu–Takaoka), Ukkonen's, Matching wildcards|
-|[**Computational Math**](https://www.wikiwand.com/en/Computational_mathematics)/|
+|[**Computational Math**](https://www.wikiwand.com/en/Computational_mathematics)/|Computer algebra, Geometry, Number theoretic algorithms, Numerical algorithms, [Optimization](https://www.wikiwand.com/en/Mathematical_optimization)|
+|/Optimization|...dynamic programming...|
+|//-[dynamic programming](https://www.wikiwand.com/en/Dynamic_programming#/Algorithms_that_use_dynamic_programming)|string (longest common subsequence, longest increasing subsequence, longest common substring, edit distance), Viterbi, Floyd, Pseudo-polynomial time(subset sum, [knapsack](https://repl.it/@WillWang42/dp-knapsack), partition),  interval scheduling, tsp,  Bellman–Ford, Kadane's |
 |[**Computational science**](https://www.wikiwand.com/en/Computational_science)|
 |...|
 
