@@ -11,45 +11,48 @@ In computer science, a disjoint-set data structure (also called a `union–find`
 
 ## 典型应用
 
-* Find component (in dynamic graph)
+* Find component (in **dynamic graph**)
 * Detect cycle for the whole graph
-* MST
+* MST(Kruskal)
 
-## 最佳实践?
+## 最佳实践
 
 ``` python
 # https://repl.it/@WillWang42/union-find
 
-class unionFind:
+class Union(object):
 
-  def __init__(self, N):
-    self.parents = [i for i in range(N)]
-    self.ranks = [0 for _ in range(N)]
-    self.components = N
+  def __init__(self):
+    self.id = {}
+    self.sz = {}    
+    self.count = 0
   
-  def find(self, x):
-    if self.parents[x] == x:
+  def add(self, x):
+    self.id[x] = x
+    self.sz[x] = 1
+    self.count += 1 
+
+  def root(self, x):
+    if self.id[x] == x:
       return x 
-    return self.find(self.parents[x])
+    return self.root(self.id[x])
        
-  def union(self, x, y):
-    x_parent = self.find(x)
-    y_parent = self.find(y)
-  
-    if x_parent != y_parent:
-      if self.ranks[x_parent] > self.ranks[y_parent]:
-        self.parents[y_parent] = x_parent
-      elif self.ranks[x_parent] < self.ranks[y_parent]:
-        self.parents[x_parent] = y_parent
-      else:
-        self.parents[x_parent] = y_parent
-        self.ranks[x_parent] += 1
-      self.components -= 1
+  def unite(self, x, y):
+    i = self.root(x)
+    j = self.root(y)
+    if i == j: return 
+
+    if self.sz[i] > self.sz[j]:
+      i, j = j, i
+    self.id[i] = j
+    self.sz[j] += self.sz[i]
+    self.count -= 1
 ```  
 
 ## 木桩训练
 
 * 323 Number of Connected Components in an Undirected 
+* [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)
 
 ## Q&A
 
@@ -60,3 +63,17 @@ class unionFind:
 The union-find algorithm is best suited for situations where the equivalence relationship is changing, i.e., there are "Union" operations which need to be performed on your set of partitions. Given a fixed undirected graph, you don't have the equivalence relationships changing at all - the edges are all fixed. OTOH, if you have a graph with new edges being added, DFS won't cut it. While DFS is asymptotically faster than union-find, in practice, the likely deciding factor would be the actual problem that you are trying to solve.
 
 source: [stackoverflow](https://stackoverflow.com/questions/28398101/union-find-or-dfs-which-one-is-better-to-find-connected-component)
+
+
+### 2. recursion vs iteration for the function `root()`?
+
+Itreation may be better for large data considering the overhead of repeated function calls for recursion, Although recursion is advantageous in shorter code.
+
+### 3. {} or [] for initialization?
+
+union find is better than DFS for dynamic graph. Thus, {} is a better choice. 
+
+
+### 4. Why is the size better than the depth for union operation?
+
+It is faster for most of nodes to find its parent.
