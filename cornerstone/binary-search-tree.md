@@ -137,15 +137,16 @@ def delete_node(root: TreeNode, key: int) -> TreeNode:
     if not root:
         return root
     
-    if root.val == key:
-        if not root.left:  return root.right
-        if not root.right: return root.left
-        root.val   = self._smallest(root.right)
-        root.right = self.deleteNode(root.right, root.val)
-    elif root.val < key:
+    if root.val < key:
         root.right = self.deleteNode(root.right, key)
-    else:
-        root.left  = self.deleteNode(root.left, key)
+    elif root.val > key:
+        root.left = self.deleteNode(root.left, key)
+    else: # == key
+        if not root.left:  return root.right
+        if not root.right: return root.left 
+        # decrease and conquer
+        root.val = self._smallest(root.right)  
+        root.right = self.deleteNode(root.right, root.val)
         
     return root 
 ```
