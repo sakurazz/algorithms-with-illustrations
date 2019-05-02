@@ -10,6 +10,14 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 * The right subtree of a node contains only nodes with keys greater than the node’s key.
 * The left and right subtree each must also be a binary search tree.
 
+### lists of fact 
+
+- Inorder traversal of BST is an array sorted in the ascending order
+- To compute inorder traversal follow the direction `Left -> Node -> Right`.
+- **Successor** = "after node", i.e. the next node, or the smallest node after the current one.
+- **Predecessor** = "before node", i.e. the previous node, or the largest node before the current one.
+
+
 ## 典型应用
 
 - look up in O(nlogn)
@@ -17,7 +25,10 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 ## 最佳实践
 
 - isBST
+- to ordered array
 - inorder generator
+- successor 
+- predecessor
 - kth smalllest (iterative)
 - delete a node in BST? 
 
@@ -36,6 +47,18 @@ def is_valid_BST(root, lower = float("-inf"), upper = float("inf")):
             is_valid_BST(root.right, root.val, upper)
 ```
 
+### inorder
+
+> BST to a array ordered in the the ascending order
+
+To compute inorder traversal follow the direction Left -> Node -> Right.
+
+
+``` python
+def inorder(root):
+    return inorder(root.left) + [root.val] + inorder(root.right) if root else []
+```
+
 ### inorder generator 
 
 ``` python
@@ -44,6 +67,37 @@ def inorder(self, root):
         for val in self.inorder(root.left):  yield val
         yield root.val
         for val in self.inorder(root.right): yield val
+```
+
+### sucessor
+
+> Successor = "after node", i.e. the next node, or the smallest node after the current one.
+
+It's also the next node in the inorder traversal. To find a successor, go to the right once and then as many times to the left as you could.
+
+
+
+
+``` python
+def successor(root):
+    root = root.right
+    while root.left:
+        root = root.left
+    return root
+```
+
+### predecessor
+
+> Predecessor = "before node", i.e. the previous node, or the largest node before the current one.  
+
+To find a predecessor, go to the left once and then as many times to the right as you could.
+
+``` python
+def predecessor(root):
+    root = root.left
+    while root.right:
+        root = root.right
+    return root
 ```
 
 
