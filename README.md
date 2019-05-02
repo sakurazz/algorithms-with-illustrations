@@ -35,7 +35,7 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 | **/graph/5**|Graph drawing, Network theory, **Routing for graphs**, Graph search, Subgraphs|
 | //routing| MST(Borůvka, [prim](https://repl.it/@WillWang42/MST-Prim), [kruskal](https://repl.it/@WillWang42/MST-Kruskal), Reverse-delete)|
 |**/sequence/9**|matching, selection, search, merge, permutations, alignment, sorting, subsequences, substrings|
-|//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort), [selection-sort](https://repl.it/@WillWang42/selection-sort), [insertion-sort](https://repl.it/@WillWang42/insertion-sort)|
+|//[sorting](https://www.wikiwand.com/en/Sorting_algorithm) |[quicksort](https://repl.it/@WillWang42/quick-sort), [mergesort](https://repl.it/@WillWang42/merge-sort), [insertion-sort](https://repl.it/@WillWang42/insertion-sort), heap-sort, counting-sort, [selection-sort](https://repl.it/@WillWang42/selection-sort)|
 |//[selection](https://www.wikiwand.com/en/Selection_algorithm)|[quickselect](https://repl.it/@WillWang42/quickselect),|
 |//permutations|[Fisher–Yates](https://repl.it/@WillWang42/Fisher-Yates-shuffle),|
 |//[substrings](https://www.wikiwand.com/en/Substring)|Longest common substring, substring search(Aho–Corasick, Boyer–Moore, [KMP](https://repl.it/@WillWang42/substring-KMP), Rabin–Karp, Zhu–Takaoka), Ukkonen's, Matching wildcards|
