@@ -103,7 +103,7 @@ def middle_node(self, head: ListNode) -> ListNode:
 
 ``` python
 def reverse_node(head):
-	cur, pre = head, None
+	pre, cur = None, head
 	while cur:
 		cur.next, pre, cur = pre, cur, cur.next 
 	return pre
@@ -129,7 +129,7 @@ def reverse_k_group(self, head: ListNode, k: int) -> ListNode:
         node = node.next 
     
     # 3. reverse 
-    cur, pre = head, None
+    pre, cur = None, head
     for _ in range(k):
         cur.next, pre, cur = pre, cur, cur.next 
     
