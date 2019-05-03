@@ -21,8 +21,8 @@ Consider augmenting the basic stack or queue data structure to support additiona
 
 
 - LIFO: 901
-- save for later: parsing 
-- special order: discrete ascending or descending
+- **save for later**: parsing 
+- **special order**: discrete ascending or descending
 - **next greater**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
 - top-down (DFS-style): tree
 
