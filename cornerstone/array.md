@@ -40,7 +40,7 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 - **target**: sorted -> binary search, 
 - **pair** (x subarray): dp (min_so_far), cumulative (prefix_sum)
 - **subarray**: two pointer, sliding window
-- **subsequence**: stack?
+- **subsequence**: stack? dp?
 
 ## 最佳实践
 
