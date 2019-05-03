@@ -25,12 +25,11 @@ Some Applications:
 * Finding articulation points (cut vertices) of the graph.
 
 ## 典型应用
-
-- permutation: [46](https://repl.it/@WillWang42/permute)
-- detect cycle: [google](https://willwang-x.github.io/2018/02/shift)
-- connected component: 924, 928
 - **path**: 112, 1022
-- Topology Sort
+	- detect cycle: [google](https://willwang-x.github.io/2018/02/shift)
+	- topology sort
+	- permutation: [46](https://repl.it/@WillWang42/permute)
+- connected component: 924, 928
  
 
 ## 最佳实践
