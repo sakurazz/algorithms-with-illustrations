@@ -21,8 +21,8 @@ Consider augmenting the basic stack or queue data structure to support additiona
 
 
 - LIFO: 901
-- **nearest largest**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
-- save for later:
+- **next greater**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
+- save for later: parsing 
 - top-down (DFS-style?): 
 - special(discrete) order
 

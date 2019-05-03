@@ -4,6 +4,8 @@
 
 ## 基础知识
 
+source: [elements](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517671272)
+
 Array problems often have simple brute-force solutions that use 0(n) space, but subtler solutions that **use the array itself** to **reduce space** complexity to 0(1).
 
 
@@ -118,25 +120,18 @@ for i in range(1, len(nums)):
 
 ## 木桩训练
 
-1. [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/): 若干变种 ❤️
-2. [mutiply two arbitrary-precision integers stored as Array](https://www.glassdoor.com/Interview/Given-2-very-large-numbers-each-of-which-is-so-large-it-can-only-be-represented-as-an-array-of-integers-write-a-function-QTN_266330.htm) ❤️
-3. [Increment an arbitrary precision integer](https://fundatablog.wordpress.com/2016/07/11/problem-6-2-increment-an-arbitrary-precision-integer/)❤️
-4. [55. Jump Game](https://leetcode.com/problems/jump-game/description/): Variant [45](https://leetcode.com/problems/jump-game-ii/description/) ❤️
-5. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) : Variant [80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) ❤️
-6. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/): Variant: Write a program that takes an array of integers and finds the length of a longest subarray all of whose entries are equal.
-7. [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
-8. [204. Count Primes](https://leetcode.com/problems/count-primes/description/) :  print all primes under N  ❤️
-9. [Reorder an array according to given indexes](https://www.geeksforgeeks.org/reorder-a-array-according-to-given-indexes/) Variant: Given an array A of integers representing a permutation, update A to represent the inverse permutation using only constant additional storage. 
-10. [31. Next Permutation](https://leetcode.com/problems/next-permutation/description/)
-11. Sample offline data
-12. Sample online data 
-13. Compute a random permutation
-14. Cimpute a random subset
-15. Cenerate nonuniform random numbers
-16. [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) 
-17. [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) ❤️
-18. [48. Rotate Image](https://leetcode.com/problems/rotate-image/description/)
-19. compute a row in pascal's triangle:  Compute the nth row of Pascal's triangle using 0(n) space. ❤️
+- [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+- [31. Next Permutation](https://leetcode.com/problems/next-permutation/description/)
+- [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) 
+- [48. Rotate Image](https://leetcode.com/problems/rotate-image/description/)
+- [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
+- [55. Jump Game](https://leetcode.com/problems/jump-game/description/)
+- [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/)
+- [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
+- [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
+- [204. Count Primes](https://leetcode.com/problems/count-primes/description/)
+
+
 
 ## Explain
 
