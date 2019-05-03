@@ -36,7 +36,7 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 ## 典型应用
 
 - **target**: sorted -> binary search
-- **pairs** (x subarray): dp
+- **pair** (x subarray): dp
 - **subarray**: two pointer, sliding window
 - **subsequence**: stack?
 
@@ -44,18 +44,23 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 
 - [libraries]((https://i.imgur.com/VNGOnCx.png))
 - preprocess: 
-	- sort the array first 
+	- sort the array first -> binary search 
 	- hashing (val -> index) 
-	- a prefix/suffix sum/product
+	- a prefix/suffix sum/product -> to get subarray sum
 - search 
 	- sliding window / two pointers
 	- use **index** instead of slicing when possible (O(1) vs O(n))
-	- binary search 
 	- out of bounds
 	- array used as a hashmap
 - access / change
 	- processing the element from the back
 	- simulate
+
+### corner case 
+
+- Empty sequence.
+- Sequence with 1 or 2 elements.
+- Sequence with repeated elements.
 
 ### out of bounds
 
@@ -110,12 +115,6 @@ for i in range(1, len(nums)):
 
 - Pracetice: [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/), [1031](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/), 1041  
 
-
-### corner case 
-
-- Empty sequence.
-- Sequence with 1 or 2 elements.
-- Sequence with repeated elements.
 
 ## 木桩训练
 
