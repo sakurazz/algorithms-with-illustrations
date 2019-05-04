@@ -37,7 +37,12 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 
 ## 典型应用
 
-- **target**: sorted -> binary search, 
+- **target**:
+	- 1 unsorted -> quick select
+	- 1 sorted -> binary search
+	- 2 sorted array -> dcrease & conquer
+	- N sorted array -> merge sort
+	- sorted matrix  -> dcrease & conquer
 - **pair** (x subarray): dp (min_so_far), cumulative (prefix_sum)
 - **subarray**: two pointer, sliding window
 - **subsequence**: stack? dp?
