@@ -15,8 +15,8 @@ Updating a mutable string from the front is slow, so see if it's possible to **w
 
 1. **anagram**: sort, hashmap or counter 
 2. **palindrome**: a == a[::-1] 
-3. **valid substring**: counter, sliding window
-4. **match**: KMP? Rabin Karp? 
+3. **substring**: counter, sliding window
+4. **match**: KMP? Rabin Karp? wildcards?
 5. **search**: trie 
 
 ## 最佳实践
