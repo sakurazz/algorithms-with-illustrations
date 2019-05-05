@@ -42,9 +42,12 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 	- 1 sorted -> binary search
 	- 2 sorted array -> dcrease & conquer
 	- N sorted array -> merge sort
-	- sorted matrix  -> dcrease & conquer
-- **pair** (x subarray): dp (min_so_far), cumulative (prefix_sum)
-- **subarray**: two pointer, sliding window
+	- ⚃ sorted matrix  -> dcrease & conquer
+- **pair** (x subarray): dp (min_so_far)
+- **subarray**: 
+	- sum: cumulative (prefix_sum) 
+	- two pointer
+	- sliding window
 - **subsequence**: stack? dp?
 
 ## 最佳实践
