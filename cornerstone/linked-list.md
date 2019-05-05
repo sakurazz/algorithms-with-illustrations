@@ -20,14 +20,15 @@ Algorithms operating on singly linked lists often benefit from using **two itera
  
 ## 典型应用
 
-- dummy node: [2](https://leetcode.com/problems/add-two-numbers/description/)
-- delete in O(1): moditfy the value or pointer 
-- two pointer (fast/slow pointers)
-	- kth: get the kth from last node 
-	- middle: get the middle node 
-	- cycle: detect cycle 
-- reverse 2 or K: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
-- merge 2 or K
+- `+`: dummy node: [2](https://leetcode.com/problems/add-two-numbers/description/)
+- `-`: delete in O(1): moditfy the value or pointer 
+- `%`: fast & slow 
+	- **kth**: get the kth from last node 
+	- **middle**: get the middle node 
+	- **cycle**: detect cycle 
+- `*`: 
+	- reverse 1 or K: [25](https://leetcode.com/problems/reverse-nodes-in-k-group/description/), [92](https://leetcode.com/problems/reverse-linked-list-ii/description/), [206](https://leetcode.com/problems/reverse-linked-list/description/)
+	- merge 2 or K
 
 ## 最佳实践
 
@@ -82,7 +83,19 @@ def delete_node(self, node):
 
 ### kth(back)
 
-
+``` python
+def remove_Nth_from_end(head: ListNode, n: int) -> ListNode:
+    fast = slow = head
+    for _ in range(n):
+        fast = fast.next
+    if not fast:
+        return head.next
+    while fast.next:
+        fast = fast.next
+        slow = slow.next
+    slow.next = slow.next.next
+    return head
+```
  
 ### middle
 
@@ -97,7 +110,19 @@ def middle_node(self, head: ListNode) -> ListNode:
 
 ### cycle 
 
-
+``` python
+def has_cycle(head):
+    """
+    :type head: ListNode
+    :rtype: bool
+    """
+    fast, slow = head, head 
+    while fast and fast.next:
+        fast, slow = fast.next.next, slow.next 
+        if fast == slow:  
+            return True 
+    return False 
+```
 
 ### reverse 
 
