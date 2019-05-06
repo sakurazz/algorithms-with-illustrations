@@ -57,16 +57,42 @@ To compute inorder traversal follow the direction Left -> Node -> Right.
 ``` python
 def inorder(root):
     return inorder(root.left) + [root.val] + inorder(root.right) if root else []
-```
 
-### inorder generator 
-
-``` python
-def inorder(self, root):
+def helper(self, ans, root):
+    if root is None: return ans 
+    ans.append(root.val)
+    return self.helper([], root.left) + ans + self.helper([], root.right)   
+   
+def inorder_generator(self, root):
     if root:
         for val in self.inorder(root.left):  yield val
         yield root.val
-        for val in self.inorder(root.right): yield val
+        for val in self.inorder(root.right): yield val    
+
+def inorder_iterative(root):
+	stack = []
+	while stack or root:
+		while root:
+			stack.append(root)
+			root.left 
+		node = stack.pop()
+		# do sth. with node 
+		root = node.right   
+
+# general way 
+def inorder_traversal(root: TreeNode) -> List[int]:
+    stack = [(0, root)]
+    ans = []
+    while stack:
+        opt, node = stack.pop()
+        if node is None: continue 
+        if opt == 0:
+            stack.append((0, node.right))
+            stack.append((1, node))
+            stack.append((0, node.left))
+        else:
+            ans.append(node.val)
+    return ans
 ```
 
 ### sucessor
