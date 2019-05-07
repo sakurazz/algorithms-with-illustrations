@@ -35,5 +35,5 @@ Either the problem or algorithm can be transformed in one of three ways:
 ## More 
 
 - [Transform and Conquer](http://www.csl.mtu.edu/cs4321/www/Lectures/Lecture%2012%20-%20Transform%20and%20Conquer-Presort%20and%20Heap.htm)
-- [PDF: Transform and Conquer](http://www.math.uaa.alaska.edu%2F~afkjm%2Fcs351%2Fhandouts%2Ftransform-conquer.pdf)
+- [PDF: Transform and Conquer](http://www.math.uaa.alaska.edu/~afkjm/cs351/handouts/transform-conquer.pdf)
 
