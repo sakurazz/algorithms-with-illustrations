@@ -8,7 +8,7 @@
 
 ## Question 
 
-![](https://i.imgur.com/lrGpay2.png)
+![questions](https://i.imgur.com/lrGpay2.png)
 
 ```
 input = [[0,6], [7, 8], [0,1] [1,3], [4, 5], [7, 9], [0, 2], [2, 4], [4, 7]]
