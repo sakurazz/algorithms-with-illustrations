@@ -12,10 +12,10 @@ A heap is a good choice when you need to compute the k **largest** or k **smalle
 
 ## 典型应用
 
-- first in, best out 
+- first in, best out, [407](https://leetcode.com/problems/trapping-rain-water-ii/)
 - top / lowest k: [347](https://leetcode.com/problems/top-k-frequent-elements/description/)
-- shortest path: [787]
-- merge k lists
+- shortest path: [787](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
+- merge k lists: [23](https://leetcode.com/problems/merge-k-sorted-lists/)
 
 ## 最佳实践
 
