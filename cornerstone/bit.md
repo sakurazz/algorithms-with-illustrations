@@ -37,7 +37,7 @@ Some helpful utility snippets:
 - count `1`s by `A&(A-1)`
 - get sum of a and b (& ^)
 - missing number `^`
-- bit states - `(1 << k) | state`
+- bit states - `(1 << k) | state`, [847](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
 
 ### binary/hexadecimal to decimal
 
