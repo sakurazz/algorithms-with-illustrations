@@ -15,6 +15,15 @@ Either the problem or algorithm can be transformed in one of three ways:
 
 ## 典型应用
 
+- instance simplification
+	- presort
+- representation change
+	- heapify: tree -> array
+- problem reduction
+	- lcm(m, n) -> |m*n| / gcd(m, n)   
+
+
+----
 1. Presorting
 2. Gaussian Elimination
 3. Balanced Search Trees
