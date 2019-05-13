@@ -72,7 +72,7 @@ It's easy to make the **mistake** of treating a node that has a single child as 
 	- iterative
 - calculate
 	- pass info to children (target)
-	- get infor from children (sum) 
+	- get info from children (sum) 
 	- path sum
 - modify 
 
@@ -155,7 +155,11 @@ def min_depth(self, root: TreeNode) -> int:
 
 ## 木桩训练
 
+- [112. Path Sum](https://leetcode.com/problems/path-sum/)
+- [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/)
 - [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+- [437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)
+- [666. Path Sum IV](https://leetcode.com/problems/path-sum-iv/)
 
 ## Explain
 
