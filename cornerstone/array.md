@@ -38,11 +38,11 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 ## 典型应用
 
 - **target**:
-	- 1 unsorted -> quick select
-	- 1 sorted -> binary search
-	- 2 sorted array -> dcrease & conquer
-	- N sorted array -> merge sort
-	- ⚃ sorted matrix  -> dcrease & conquer
+	- 1 unsorted -> quick select, [215](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+	- 1 sorted -> binary search, [35](https://leetcode.com/problems/search-insert-position/), [33](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+	- 2 sorted array -> dcrease & conquer, [4](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+	- N sorted array -> merge sort, [23](https://leetcode.com/problems/merge-k-sorted-lists/)
+	- ⚃ sorted matrix  -> dcrease & conquer, [378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 - **pair** (x subarray): dp (min_so_far)
 - **subarray**: 
 	- sum: cumulative (prefix_sum) 
