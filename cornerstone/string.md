@@ -19,7 +19,7 @@ Updating a mutable string from the front is slow, so see if it's possible to **w
 4. **match**: 
 	- KMP? 
 	- Rabin Karp? 
-	- wildcards, [44](https://leetcode.com/problems/wildcard-matching/)
+	- wildcards, [10](https://leetcode.com/problems/regular-expression-matching/)
 5. **search**: trie, [212](https://leetcode.com/problems/word-search-ii/)
 
 ## 最佳实践
