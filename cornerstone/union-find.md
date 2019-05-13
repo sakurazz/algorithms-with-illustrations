@@ -11,7 +11,7 @@ In computer science, a disjoint-set data structure (also called a `union–find`
 
 ## 典型应用
 
-* Find component (in **dynamic graph**)
+* Find component (in **dynamic graph**): [305](https://leetcode.com/problems/number-of-islands-ii/)
 * Detect cycle for the whole graph
 * MST(Kruskal)
 
