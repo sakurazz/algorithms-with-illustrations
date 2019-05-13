@@ -5,7 +5,7 @@
 - component: [island 系列](https://leetcode.com/problems/number-of-islands/)
 - shortest path: [maze 系列](https://leetcode.com/problems/the-maze/) 
 - simulation: [Spiral matrix 系列](https://leetcode.com/problems/spiral-matrix-iii/)
-- search: [240 search a 2D matrix](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+- search: [240 search a 2D matrix](https://leetcode.com/problems/search-a-2d-matrix-ii/), [542](https://leetcode.com/problems/01-matrix/)
 
 ## 最佳实践 Best practice 
 
