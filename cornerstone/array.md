@@ -43,12 +43,18 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 	- 2 sorted array -> dcrease & conquer, [4](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 	- N sorted array -> merge sort, [23](https://leetcode.com/problems/merge-k-sorted-lists/)
 	- ⚃ sorted matrix  -> dcrease & conquer, [378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
-- **pair** (x subarray): dp (min_so_far)
+- **pair** (x subarray):
+	- dp (min_so_far), [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+	- x subarray: [1031](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/)
 - **subarray**: 
-	- sum: cumulative (prefix_sum) 
-	- two pointer
-	- sliding window
-- **subsequence**: stack? dp?
+	- sum: cumulative (prefix_sum), [325](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)
+	- two pointer, [209](https://leetcode.com/problems/minimum-size-subarray-sum/)
+	- sliding window, [992](https://leetcode.com/problems/subarrays-with-k-different-integers/)
+- **subsequence**:
+	- stack? 
+	- dp, [300](https://leetcode.com/problems/longest-increasing-subsequence/)
+	- dfs, [491](https://leetcode.com/problems/increasing-subsequences/)
+	- greedy, [659](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)
 
 ## 最佳实践
 
