@@ -21,6 +21,13 @@ Greedy algorithms produce good solutions on some mathematical problems, but not 
 
 ## 典型应用
 
+- prove:
+	- stay ahead(induction): [253](https://leetcode.com/problems/meeting-rooms-ii/)
+	- exchange argument(deduction): 
+	- copy and paste: [135](https://leetcode.com/problems/candy/) 
+
+----
+
 * 可行性，局部最优，不可取消。
 	* 可行性：满足问题的约束。
 	* 局部最优：看到的目光有限！
