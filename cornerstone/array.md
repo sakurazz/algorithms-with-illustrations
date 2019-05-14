@@ -52,8 +52,8 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 	- sliding window, [992](https://leetcode.com/problems/subarrays-with-k-different-integers/)
 - **subsequence**:
 	- stack? 
-	- dp, [300](https://leetcode.com/problems/longest-increasing-subsequence/)
 	- dfs, [491](https://leetcode.com/problems/increasing-subsequences/)
+	- dp, [300](https://leetcode.com/problems/longest-increasing-subsequence/)
 	- greedy, [659](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)
 
 ## 最佳实践
