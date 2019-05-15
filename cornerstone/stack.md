@@ -20,11 +20,11 @@ Consider augmenting the basic stack or queue data structure to support additiona
 ## 典型应用
 
 
-- LIFO: 901
+- LIFO: [901](https://leetcode.com/problems/online-stock-span/)
 - **save for later**: parsing, [394](https://leetcode.com/problems/decode-string/)
-- **special order**: discrete ascending or descending
-- **next greater**: 84, 85, 801, 739, 907, 221, 1019 (7 solved in 1 way)
-- top-down (DFS-style): tree
+- **special order**: discrete ascending or descending, [84](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+- **next greater**: [496](https://leetcode.com/problems/next-greater-element-i/)
+- top-down (DFS-style): tree, [173](https://leetcode.com/problems/binary-search-tree-iterator/)
 
 ## 最佳实践
 
@@ -89,7 +89,7 @@ s = "10[a]", return "aaaaaaaaaa".
 ## 木桩训练
 
 * [155. Min Stack](https://leetcode.com/problems/min-stack/) 🌟
-* [84.Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) (系列, 907 + 42? 85, 901, 907, 739)
+* [84.Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) 42, 84, 85, 221, 801, 739, 901, 907, 1019 (7 solved in 1 way)
 * [907.Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) 
 * [94.Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) (Iterative, 系列)!  pre-order, 394 🌟
 * [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
