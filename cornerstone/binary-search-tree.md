@@ -20,7 +20,13 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 
 ## 典型应用
 
-- look up in O(nlogn)
+- successor or predecessor
+- sorted array
+	- inorder generator, [1038](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)
+- search (logn)
+	- kth
+	- delete 
+ 
 
 ## 最佳实践
 
