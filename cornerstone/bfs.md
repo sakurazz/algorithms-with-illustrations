@@ -23,7 +23,7 @@ Some Application:
 1. Traversal: 133, 301
 2. Connected Components: 200, 261, 323
 3. Shortest Path: 🌟[126 word ladder], 127,286, 317, [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
-4. Topological 拓扑排序: 207, 269, 444, 631 
+4. Topological: [207](https://leetcode.com/problems/course-schedule/), [269](https://leetcode.com/problems/alien-dictionary/) 
 
 ## 最佳实践
 
@@ -141,7 +141,8 @@ def shortest_depth(graph, start, goal):
 1. 317 Shortest Distance from All Buildings  ❸
 1. 207 Course Schedule 
 1. 269 Alien Dictionary 
-1. 444 Sequence Reconstruction ❹
+1. [444 Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/) ❹
+2. [631. Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula/)
 2. [815. Bus Routes](https://leetcode.com/problems/bus-routes/)
 
 ## Q&A
