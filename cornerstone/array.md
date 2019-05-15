@@ -50,7 +50,7 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 	- sum: cumulative (prefix_sum), [325](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)
 	- two pointer, [209](https://leetcode.com/problems/minimum-size-subarray-sum/)
 	- sliding window, [992](https://leetcode.com/problems/subarrays-with-k-different-integers/)
-- **subsequence**: (duplicate)
+- **subsequence**: (duplicate, end with)
 	- stack? 
 	- dfs, [491](https://leetcode.com/problems/increasing-subsequences/)
 	- dp, [300](https://leetcode.com/problems/longest-increasing-subsequence/)
