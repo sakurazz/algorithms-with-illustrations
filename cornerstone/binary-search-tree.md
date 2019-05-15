@@ -20,9 +20,13 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 
 ## 典型应用
 
-- successor or predecessor
-- sorted array
+- isBST
+	- successor
+	- predecessor
+- sorted
 	- inorder generator, [1038](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)
+	- inorder traverse (iterative / recursive)
+	- inorder array
 - search (logn)
 	- kth
 	- delete 
