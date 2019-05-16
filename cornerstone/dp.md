@@ -25,6 +25,16 @@ Sometimes, **recursion may out-perform a bottom-up DP** solution, e.g., when the
 
 ## 典型应用
 
+- memoization
+- choices: [322](https://leetcode.com/problems/coin-change/description/)
+- add one variable: [1035](https://leetcode.com/problems/uncrossed-lines/)
+- more variables
+- sequence alignment 
+- shortest paths: [787](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
+- counting: [91](https://leetcode.com/problems/decode-ways/)
+
+---
+
 - [**Longest common subsequence**](https://leetcode.com/problems/uncrossed-lines/): top down or bottom up, O(n) - O(1)
 - choice: 120, 97, 174, [221 Matrix], 903, **322**
 - variable: 188, 474,
@@ -117,7 +127,7 @@ def longest_common_subsquence(A: List[int], B: List[int]) -> int:
 - Try [516](https://leetcode.com/problems/longest-palindromic-subsequence/), [1035](https://leetcode.com/problems/uncrossed-lines/), 
 
 
-## 木桩训练
+## [木桩训练](https://leetcode.com/tag/dynamic-programming/)
 
 - [1035. Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/): Typical! LCS
 * 62 Unique Paths
