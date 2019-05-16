@@ -120,7 +120,7 @@ def dfs_paths(graph, start, goal, path=None):
 list(dfs_paths(graph, 'C', 'F')) # [['C', 'F'], ['C', 'A', 'B', 'E', 'F']]
 ```
 
-## 木桩训练 
+## [木桩训练](https://leetcode.com/tag/depth-first-search/) 
 
 * [112. Path Sum](https://leetcode.com/problems/path-sum/submissions/1)
 * [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
