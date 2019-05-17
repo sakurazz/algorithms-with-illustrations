@@ -100,3 +100,9 @@ def compute_prefix_function(pattern):
 - [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 - [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
 - [67. Add Binary](https://leetcode.com/problems/add-binary/)
+
+
+## More
+
+- [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)
+](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/?from=groupmessage&isappinstalled=0)
