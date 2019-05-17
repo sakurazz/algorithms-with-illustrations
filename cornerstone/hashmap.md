@@ -86,7 +86,7 @@ class LRUCache:
 - 36 Valid Sudoku
 - 49 Group Anagrams 
 - 136 Single Number
-- 138 Copy List with Random Pointer 
+- [138 Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/): hashmap x linkedlist 
 - 149 Max Points on a Line 
 - 166 Fraction to Recurring Decimal 
 - 170 Two Sum III - Data structure design 
