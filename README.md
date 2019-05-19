@@ -33,7 +33,7 @@ Fields tend to overlap with each other, and algorithm advances in one field may 
 |[**Combinatorial**](https://www.wikiwand.com/en/Combinatorics)/3|General combinatorial, Graph, [Sequence](https://www.wikiwand.com/en/Sequences)|
 |**/general**|
 | **/graph/5**|Graph drawing, Network theory, **Routing for graphs**, Graph search, Subgraphs|
-| //basics| coloring, Hopcroft–Karp, Hungarian, Prüfer coding, Tarjan's, [topological-sort]()|
+| //basics| coloring, Hopcroft–Karp, Hungarian, Prüfer coding, Tarjan's, [topological-sort](https://repl.it/@WillWang42/graph-topological-sort)|
 | //drawing| |
 | //network theory| |
 | //routing| MST(Borůvka, [prim](https://repl.it/@WillWang42/MST-Prim), [kruskal](https://repl.it/@WillWang42/MST-Kruskal), Reverse-delete)|
