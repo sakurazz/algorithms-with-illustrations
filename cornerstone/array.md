@@ -45,7 +45,7 @@ Sometimes it's easier to **simulate the specification**, than to analytically so
 	- ⚃ sorted matrix  -> dcrease & conquer, [378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 - **pair** (x subarray):
 	- dp (min_so_far), [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
-	- x complement: [653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)
+	- x complement: [653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/), [1049](https://leetcode.com/problems/last-stone-weight-ii/)
 	- x subarray: [1031](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/)
 - **subarray**: 
 	- sum: cumulative (prefix_sum), [325](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)
