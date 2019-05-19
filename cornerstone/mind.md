@@ -14,7 +14,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 - [ ] Index/坐标视角: 283. Move Zeroes, 
 - [x] Granularity|zoom out
 - [ ] Limited states
-- [ ] Math reduce: 49
+- [ ] Math reduce: 49, 数学表达就是一种抽象
 - [ ] Object: 418 
 - [ ] Reverse thinking: 283. Move Zeroes(移非零)
 - [x] Reduction
@@ -23,6 +23,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 - [ ] safest way(greedy)
 - [ ] 双标准: 678 
 - [ ] 满足/不满足： 836 
+- [ ] assume: 假设最优解，然后查看最优解的性质
 
 --- 
 
@@ -33,6 +34,8 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 	- [815](https://leetcode.com/problems/bus-routes/): 将一个bus路线看作一个点，然后用BFS去做 
 	- [918](https://github.com/willwang-x/algorithms-with-illustrations/blob/master/stories/granularity-zoom-out-918.md)
 	- 1001 (preprocess)
+	- [1031](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/) subarray seen as a element 
+	- [1049](https://leetcode.com/problems/last-stone-weight-ii/) all elements seen as two group
 - [x] Safest way(greedy)
 	- [942](https://leetcode.com/problems/di-string-match/): 最安全方法就是选最大，留有余地 
 	- [31](https://leetcode.com/problems/next-permutation/): 找到decreasing subarray[...](https://leetcode.com/problems/next-permutation/solution/)
@@ -47,6 +50,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 	- LC 85 二维求最大长方形，可以降为一维 成 LC84 
 	- [LC 763](https://leetcode.com/problems/partition-labels/): valid sbtring, track所有字母的个数(多个) 变成 只 track index在最后的字母(1个)
 	- [1035](https://leetcode.com/problems/uncrossed-lines/) uncrossed line 可以被reduced to `longest common subsequence`
+	- [1049](https://leetcode.com/problems/last-stone-weight-ii/) 变成 knapsack 问题
 
 
 
